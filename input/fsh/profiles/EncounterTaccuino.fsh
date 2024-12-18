@@ -18,6 +18,7 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 // aggiungere il valueset (basta l'alias http://terminology.hl7.org/ValueSet/v3-ActEncounterCode) valutare se va bene
 * serviceProvider 1..1
 * serviceProvider ^short = "Organizzazione responsabile del contatto con il paziente"
+* serviceProvider only Reference(OrganizationTaccuino)
 //Da decreto è necessario inserire codice e descrizione della struttura sanitaria, TODO: valutare come e dove inserirli
 * reasonCode ^short = "Motivazione del contatto"
 * reasonCode.coding.system from $reason (extensible)

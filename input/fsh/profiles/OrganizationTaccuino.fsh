@@ -20,14 +20,14 @@ Description: "Rappresentazione della struttura sanitaria tramite il profilo Orga
 	
 * identifier[farmacia]
   * ^short = "Farmacia"
-  * system = $vs-minsan-farmacie
+  * system from $vs-minsan-farmacie
 * identifier[azienda]
   * ^short = "Azienda Sanitaria ed Ospedaliera"
-  * system = $minsan-fls
+  * system from $minsan-fls
 * identifier[strutturaHos]
   * ^short = "Struttura di ricovero"
-  * system = $minsan-hsp
+  * system from $minsan-hsp
 * identifier[strutturaRic]
   * ^short = "Strutture di ricovero pubbliche, istituti e centri di riabilitazione pubblici"
-  * system = $minsan-ria
+  * system from $minsan-ria
 
