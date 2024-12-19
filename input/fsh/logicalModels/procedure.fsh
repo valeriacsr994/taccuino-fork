@@ -11,4 +11,4 @@ Characteristics: #can-be-target
 * luogo 0..1 Reference(LuogoEvento) "Luogo dove viene eseguita la procedura"
 * sitoAnatomico 0..* code "Sito anatomico sul quale è stata eseguita la procedura"
 * note 0..* Annotation "Annotazioni e commenti"
-//TO DO --> fare logical model delle references
+//TO DO --> inserire logical model delle references

@@ -102,8 +102,9 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * valueCodeableConcept ^short = "Codice e descrizione del dolore" // TO DO --> capire il vocabolario
 * bodySite ^short = "Area interessata dal dolore"
 
-// TO DO --> Grado di intensità del dolore, potrebbe essere un integer che con una rule applica una scala da 0 a 10
-// utilizzare il concept come code --> 72514-3 e poi nel concept.valueIntefer la scala da 1 a 10 (proposta)
+// Proposta 1--> Grado di intensità del dolore, potrebbe essere un integer che con una rule applica una scala da 0 a 10
+// Proposta 2 --> utilizzare il concept come code --> 72514-3 e poi nel concept.valueCodableConcept la scala da 1 a 10, però 
+// l'oid da inserire nel system è quello relativo a LOINC? oppure un  altro? (proposta)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

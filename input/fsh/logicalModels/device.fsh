@@ -5,7 +5,6 @@ Characteristics: #can-be-target
 * identificativo 1..1 Identifier "Identificatico del dispositivo medico"
 * produttore 0..1 string "Produttore del dispositivo medico"
 * nome 1..* string "Nome del dispositivo medico" // Nome commerciale oppure nome specialistico del DM
-* seriale 0..1 string "Numero seriale del dispositivo medico"
 * tipologia 1..1 code "Tipologia di dispositivo medico"
 * dataProduzione 0..1 dateTime "Data produzione del dispositivo medico" 
 * dataImpianto 0..1 dateTime "Data di impianto/acquisto del dispositivo medico"
