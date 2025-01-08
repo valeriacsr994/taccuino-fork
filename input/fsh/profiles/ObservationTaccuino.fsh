@@ -11,7 +11,10 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * code.coding.display = "Annotazioni e commenti"
 
 * valueString 1..1
+//valutare se inserirlo su value[x] e dare la possibilità di scegliere la tipologia di dato coerentemente con quanto riportato nella observation
 * valueString ^short = "Note generali: annotazioni libere"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationEventiTaccuino
 Parent: Observation
@@ -26,6 +29,8 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * effectiveDateTime ^short = "Data evento significativo"
 
 // TO DO --> quale tipo di dato va valorizzato , valueSring,valuequantity...?
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationOsservazioniTaccuino
 Parent: Observation
