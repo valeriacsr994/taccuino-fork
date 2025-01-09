@@ -254,7 +254,7 @@ Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramit
 * code.coding.code = #3043-7 // ci sono diversi codici che rappresentano i triglicedi in varie campioni (sangue, urine..)
 // Valutare un valueset di valori loinc altrimenti c'è un codice SNOMED più generico <Triglycerides measurement (procedure) SCTID: 14740000>
 * code.coding.system from $loinc
-* code.coding.display = "Triglyceride [Mass/volume] in Blood"
+* code.coding.display = "Trigliceridi"
 
 * effectiveDateTime ^short = "Data di registrazione dei Trigliceridi"
 * effectiveDateTime 1..1
@@ -279,7 +279,7 @@ Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramit
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code.coding.code = #20564-1
 * code.coding.system from $loinc
-* code.coding.display = "Oxygen saturation in Blood"
+* code.coding.display = "Saturazione dell'ossigeno"
 // 85353-1	Vital signs, weight, height, head circumference, oxygen saturation and BMI panel LHC-Forms
 
 * effectiveDateTime ^short = "Data di registrazione dei Ossimetria"
@@ -304,7 +304,7 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code.coding.code = #88365-2
 * code.coding.system from $loinc
-* code.coding.display = "Glucose [Mass/volume] in Blood --pre-meal"
+* code.coding.display = "Glucosio^pre-pasto"
 
 * effectiveDateTime ^short = "Data di rilevazione della glicemia a digiuno"
 * effectiveDateTime 1..1
@@ -328,7 +328,7 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code.coding.code = #4548-4
 * code.coding.system from $loinc
-* code.coding.display = "Hemoglobin A1c/Hemoglobin.total in Blood"
+* code.coding.display = "Emoglobina A1c/Emoglobina.totale"
 
 * effectiveDateTime ^short = "Data di rilevazione dell'emoglobina nel sangue"
 * effectiveDateTime 1..1
