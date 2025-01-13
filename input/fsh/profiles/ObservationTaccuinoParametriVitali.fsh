@@ -26,6 +26,30 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+Profile: ObservationAltezzaTaccuino
+Parent: Observation
+Id: Observation-it-height-taccuino
+Title: "Observation Altezza - Taccuino"
+Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il profilo Observation"
+* ^status = #active
+
+* extension contains RegistrationDate named dataRegistrazione 1..1 //valutare se mantenerlo, vedi documento Taccuino
+* code.coding.code = #8302-2
+* code.coding.system from $loinc
+* code.coding.display = "Altezza"
+
+* effectiveDateTime ^short = "Data di misurazione dell'altezza"
+* effectiveDateTime 1..1
+
+* valueQuantity ^short = "Risultato della misurazione"
+* valueQuantity 1..1
+* valueQuantity.unit ^short = "Unità di misura" 
+* valueQuantity.unit 1..1
+* valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
+* valueQuantity.system from $vs-unitOfMeasure
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Profile: ObservationTemperaturaTaccuino
 Parent: Observation
 Id: Observation-it-temperature-taccuino
@@ -157,7 +181,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code.coding.code = #9279-1
 * code.coding.system from $loinc
-* code.coding.display = "Pressione frequenza respiratoria"
+* code.coding.display = "Frequenza respiratoria"
 
 * effectiveDateTime ^short = "Data di registrazione della frequenza respiratoria"
 * effectiveDateTime 1..1
@@ -181,7 +205,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code.coding.code = #14646-4
 * code.coding.system from $loinc
-* code.coding.display = "Colesterolo HDL"
+* code.coding.display = "Colesterolo HDL [moli/volume] nel siero o nel plasma"
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo HDL"
 * effectiveDateTime 1..1
@@ -304,7 +328,7 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code.coding.code = #88365-2
 * code.coding.system from $loinc
-* code.coding.display = "Glucosio^pre-pasto"
+* code.coding.display = "Glicemia a digiuno"
 
 * effectiveDateTime ^short = "Data di rilevazione della glicemia a digiuno"
 * effectiveDateTime 1..1

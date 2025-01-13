@@ -88,8 +88,6 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
 Parent: Observation
 Id: Observation-it-dolore-taccuino

@@ -6,9 +6,9 @@ Title: "DocumentReference - Taccuino"
 Description: "Rappresentazione di eventuali documenti che l'assisito allega al Taccuino, tramite il profilo DocumentReference"
 * ^status = #active
 
-//inserire data emissione documento
+//inserire data di inserimento sul taccuino
 * date 0..1
-* date ^short = "Data di inserimento del documento"
+* date ^short = "Data di emissione del documento"
 * identifier ^short = "Identificativo univoco del documento (OID)" // dovrebbe essere obbbligatorio, l'identificativo univoco dovrebbe essere inserito da sistema
 * identifier 1..1
 * type 1..1

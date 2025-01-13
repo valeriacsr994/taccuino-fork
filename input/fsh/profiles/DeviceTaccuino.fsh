@@ -11,7 +11,7 @@ Description: "Rappresentazione dei dispositivi sanitari quali protesi impiantate
 * type ^short = "Tipologia del dispositivo sanitario"
 * type 1..
 * type.coding 1..
-* type.coding.system = "2.16.840.1.113883.2.9.6.1.48"
+* type.coding.system = "2.16.840.1.113883.2.9.6.1.48" 
 // discutere di quale dizionario utilizzare per identificare i tipi di dispositivo sanitario
 * manufacturer ^short = "Produttore del dispositivo sanitario"
 * identifier 1..1 

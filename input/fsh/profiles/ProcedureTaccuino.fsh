@@ -12,7 +12,7 @@ Description: "Rappresentazione della procedura di impianto protesico tramite il 
 * code.coding.display = "Procedura impianti"
 * code.coding.system = $loinc
 * code ^short = "Identificativo della procedura di impianto protesico"
-* performedDateTime ^short = "Data di emissione del documento di impianto del dispositivo"
-* performer.actor ^short = "Medico che ha emesso il documento di impianto del dispositivo"
+* performedDateTime ^short = "Data di impianto del dispositivo"
+* performer.actor ^short = "Medico che ha effettuato l'impianto del dispositivo"
 * performer.actor only Reference(Practitioner or PractitionerRole)
 * performer.onBehalfOf only Reference(OrganizationTaccuino)
