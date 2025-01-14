@@ -6,8 +6,7 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #48767-8
-* code.coding.system from $loinc
+* code = $loinc#48767-8
 * code.coding.display = "Annotazioni e commenti"
 
 * valueString 1..1
@@ -24,7 +23,8 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-// TO DO --> capire codice loinc da associare e di quali tipi di eventi si parla, secondo noi non solo vaccinazioni, farmaci ...
+* code = $loinc#42547-0
+* code.coding.display = "Evento"
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "Data evento significativo"
 
@@ -40,15 +40,13 @@ Description: "Rappresentazione delle osservazioni 'Parametri Osservabili' tramit
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #19781-4
-* code.coding.system from $loinc
+* code = $loinc#19781-4
 * code.coding.display = "Procedura, parametri monitoraggio"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * effectiveDateTime ^short = "Data rilevazione del parametro osservabile"
 * component 1..*
 * component.code ^short = "Tipo di rilevazione misurata dall'assistito"
-* component.code.coding.system from $loinc
 * component.valueQuantity ^short = "Valore della rilevazione misurata dall'assistito"
 * component.valueQuantity 1..1
 
@@ -61,8 +59,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #56831-1
-* code.coding.system from $loinc
+* code = $loinc#56831-1
 * code.coding.display = "Problema, sintomi e segni associati"
 
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
@@ -96,8 +93,7 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #94085-8
-* code.coding.system from $loinc
+* code = $loinc#94085-8
 * code.coding.display = "Dolore, categoria"
 
 * effectivePeriod ^short = "Data di inizio e fine del dolore"

@@ -13,7 +13,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * identifier 1..1
 * type 1..1
 * type ^short = "Tipologia di documento"
-* type from $vs-doc-type (extensible)
+* type from $vs-classCode (required)
 * author only Reference (Practitioner or PractitionerRole or Organization or Device)
 * description ^short = "Commenti e annotazioni aggiuntive"
 

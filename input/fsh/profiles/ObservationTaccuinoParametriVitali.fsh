@@ -10,8 +10,7 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 //valutare se mantenerlo, vedi documento Taccuino
-* code.coding.code = #29463-7
-* code.coding.system from $loinc
+* code = $loinc#29463-7
 * code.coding.display = "Peso corporeo"
 
 * effectiveDateTime ^short = "Data di misurazione del peso corporeo"
@@ -34,8 +33,7 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 //valutare se mantenerlo, vedi documento Taccuino
-* code.coding.code = #8302-2
-* code.coding.system from $loinc
+* code = $loinc#8302-2
 * code.coding.display = "Altezza"
 
 * effectiveDateTime ^short = "Data di misurazione dell'altezza"
@@ -58,8 +56,7 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #8310-5
-* code.coding.system from $loinc
+* code = $loinc#8310-5
 * code.coding.display = "Temperatura corporea"
 
 * effectiveDateTime ^short = "Data di registrazione della temperatura corporeo"
@@ -82,8 +79,7 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #56115-9
-* code.coding.system from $loinc
+* code = $loinc#56115-9
 * code.coding.display = "Circonferenza della vita"
 
 * effectiveDateTime ^short = "Data di registrazione della circonferenza della vita"
@@ -106,8 +102,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #8462-4
-* code.coding.system from $loinc
+* code = $loinc#8462-4
 * code.coding.display = "Pressione sanguigna diastolica"
 
 * effectiveDateTime ^short = "Data di registrazione della pressione sanguigna diastolica"
@@ -130,8 +125,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #8480-6
-* code.coding.system from $loinc
+* code = $loinc#8480-6
 * code.coding.display = "Pressione sanguigna sistolica"
 
 * effectiveDateTime ^short = "Data di registrazione della pressione sanguigna sistolica"
@@ -155,8 +149,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #8867-4
-* code.coding.system from $loinc
+* code = $loinc#8867-4
 * code.coding.display = "Frequenza cardiaca a riposo"
 
 * effectiveDateTime ^short = "Data di registrazione della frequenza cardiaca a riposo"
@@ -179,8 +172,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #9279-1
-* code.coding.system from $loinc
+* code = $loinc#9279-1
 * code.coding.display = "Frequenza respiratoria"
 
 * effectiveDateTime ^short = "Data di registrazione della frequenza respiratoria"
@@ -203,8 +195,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #14646-4
-* code.coding.system from $loinc
+* code = $loinc#14646-4
 * code.coding.display = "Colesterolo HDL [moli/volume] nel siero o nel plasma"
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo HDL"
@@ -227,8 +218,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #2089-1
-* code.coding.system from $loinc
+* code = $loinc#2089-1
 * code.coding.display = "Colesterolo LDL"
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo LDL"
@@ -251,8 +241,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #2093-3
-* code.coding.system from $loinc
+* code = $loinc#2093-3
 * code.coding.display = "Colesterolo Totale"
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo totale"
@@ -275,9 +264,8 @@ Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramit
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #3043-7 // ci sono diversi codici che rappresentano i triglicedi in varie campioni (sangue, urine..)
+* code = $loinc#3043-7 // ci sono diversi codici che rappresentano i triglicedi in varie campioni (sangue, urine..)
 // Valutare un valueset di valori loinc altrimenti c'è un codice SNOMED più generico <Triglycerides measurement (procedure) SCTID: 14740000>
-* code.coding.system from $loinc
 * code.coding.display = "Trigliceridi"
 
 * effectiveDateTime ^short = "Data di registrazione dei Trigliceridi"
@@ -301,8 +289,7 @@ Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramit
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #20564-1
-* code.coding.system from $loinc
+* code = $loinc#20564-1
 * code.coding.display = "Saturazione dell'ossigeno"
 // 85353-1	Vital signs, weight, height, head circumference, oxygen saturation and BMI panel LHC-Forms
 
@@ -326,8 +313,7 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #88365-2
-* code.coding.system from $loinc
+* code = $loinc#88365-2
 * code.coding.display = "Glicemia a digiuno"
 
 * effectiveDateTime ^short = "Data di rilevazione della glicemia a digiuno"
@@ -350,8 +336,7 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code.coding.code = #4548-4
-* code.coding.system from $loinc
+* code = $loinc#4548-4
 * code.coding.display = "Emoglobina A1c/Emoglobina.totale"
 
 * effectiveDateTime ^short = "Data di rilevazione dell'emoglobina nel sangue"
