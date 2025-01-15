@@ -149,12 +149,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-<<<<<<< Updated upstream
-* code = $loinc#8867-4
-=======
-* code.coding.code = #40443-4
-* code.coding.system from $loinc
->>>>>>> Stashed changes
+* code = $loinc#40443-4
 * code.coding.display = "Frequenza cardiaca a riposo"
 
 * effectiveDateTime ^short = "Data di registrazione della frequenza cardiaca a riposo"
