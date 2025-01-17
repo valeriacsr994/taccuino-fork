@@ -26,3 +26,10 @@ Description: "HL7 Iternational - Codici che descrivono perchè non è presente u
 * codes from system $v3-NullFlavor
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsClassCode
+Id: vs-classCode
+Title: "Tipologia di documento"
+Description: "Classe a cui appartiene il documento"
+* ^experimental = false
+* codes from system $cs-classCode

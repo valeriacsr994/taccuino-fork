@@ -30,4 +30,4 @@ Description: "Rappresentazione della struttura sanitaria tramite il profilo Orga
 * identifier[strutturaRic]
   * ^short = "Strutture di ricovero pubbliche, istituti e centri di riabilitazione pubblici"
   * system from $minsan-ria
-
+//ampliare

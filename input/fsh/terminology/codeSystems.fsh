@@ -30,3 +30,28 @@ Description: "Nessuna Allergie oppure agente non noto"
 * #no-known-medication-allergies "No known medication allergies"
 * #no-known-environmental-allergies "No known environmental allergies"
 * #no-known-food-allergies "No known food allergies"
+
+CodeSystem: CsClassCode
+Id: class-code
+Title: "Tipologia di documento"
+Description: "Classe a cui appartiene il documento"
+* ^experimental = false
+* ^status = #active
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+
+* #WOR "Documento di workflow"
+* #REF "Referto"
+* #LDO "Lettera di dimissione ospedaliera"
+* #RIC "Richiesta"
+* #SUM "Sommario"
+* #TAC "Taccuino"
+* #PRS "Prescrizione"
+* #PRE "Prestazioni"
+* #ESE "Esenzione"
+* #PDC "Piano di cura"
+* #VAC "Vaccino"
+* #CER "Certificato per DGC VRB Verbale"
+* #CON "Documento di consenso"
+* #CNT "Documento di controllo"
