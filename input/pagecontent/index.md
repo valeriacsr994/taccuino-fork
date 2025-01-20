@@ -50,17 +50,17 @@ TODO
 <td>EY Advisory S.p.A.</td>
 <td>valeria.cesaro@it.ey.com</td>
 </tr>
-<tr class="odd">
-<td>Autore</td>
-<td>Maria Giovanna Antida Preziosi</td>
-<td>SOGEI</td>
-<td>mpreziosi@sogei.it</td>
-</tr>
 <tr class="even">
 <td>Autore</td>
 <td>Alice Cappello</td>
 <td>EY Advisory S.p.A.</td>
 <td>alice.cappello1@it.ey.com</td>
+</tr>
+<tr class="odd">
+<td>Autore</td>
+<td>Maria Giovanna Antida Preziosi</td>
+<td>SOGEI</td>
+<td>mpreziosi@sogei.it</td>
 </tr>
 <tr class="odd">
 <td>Autore</td>

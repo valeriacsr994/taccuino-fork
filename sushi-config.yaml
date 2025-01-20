@@ -62,8 +62,8 @@ pages:
  #   title: Principi e disegno
   # methodology.md:
   #   title: Metodologia
-  contestoIniziale.md:
-    title: Contesto Iniziale
+  # contestoIniziale.md:
+  #   title: Contesto Iniziale
   specifiche.md:
     title: Specifiche Tecniche
   # scenario.html:
