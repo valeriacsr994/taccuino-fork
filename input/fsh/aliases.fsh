@@ -32,5 +32,5 @@ Alias: $vs-mds-esenzioni = https://www.hl7.it/fhir/terminology/ValueSet/vs-mds-e
 Alias: $class = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
 Alias: $reason = http://hl7.org/fhir/ValueSet/encounter-reason
 Alias: $vs-doc-type = http://hl7.org/fhir/ValueSet/c80-doc-typecodes
-Alias: $cs-classCode = http://hl7.it/fhir/taccuino/CodeSystem/class-code
-Alias: $vs-classCode = http://hl7.it/fhir/taccuino/ValueSet/vs-classCode
+Alias: $cs-typeCode = http://hl7.it/fhir/taccuino/CodeSystem/type-code
+Alias: $vs-typeCode = http://hl7.it/fhir/taccuino/ValueSet/vs-typeCode

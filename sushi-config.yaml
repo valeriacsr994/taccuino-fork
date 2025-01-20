@@ -14,7 +14,7 @@ id: hl7.fhir.it.taccuino
 canonical: http://hl7.it/fhir/taccuino
 version: 0.0.1
 name: HL7itTaccuino
-title: HL7 FHIR Implementation Guide Taccuino
+title: HL7 FHIR Implementation Guide Taccuino Personale dell'Assistito
 status: active
 publisher:
   - name: HL7 Italia
@@ -24,7 +24,7 @@ contact:
     telecom:
       - system: url
         value: https://hl7.it
-description: "HL7 FHIR Implementation Guide Taccuino, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del Taccuino"
+description: "HL7 FHIR Implementation Guide Taccuino, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del Taccuino Personale dell'Assistito"
 license: CC-BY-SA-4.0
 fhirVersion: 4.0.1
 parameters:
@@ -88,8 +88,8 @@ menu:
   IG Home: index.html
   Sommario: toc.html
   Indice Artefatti: artifacts.html
-  Contesto:
-    Contesto Iniziale: contestoIniziale.html
+  # Contesto:
+  #   Contesto Iniziale: contestoIniziale.html
   #  Principi e disegno: design.html
 #  Specifiche Funzionali:
  #   Scenari: scenario.html
