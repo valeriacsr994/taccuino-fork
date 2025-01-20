@@ -20,6 +20,7 @@ Il data set standard, definito nellâ€™Allegato A del Decreto 7 settembre 2023 â€
 - Farmaci e Integratori che rappresentano i farmaci/integratori assunti da parte del paziente;
 - Viaggi all'estero TODO;
 - Documenti allegati che rappresentano i documenti caricati da parte del paziente non ancora presenti nel FSE.
+![](azionitaccuino.png)
 
 ### Dipendenze
 {% include dependency-table.xhtml %}
