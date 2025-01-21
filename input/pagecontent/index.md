@@ -13,7 +13,14 @@ La guida facilita l'interoperabilità tra i sistemi sanitari regionali e naziona
 
 Il cittadino, o a un suo delegato opportunamente autorizzato, avrà la possibilità di caricare, visualizzare e cancellare nel proprio FSE documenti relativi ai percorsi di cura personali. I documenti potranno essere sia scannerizzati sia nativamente elettronici e saranno caricati. L'obiettivo principale del Taccuino personale è fornire uno spazio sicuro e accessibile per integrare la propria storia clinica con documenti personali non ancora presenti nel FSE, provenienti da strutture private o pubbliche, a supporto dei percorsi di cura.
 
-![](azionitaccuino.png)
+
+
+<figure style="text-align: center;">
+  <img src="funzionalitaTaccuinorid.png" />
+  <figcaption>Funzionalità del Taccuino personale dell'assistito.</figcaption>
+</figure>
+
+
 
 ### Informazioni peculiari del Taccuino
 
