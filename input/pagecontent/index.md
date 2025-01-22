@@ -7,7 +7,7 @@ Questa guida ha lo scopo di definire i profili [HL7 FHIR](https://hl7.org/fhir/R
 Il Taccuino personale dell'assistito, come definito dall’art. 5 del DM FSE 2.0 del 7 settembre 2023, è una sezione riservata del FSE all’interno della quale esclusivamente l’assistito, o un suo delegato, può inserire, modificare ed eliminare dati, anche generati dai dispositivi medici e/o wearable, e documenti personali relativi ai propri percorsi di cura, oltre a informazioni integrative inserite direttamente dal cittadino.
 I dati e i documenti inseriti nel Taccuino personale dell’assistito sono informazioni non certificate e l’assistito è responsabile dell’esattezza e dell’eventuale aggiornamento dei dati e documenti inseriti nel Taccuino personale.
 
-### Funzionalità del Taccuino personale dell'assistito
+### Funzionalità del Taccuino
 L'Implementation Guide per il Taccuino personale dell'assistito fornisce le linee guida tecniche per l'adozione dello standard FHIR nella gestione dei dati inseriti nel Taccuino all'interno dell'FSE.
 La guida facilita l'interoperabilità tra i sistemi sanitari regionali e nazionali, garantendo la rappresentazione univoca, lo scambio e l'archiviazione delle informazioni personali del paziente.
 
