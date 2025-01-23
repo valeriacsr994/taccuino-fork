@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
 ### Scopo
 
 Questa guida ha lo scopo di definire i profili [HL7 FHIR](https://hl7.org/fhir/R4B) da utilizzare per l'implementazione del Taccuino personale dell'assistito, il quale appartiene al nucleo minimo dei documenti del Fascicolo Sanitario Elettronico (FSE).
@@ -96,3 +100,6 @@ Le informazioni, definite nell’Allegato A del Decreto 7 settembre 2023 “Fasc
 
 ### Intellectual Property Statements
 {% include ip-statements.xhtml %}
+
+</body>
+</html>
