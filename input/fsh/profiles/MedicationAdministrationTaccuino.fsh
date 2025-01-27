@@ -7,7 +7,7 @@ Description: "Rappresentazione della somministrazione del farmaco tramite il pro
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
-* extension[dataRegistrazione].valueCodeableConcept
+* extension[dataRegistrazione].valueDateTime
 * effective[x] ^short = "Inizio e fine dell'assunzione del farmaco"
 * effectivePeriod.start 1..
 * effectivePeriod.start ^short = "Inizio dell'assunzione del farmaco"

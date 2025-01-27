@@ -1,0 +1,14 @@
+{
+ "name": "HL7itTaccuino",
+ "version" : "0.0.1",  
+ "canonical" : "http://hl7.it/fhir/taccuino",
+ "url" : "http://hl7.it/fhir/taccuino",
+ "title" : "HL7 Italia FHIR Implementation Guide: Personal Notebook of the Patient",
+ "description": "HL7 Italia FHIR Implementation Guide: Personal Notebook of the Patient",
+ "keywords": [
+   "HL7 Italia",
+   "HL7 IT Personal Notebook of the Patient"
+  ],
+ "language": "it",
+ "license": "CC0-1.0"
+}

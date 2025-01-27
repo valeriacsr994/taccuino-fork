@@ -9,9 +9,9 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * code = $loinc#48767-8
 * code.coding.display = "Annotazioni e commenti"
 
-* valueString 1..1
+* value[x] 1..1
 //valutare se inserirlo su value[x] e dare la possibilità di scegliere la tipologia di dato coerentemente con quanto riportato nella observation
-* valueString ^short = "Note generali: annotazioni libere"
+* value[x] ^short = "Note generali: annotazioni libere"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -28,27 +28,29 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "Data evento significativo"
 
-// TO DO --> quale tipo di dato va valorizzato , valueSring,valuequantity...?
+* value[x] 1..1
+* value[x] ^short = "Evento"
+
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationOsservazioniTaccuino
-Parent: Observation
-Id: Observation-it-osservazioni-taccuino
-Title: "Observation Parametri Osservabili - Taccuino"
-Description: "Rappresentazione delle osservazioni 'Parametri Osservabili' tramite il profilo Observation"
-* ^status = #active
+// Profile: ObservationOsservazioniTaccuino
+// Parent: Observation
+// Id: Observation-it-osservazioni-taccuino
+// Title: "Observation Parametri Osservabili - Taccuino"
+// Description: "Rappresentazione delle osservazioni 'Parametri Osservabili' tramite il profilo Observation"
+// * ^status = #active
 
-* extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#19781-4
-* code.coding.display = "Procedura, parametri monitoraggio"
+// * extension contains RegistrationDate named dataRegistrazione 1..1 
+// * code = $loinc#19781-4
+// * code.coding.display = "Procedura, parametri monitoraggio"
 
-* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* effectiveDateTime ^short = "Data rilevazione del parametro osservabile"
-* component 1..*
-* component.code ^short = "Tipo di rilevazione misurata dall'assistito"
-* component.valueQuantity ^short = "Valore della rilevazione misurata dall'assistito"
-* component.valueQuantity 1..1
+// * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+// * effectiveDateTime ^short = "Data rilevazione del parametro osservabile"
+// * component 1..*
+// * component.code ^short = "Tipo di rilevazione misurata dall'assistito"
+// * component.valueQuantity ^short = "Valore della rilevazione misurata dall'assistito"
+// * component.valueQuantity 1..1
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
@@ -84,6 +86,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
 
+* value[x] ^short = "Valore del Segno/sintomo"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
 Parent: Observation

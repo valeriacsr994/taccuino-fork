@@ -12,6 +12,8 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 * extension contains RegistrationDate named dataRegistrazione 1..1 //valutare se mantenerlo, vedi documento Taccuino
 * code = $loinc#29463-7
 * code.coding.display = "Peso corporeo"
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
 
 * effectiveDateTime ^short = "Data di misurazione del peso corporeo"
 * effectiveDateTime 1..1
@@ -36,6 +38,9 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 * code = $loinc#8302-2
 * code.coding.display = "Altezza"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 * effectiveDateTime ^short = "Data di misurazione dell'altezza"
 * effectiveDateTime 1..1
 
@@ -58,6 +63,10 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#8310-5
 * code.coding.display = "Temperatura corporea"
+
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 
 * effectiveDateTime ^short = "Data di registrazione della temperatura corporeo"
 * effectiveDateTime 1..1
@@ -82,6 +91,9 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 * code = $loinc#56115-9
 * code.coding.display = "Circonferenza della vita"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 * effectiveDateTime ^short = "Data di registrazione della circonferenza della vita"
 * effectiveDateTime 1..1
 
@@ -105,6 +117,9 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 * code = $loinc#8462-4
 * code.coding.display = "Pressione sanguigna diastolica"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 * effectiveDateTime ^short = "Data di registrazione della pressione sanguigna diastolica"
 * effectiveDateTime 1..1
 
@@ -127,6 +142,9 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#8480-6
 * code.coding.display = "Pressione sanguigna sistolica"
+
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
 
 * effectiveDateTime ^short = "Data di registrazione della pressione sanguigna sistolica"
 * effectiveDateTime 1..1
@@ -152,6 +170,9 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * code = $loinc#40443-4
 * code.coding.display = "Frequenza cardiaca a riposo"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 * effectiveDateTime ^short = "Data di registrazione della frequenza cardiaca a riposo"
 * effectiveDateTime 1..1
 
@@ -174,6 +195,9 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#9279-1
 * code.coding.display = "Frequenza respiratoria"
+
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
 
 * effectiveDateTime ^short = "Data di registrazione della frequenza respiratoria"
 * effectiveDateTime 1..1
@@ -198,6 +222,10 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * code = $loinc#14646-4
 * code.coding.display = "Colesterolo HDL [moli/volume] nel siero o nel plasma"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
+
 * effectiveDateTime ^short = "Data di registrazione del colesterolo HDL"
 * effectiveDateTime 1..1
 
@@ -221,6 +249,9 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 * code = $loinc#2089-1
 * code.coding.display = "Colesterolo LDL"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 * effectiveDateTime ^short = "Data di registrazione del colesterolo LDL"
 * effectiveDateTime 1..1
 
@@ -243,6 +274,10 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#2093-3
 * code.coding.display = "Colesterolo Totale"
+
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo totale"
 * effectiveDateTime 1..1
@@ -268,6 +303,10 @@ Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramit
 // Valutare un valueset di valori loinc altrimenti c'è un codice SNOMED più generico <Triglycerides measurement (procedure) SCTID: 14740000>
 * code.coding.display = "Trigliceridi"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
+
 * effectiveDateTime ^short = "Data di registrazione dei Trigliceridi"
 * effectiveDateTime 1..1
 
@@ -291,6 +330,10 @@ Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramit
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#20564-1
 * code.coding.display = "Saturazione dell'ossigeno"
+
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
 // 85353-1	Vital signs, weight, height, head circumference, oxygen saturation and BMI panel LHC-Forms
 
 * effectiveDateTime ^short = "Data di registrazione dei Ossimetria"
@@ -316,6 +359,10 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * code = $loinc#88365-2
 * code.coding.display = "Glicemia a digiuno"
 
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+
+
 * effectiveDateTime ^short = "Data di rilevazione della glicemia a digiuno"
 * effectiveDateTime 1..1
 
@@ -338,6 +385,9 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#4548-4
 * code.coding.display = "Emoglobina A1c/Emoglobina.totale"
+
+* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
 
 * effectiveDateTime ^short = "Data di rilevazione dell'emoglobina nel sangue"
 * effectiveDateTime 1..1

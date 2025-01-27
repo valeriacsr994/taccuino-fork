@@ -27,9 +27,9 @@ Description: "HL7 Iternational - Codici che descrivono perchè non è presente u
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ValueSet: VsClassCode
-Id: vs-classCode
+ValueSet: VsTypeCode
+Id: vs-typeCode
 Title: "Tipologia di documento"
-Description: "Classe a cui appartiene il documento"
+Description: "Valuset che raccoglie i codici per indicare la tipologia di documento"
 * ^experimental = false
-* codes from system $cs-classCode
+* codes from system $cs-typeCode
