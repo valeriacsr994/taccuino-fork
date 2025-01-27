@@ -5,7 +5,7 @@
 Profile: ObservationPesoCorporeoTaccuino
 Parent: Observation
 Id: Observation-it-weight-taccuino
-Title: "Observation Peso Corporeo - Taccuino"
+Title: "Observation Peso Corporeo - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al peso corporeo tramite il profilo Observation"
 * ^status = #active
 
@@ -30,7 +30,7 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 Profile: ObservationAltezzaTaccuino
 Parent: Observation
 Id: Observation-it-height-taccuino
-Title: "Observation Altezza - Taccuino"
+Title: "Observation Altezza - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il profilo Observation"
 * ^status = #active
 
@@ -56,7 +56,7 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 Profile: ObservationTemperaturaTaccuino
 Parent: Observation
 Id: Observation-it-temperature-taccuino
-Title: "Observation Temperatura Corporea - Taccuino"
+Title: "Observation Temperatura Corporea - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla temperatura corporea tramite il profilo Observation"
 * ^status = #active
 
@@ -83,7 +83,7 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 Profile: ObservationCirconferenzaVitaTaccuino
 Parent: Observation
 Id: Observation-it-circonferenza-taccuino
-Title: "Observation Circonferenza Vita - Taccuino"
+Title: "Observation Circonferenza Vita - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla circonferenza della vita tramite il profilo Observation"
 * ^status = #active
 
@@ -109,7 +109,7 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 Profile: ObservationPressioneDiastolicaTaccuino
 Parent: Observation
 Id: Observation-it-diastolica-taccuino
-Title: "Observation Pressione Sanguigna Diastolica - Taccuino"
+Title: "Observation Pressione Sanguigna Diastolica - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla pressione sanguigna diastolica tramite il profilo Observation"
 * ^status = #active
 
@@ -135,7 +135,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 Profile: ObservationPressioneSistolicaTaccuino
 Parent: Observation
 Id: Observation-it-sistolica-taccuino
-Title: "Observation Pressione Sanguigna Sistolica - Taccuino"
+Title: "Observation Pressione Sanguigna Sistolica - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla pressione sanguigna sistolica tramite il profilo Observation"
 * ^status = #active
 
@@ -162,7 +162,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 Profile: ObservationFrequenzaCardiacaTaccuino
 Parent: Observation
 Id: Observation-it-heartrate-taccuino
-Title: "Observation Frequenza Cardiaca a riposo - Taccuino"
+Title: "Observation Frequenza Cardiaca a riposo - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiaca a riposo tramite il profilo Observation"
 * ^status = #active
 
@@ -187,8 +187,8 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 
 Profile: ObservationFrequenzaRespiratoriaTaccuino
 Parent: Observation
-Id: Observation-it-rapiratoryrate-taccuino
-Title: "Observation Frequenza Respiratoria - Taccuino"
+Id: Observation-it-respiratoryrate-taccuino
+Title: "Observation Frequenza Respiratoria - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla frequenza respiratoria tramite il profilo Observation"
 * ^status = #active
 
@@ -214,7 +214,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 Profile: ObservationColesteroloHDLTaccuino
 Parent: Observation
 Id: Observation-it-hdl-taccuino
-Title: "Observation Colesterolo HDL - Taccuino"
+Title: "Observation Colesterolo HDL - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tramite il profilo Observation"
 * ^status = #active
 
@@ -241,7 +241,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 Profile: ObservationColesteroloLDLTaccuino
 Parent: Observation
 Id: Observation-it-ldl-taccuino
-Title: "Observation Colesterolo LDL - Taccuino"
+Title: "Observation Colesterolo LDL - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tramite il profilo Observation"
 * ^status = #active
 
@@ -267,7 +267,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 Profile: ObservationColesteroloTotaleTaccuino
 Parent: Observation
 Id: Observation-it-colesterolo-taccuino
-Title: "Observation Colesterolo Totale - Taccuino"
+Title: "Observation Colesterolo Totale - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al colesterolo totale tramite il profilo Observation"
 * ^status = #active
 
@@ -294,7 +294,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 Profile: ObservationTrigliceridi
 Parent: Observation
 Id: Observation-it-trigliceridi-taccuino
-Title: "Observation Trigliceridi Totale - Taccuino"
+Title: "Observation Trigliceridi Totale - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramite il profilo Observation"
 * ^status = #active
 
@@ -323,7 +323,7 @@ Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramit
 Profile: ObservationOssimetria
 Parent: Observation
 Id: Observation-it-ossimetria-taccuino
-Title: "Observation Ossimetria - Taccuino"
+Title: "Observation Ossimetria - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramite il profilo Observation"
 * ^status = #active
 
@@ -351,7 +351,7 @@ Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramit
 Profile: ObservationGlicemiaDigiuno
 Parent: Observation
 Id: Observation-it-glicemia-digiuno-taccuino
-Title: "Observation Glicemia a Digiuno - Taccuino"
+Title: "Observation Glicemia a Digiuno - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiuno tramite il profilo Observation"
 * ^status = #active
 
@@ -378,7 +378,7 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 Profile: ObservationEmoglobinaGlicata
 Parent: Observation
 Id: Observation-it-emoglobina-glicata-taccuino
-Title: "Observation Emoglobina Glicata - Taccuino"
+Title: "Observation Emoglobina Glicata - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata tramite il profilo Observation"
 * ^status = #active
 

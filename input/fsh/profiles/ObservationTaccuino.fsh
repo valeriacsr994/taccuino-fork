@@ -1,7 +1,7 @@
 Profile: ObservationAnnotazioniTaccuino
 Parent: Observation
 Id: Observation-it-annotazioni-taccuino
-Title: "Observation Note generali - Taccuino"
+Title: "Observation Note generali - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Note generali' tramite il profilo Observation"
 * ^status = #active
 
@@ -18,7 +18,7 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 Profile: ObservationEventiTaccuino
 Parent: Observation
 Id: Observation-it-eventi-taccuino
-Title: "Observation Eventi - Taccuino"
+Title: "Observation Eventi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Observation"
 * ^status = #active
 
@@ -56,7 +56,7 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 Profile: ObservationSintomiTaccuino
 Parent: Observation
 Id: Observation-it-sintomi-taccuino
-Title: "Observation Segni e sintomi - Taccuino"
+Title: "Observation Segni e sintomi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il profilo Observation"
 * ^status = #active
 
@@ -91,7 +91,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 Profile: ObservationDoloreTaccuino
 Parent: Observation
 Id: Observation-it-dolore-taccuino
-Title: "Observation Dolore - Taccuino"
+Title: "Observation Dolore - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Observation"
 * ^status = #active
 

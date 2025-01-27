@@ -2,7 +2,7 @@
 Profile: DocumentReferenceTaccuino
 Parent: DocumentReference
 Id: document-reference-it-taccuino
-Title: "DocumentReference - Taccuino"
+Title: "DocumentReference - Taccuino personale dell'assistito"
 Description: "Rappresentazione di eventuali documenti che l'assisito allega al Taccuino, tramite il profilo DocumentReference"
 * ^status = #active
 

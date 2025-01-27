@@ -1,7 +1,7 @@
 Profile: EncounterTaccuino
 Parent: Encounter
 Id: Encounter-it-Taccuino
-Title:    "Encounter - Taccuino"
+Title:    "Encounter - Taccuino personale dell'assistito"
 Description: "Rappresentazione dei contatti tra il paziente e le strutture sanitarie tramite il profilo Encounter"
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 

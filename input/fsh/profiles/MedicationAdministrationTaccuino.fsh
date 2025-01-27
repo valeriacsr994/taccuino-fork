@@ -1,7 +1,7 @@
 Profile: MedicationAdministrationTaccuino
 Parent: MedicationAdministration
 Id: MedicationAdministration-it-Taccuino
-Title:    "MedicationAdministration - Taccuino"
+Title:    "MedicationAdministration - Taccuino personale dell'assistito"
 Description: "Rappresentazione della somministrazione del farmaco tramite il profilo MedicationAdministration"
 * . ^short = "Descrive l'evento in cui il paziente assume il farmaco"
 

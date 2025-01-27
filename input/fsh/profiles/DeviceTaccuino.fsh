@@ -1,7 +1,7 @@
 Profile: DeviceTaccuino
 Parent: Device
 Id: Device-it-Taccuino
-Title:    "Device - Taccuino"
+Title:    "Device - Taccuino personale dell'assistito"
 Description: "Rappresentazione dei dispositivi sanitari quali protesi impiantate o d'ausilio tramite il profilo Device"
 
 
