@@ -128,7 +128,7 @@ Description: "Esempio di un'osservazione: Colesterolo Totale"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-EmoglobinaGlicata
-InstanceOf: ObservationEmoglobinaGlicata
+InstanceOf: ObservationEmoglobinaGlicataTaccuino
 Title: "Observation - Emoglobina Glicata"
 Usage: #example
 Description: "Esempio di un'osservazione: Emoglobina Glicata"

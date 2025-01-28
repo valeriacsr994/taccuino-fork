@@ -9,10 +9,8 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * code = $loinc#48767-8
 * code.coding.display = "Annotazioni e commenti"
 
-* value[x] 1..1
-//valutare se inserirlo su value[x] e dare la possibilità di scegliere la tipologia di dato coerentemente con quanto riportato nella observation
-* value[x] ^short = "Note generali: annotazioni libere"
-
+* valueString 1..1
+* valueString ^short = "Note generali: annotazioni libere"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationEventiTaccuino
@@ -69,20 +67,14 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 
 * valueCodeableConcept ^short = "Codice e descrizione del sintomo, nome dell'allergene o dell'intolleranza"
 // necessità di inserire più component.valueCodeableConcept perchè posso rappresentare sintomo,allergene o intolleranza (1..*)
-
-* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* valueCodeableConcept.coding ^slicing.ordered = false
-* valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding contains atc 0..1 and aic 0..1
-  and noAllergiesInfo 0..1  // Preso da CDA2 in PSS
-
-* valueCodeableConcept.coding[atc] 
-* valueCodeableConcept.coding[atc] ^sliceName = "atc"
-* valueCodeableConcept.coding[atc].system from $vs-atc
-* valueCodeableConcept.coding[aic].system from $vs-aifa-aic
-* valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
-
+// risolta mettendolo in component
+* component.valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* component.valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* component.valueCodeableConcept.coding ^slicing.ordered = false
+* component.valueCodeableConcept.coding ^slicing.rules = #open
+* component.valueCodeableConcept.coding contains noAllergiesInfo 0..1  // Preso da CDA2 in PSS
+* component.valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
+//quale valueset usare per segni e sintomi fa
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
 
