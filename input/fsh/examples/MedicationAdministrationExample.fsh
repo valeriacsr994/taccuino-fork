@@ -10,7 +10,7 @@ Usage: #example
 * id = "5bd5129b-15be-4f6b-bbe0-a2dd645d6a6a"
 * contained[0] = Medication-Taccuino-Esempio
 * status = #in-progress
-* medicationReference = Reference(Medication-Taccuino-Esempio)
+* medicationReference = Reference(urn:uuid:ed43d494-c9db-47f0-9a7t-9eac3bc6d713)
 * subject = Reference(Patient-Taccuino-Esempio)
 * effectivePeriod.start = "2024-02-20T14:30:00+01:00"
 * effectivePeriod.end = "2024-02-20T14:35:00+01:00"

@@ -6,7 +6,7 @@ Title: "Organization ASL Roma 1"
 Description: "Esempio di organizzazione ASL"
 
 * identifier[0].system = $CS_ASL
-* identifier[0].value = "120201"
+* identifier[0].value = #120201
 * active = 	true
 * type = $CS-entita#asl "Azienda Sanitaria Locale"
 * name = "ASL ROMA 1"
