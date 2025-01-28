@@ -11,41 +11,34 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
 * extension[dataRegistrazione].valueDateTime
 
-* securityLabel 1..1
-* securityLabel ^short = "Livello di confidenzialità"
+* securityLabel ^short = "Livello di confidenzialità" //OPZIONALE
 
 * date 0..1
-* date ^short = "Data di emissione del documento"
+* date ^short = "Data di emissione del documento" // discutere della cardinalità - proposta Obbligatorio
 
 * masterIdentifier 1..1
-* masterIdentifier ^short = "Identificativo univoco del documento" // dovrebbe essere obbbligatorio, l'identificativo univoco dovrebbe essere inserito da sistema
-
+* masterIdentifier ^short = "Identificativo univoco del documento (OID)" 
 * identifier ^short = "Identificativo univoco Documento all’interno del Registry"
 
 * type 1..1
 * type ^short = "Tipologia di documento (medio livello)"
 * type from $vs-typeCode (required)
 
-* subject only Reference (Patient or Device)
+* subject only Reference (PatientTaccuino or Device)
 * authenticator only Reference (Practitioner)
 * authenticator ^short = "Rappresentazione legale"
-* author only Reference (Practitioner or PractitionerRole or Organization or Device)
+* author only Reference (Practitioner or PractitionerRole or OrganizationTaccuino or Device)
 * author ^short = "Autore del documento"
 
 * content.attachment.hash ^short = "Hash"
 * content.attachment.size ^short = "Size"
-* context.practiceSetting ^short = "Assetto organizzativo che ha portato alla creazione del documento"
-* context.sourcePatientInfo ^short = "Identificativo del paziente al momento della creazione del documento e informazioni demografiche"
 * content.attachment.language ^short = "Lingua del Documento"
-* context.period ^short = "Data della prestazione"
-* context.facilityType ^short = "Tipologia di struttura che ha prodotto il documento"
-* context.event ^short = "Regole di accesso"
+* context.event ^short = "Regole di accesso" // proposta oblligatorio e il code da definire
 
 * category ^short = "Tipo documento (alto livello)"
 
 * content.attachment.url ^short = "Identificativo repository"
 * content.format ^short = "Formato utilizzato (basso livello)"
 * docStatus ^short = "Stato del documento"
-* context.related ^short = "Riferimento al documento di prescrizione"
 
 * description ^short = "Commenti e annotazioni aggiuntive"

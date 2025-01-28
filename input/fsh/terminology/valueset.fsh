@@ -33,3 +33,14 @@ Title: "Tipologia di documento"
 Description: "Valuset che raccoglie i codici per indicare la tipologia di documento"
 * ^experimental = false
 * codes from system $cs-typeCode
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsASL
+Id: vs-ASL
+Title: "MDS - ASL"
+Description: "Valuset che raccoglie i codici per le Aziende Sanitarie Locali"
+* ^experimental = false
+* codes from system $CS_ASL
+
