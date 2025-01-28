@@ -64,8 +64,8 @@ pages:
   #   title: Metodologia
   # contestoIniziale.md:
   #   title: Contesto Iniziale
-  specifiche.md:
-    title: Specifiche Tecniche
+  # specifiche.md:
+  #   title: Specifiche Tecniche
   # scenario.html:
   #   title: Scenari
   downloads.xml:

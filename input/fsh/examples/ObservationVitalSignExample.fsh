@@ -144,9 +144,33 @@ Description: "Esempio di un'osservazione: Emoglobina Glicata"
 * performer = Reference (Organization/Organization-Taccuino-Esempio3)
 * category = #vital-sign
 
-* referenceRange.high = 20 #mmol/mol "mmol/mol"
-* referenceRange.low = 42 #mmol/mol "mmol/mol"
+* referenceRange.high = 20 $CS-unitOfMeasure#mmol/mol
+* referenceRange.low = 42 $CS-unitOfMeasure#mmol/mol 
 
 
-* valueQuantity = 30 #mmol/mol "mmol/mol"
+* valueQuantity = 30 'mmol/mol'
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.unit = "mmol/mol"
 
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+
+Instance: Observation-Taccuino-Dolore
+InstanceOf: ObservationDoloreTaccuino
+Title: "Observation - Dolore"
+Usage: #example
+Description: "Esempio di un'osservazione: Dolore"
+
+* extension[dataRegistrazione].valueDate = "2024-02-19"
+
+* code = $loinc#94085-8 "Dolore, categoria"
+* effectiveDateTime = "2023-08-01"
+* status = #final
+
+
+* subject = Reference (Patient-Taccuino-Esempio)
+* performer = Reference (Patient-Taccuino-Esempio)
+* category = #vital-sign
+
+* component.code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+
+* component.valueCodeableConcept = $loinc#LA6115-5 "4"

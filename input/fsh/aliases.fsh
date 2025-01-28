@@ -4,6 +4,7 @@
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $vs-unitOfMeasure = http://hl7.org/fhir/ValueSet/ucum-units
+Alias: $CS-unitOfMeasure = http://unitsofmeasure.org
 
 Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $sct = http://snomed.info/sct
