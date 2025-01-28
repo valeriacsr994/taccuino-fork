@@ -4,7 +4,6 @@ Title : "Dispositivo medico - defibrillatore cardiaco impiantabile"
 Description: "Esempio di dispositivo medico (defibrillatore cardiaco) impiantato su un paziente"
 
 //* identifier = "74839837"
-* id = "19d1e399-feb0-44e0-b867-88e4ce1dd323"
 * manufacturer = "Microport"
 * manufactureDate = "2023-04-23"
 * expirationDate = "2033-04-23"

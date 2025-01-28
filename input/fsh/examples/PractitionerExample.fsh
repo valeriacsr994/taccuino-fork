@@ -24,4 +24,16 @@ Description: "Esempio di Practitioner (Farmacista) di sesso maschile"
 * qualification.code = https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni#2.3.1.5 "Farmacisti"
 
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
+Instance: Practitioner-Taccuino-Esempio3
+InstanceOf: Practitioner
+Title: "Practitioner maschile"
+Description: "Esempio di Practitioner (MMG) di sesso maschile"
+* identifier[0].system = "http://hl7.it/sid/codiceFiscale"
+* identifier[0].value = "RSSMRA80L10H501Z"
+* name.family = "Paleri"
+* name.given = "Pasquale"
+* gender = #male
+* birthDate = "1980-07-10"
+* qualification.code = https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni#2.4.1 "Medici"
 

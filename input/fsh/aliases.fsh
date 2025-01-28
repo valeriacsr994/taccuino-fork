@@ -2,8 +2,6 @@
 
 //============== ALIAS ===============
 Alias: $uri = urn:ietf:rfc:3986
-// Alias: $uriCodiceSostituzone = https://develop.art-decor.org/fhir/ValueSet/2.16.840.1.113883.2.9.6.1.53
-// Alias: $uriMotivoSostituzione = https://hl7itig.art-decor.pub/fhir/ValueSet/2.16.840.1.113883.3.1937.777.63.11.16
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $vs-unitOfMeasure = http://hl7.org/fhir/ValueSet/ucum-units
 
@@ -23,6 +21,7 @@ Alias: $vs-NullFlavor = http://terminology.hl7.org/ValueSet/v3-NullFlavor
 
 Alias: $minsan-fls = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idAziendeOspedaliere
 Alias: $minsan-hsp = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture
+Alias: $CS-minsan-hsp = https://www.hl7.it/fhir/terminology/CodeSystem/minsan-hsp
 Alias: $minsan-ria = https://www.hl7.it/fhir/terminology/ValueSet/strutturePubbliche // https://www.salute.gov.it/portale/documentazione/p6_2_2_1.jsp?lingua=italiano&id=1053
 
 Alias: $minsan-farmacie = https://www.hl7.it/fhir/terminology/CodeSystem/minsan-farmacie
@@ -55,3 +54,4 @@ Alias: $vs_ASL = http://hl7.it/fhir/taccuino/ValueSet/vs-ASL
 Alias: $CS-entita = https://www.hl7.it/fhir/terminology/CodeSystem/it-tipoEntita
 Alias: $reason-medication-given = http://terminology.hl7.org/CodeSystem/reason-medication-given
 Alias: $odf = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
+Alias: $cs-itroleCode = https://www.hl7.it/fhir/terminology/CodeSystem/it-V3RoleCode

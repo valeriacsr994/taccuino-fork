@@ -23,3 +23,15 @@ Description: "Esempio di Farmacia"
 * type = $CS-entita#minsan "Ministero della Salute"
 * name = "FASSA DOTT. PIETRO"
 
+// //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Instance: Organization-Taccuino-Esempio3
+InstanceOf: Organization
+Title: "Organization: Struttura di ricovero"
+Description: "Esempio di Struttura di ricovero"
+
+* identifier[0].system = $CS-minsan-hsp
+* identifier[0].value = #010626
+* active = 	true
+* type = $CS-entita#cc-priv "Casa di cura privata"
+* name = "POLICLINICO DI MONZA SPA - CASA DI CURA"
+
