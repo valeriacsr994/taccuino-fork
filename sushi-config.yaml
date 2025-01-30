@@ -33,6 +33,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
   special-url: !!seq
+  - http://unitsofmeasure.org
   - https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni  
   - http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace
   - http://hl7.it/fhir/StructureDefinition/patient-occupation-it
@@ -49,7 +50,7 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
  
 dependencies:
   hl7.fhir.it.base: current
-  hl7.fhir.it.terminology: current
+  hl7.fhir.it.terminology: dev
   #hl7.fhir.it.terminology: dev
   # hl7.fhir.it.base: 0.1.0
 
@@ -93,9 +94,9 @@ menu:
   #  Principi e disegno: design.html
 #  Specifiche Funzionali:
  #   Scenari: scenario.html
-  Specifiche:
+  #Specifiche:
     #Scenari: scenario.html
-    Specifiche Tecniche: specifiche.html    
+    #Specifiche Tecniche: specifiche.html    
   Support:
     FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
     Downloads: downloads.html

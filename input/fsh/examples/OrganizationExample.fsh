@@ -1,7 +1,7 @@
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Organization-Taccuino-Esempio
-InstanceOf: Organization
+InstanceOf: OrganizationTaccuino
 Title: "Organization ASL Roma 1"
 Description: "Esempio di organizzazione ASL"
 
@@ -13,7 +13,7 @@ Description: "Esempio di organizzazione ASL"
 
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Organization-Taccuino-Esempio2
-InstanceOf: Organization
+InstanceOf: OrganizationTaccuino
 Title: "Organization Farmacia"
 Description: "Esempio di Farmacia"
 
@@ -25,7 +25,7 @@ Description: "Esempio di Farmacia"
 
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Organization-Taccuino-Esempio3
-InstanceOf: Organization
+InstanceOf: OrganizationTaccuino
 Title: "Organization: Struttura di ricovero"
 Description: "Esempio di Struttura di ricovero"
 
