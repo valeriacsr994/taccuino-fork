@@ -1,7 +1,7 @@
 Instance: DocumentReference-Taccuino-Esempio
 InstanceOf: DocumentReferenceTaccuino
-Title : "Documento Allegato - Autocertificazione Esenzione"
-Description: "Esempio di Autocertificazione Esenzione dal pagamento del ticket"
+Title : "Documento Allegato - Esenzione"
+Description: "Esempio di Esenzione dal pagamento del ticket"
 
 * extension[dataRegistrazione].valueDate = "2025-07-27"
 * masterIdentifier.system = "urn:ietf:rfc:3986"

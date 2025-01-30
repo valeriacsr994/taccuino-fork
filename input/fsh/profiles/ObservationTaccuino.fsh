@@ -31,26 +31,6 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// Profile: ObservationOsservazioniTaccuino
-// Parent: Observation
-// Id: Observation-it-osservazioni-taccuino
-// Title: "Observation Parametri Osservabili - Taccuino"
-// Description: "Rappresentazione delle osservazioni 'Parametri Osservabili' tramite il profilo Observation"
-// * ^status = #active
-
-// * extension contains RegistrationDate named dataRegistrazione 1..1 
-// * code = $loinc#19781-4
-// * code.coding.display = "Procedura, parametri monitoraggio"
-
-// * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-// * effectiveDateTime ^short = "Data rilevazione del parametro osservabile"
-// * component 1..*
-// * component.code ^short = "Tipo di rilevazione misurata dall'assistito"
-// * component.valueQuantity ^short = "Valore della rilevazione misurata dall'assistito"
-// * component.valueQuantity 1..1
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
 Parent: Observation
 Id: Observation-it-sintomi-taccuino

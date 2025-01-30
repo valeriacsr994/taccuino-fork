@@ -327,6 +327,8 @@ Title: "Observation Ossimetria - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramite il profilo Observation"
 * ^status = #active
 
+* language = #it
+
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#20564-1
 * code.coding.display = "Saturazione dell'ossigeno"

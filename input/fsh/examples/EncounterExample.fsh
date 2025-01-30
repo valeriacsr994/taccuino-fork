@@ -8,7 +8,9 @@ Description: "Esempio di contatto/incontro per un ASL"
 
 * class = $cs-encounterCode#VR "Virtual"
 
+
 * period.start = "2024-02-01"
+* period.end = "2024-02-01"
 
 * status = http://hl7.org/fhir/encounter-status#in-progress
 
