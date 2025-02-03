@@ -221,45 +221,32 @@ Description: "Esempio di un'osservazione: temperatura corporea"
 * valueQuantity.code = #Cel
 * note.text = "Oggi ho misurato una temperatura di 38.5°C. Sto avvertendo un po' di malessere e un leggero brivido. Ho preso del paracetamolo per abbassare la febbre e cercherò di riposare. Monitorerò la temperatura nelle prossime ore e, se non migliora, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-Taccuino-PressioneSistolica
-InstanceOf: ObservationPressioneSistolicaTaccuino
-Title: "Observation - Pressione Sanguigna Sistolica"
+Instance: Observation-Taccuino-PressioneSanguigna
+InstanceOf: ObservationPressioneSanguignaTaccuino
+Title: "Observation - Pressione Sanguigna"
 Usage: #example
-Description: "Esempio di un'osservazione: pressione sanguigna sistolica"
+Description: "Esempio di un'osservazione: pressione sanguigna"
 
 * status = #final
-* code = $loinc#8480-6
-* code.coding.display = "Pressione sanguigna sistolica"
+* code = $loinc#85354-9
+* code.coding.display = "Pressione sanguigna"
 * extension[dataRegistrazione].valueDate = "2025-01-07"
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
 * effectiveDateTime = "2025-01-05"
-* valueQuantity.value = 165
-* valueQuantity.unit = "mmHg"
-* valueQuantity.system = $unitOfMeasure
-* valueQuantity.code = #mm[Hg]
-* note.text = "La mia pressione sistolica è risultata essere di 165 mmHg. Questo valore è più alto del normale, quindi ho deciso di riposare e monitorare eventuali sintomi come mal di testa o vertigini. Se la pressione rimane alta, contatterò il medico per ulteriori indicazioni."
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-Taccuino-PressioneDiastolica
-InstanceOf: ObservationPressioneDiastolicaTaccuino
-Title: "Observation - Pressione Sanguigna Diastolica"
-Usage: #example
-Description: "Esempio di un'osservazione: pressione sanguigna diastolica"
+* component[0].code = $loinc#8462-4 "Pressione sanguigna diastolica"
+* component[0].valueQuantity.value = 77
+* component[0].valueQuantity.unit = "mmHg"
+* component[0].valueQuantity.system = $unitOfMeasure
+* component[0].valueQuantity.code = #mm[Hg]
+* component[1].code = $loinc#8480-6 "Pressione sanguigna sistolica"
+* component[1].valueQuantity.value = 165
+* component[1].valueQuantity.unit = "mmHg"
+* component[1].valueQuantity.system = $unitOfMeasure
+* component[1].valueQuantity.code = #mm[Hg]
 
-* status = #final
-* code = $loinc#8462-4
-* code.coding.display = "Pressione sanguigna diastolica"
-* extension[dataRegistrazione].valueDate = "2025-10-03"
-* subject = Reference(Patient-Taccuino-Esempio)
-* performer = Reference (Practitioner-Taccuino-Esempio)
-* category = $observation-category#vital-signs
-* effectiveDateTime = "2025-10-02"
-* valueQuantity.value = 77
-* valueQuantity.unit = "mmHg"
-* valueQuantity.system = $unitOfMeasure
-* valueQuantity.code = #mm[Hg]
-* note.text = "La mia pressione diastolica è risultata essere di 77 mmHg, un valore che rientra nella norma. Continuerò a monitorare la mia pressione regolarmente per tenerla sotto controllo e seguire le indicazioni del medico."
+* component[1].interpretation.coding = $observationInterpretation#H "High"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-PesoCorporeo
 InstanceOf: ObservationPesoCorporeoTaccuino
@@ -354,4 +341,5 @@ Description: "Esempio di un'osservazione: Frequenza Cardiaca a riposo"
 
 * referenceRange.low = 60 '/min' "beats/minute"
 * referenceRange.high = 100 '/min' "beats/minute"
-* valueQuantity = 70 #/min "beats/minute"
+* valueQuantity = 70 $unitOfMeasure#/min 
+* valueQuantity.unit = "beats/minute"

@@ -58,3 +58,4 @@ Alias: $odf = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $cs-itroleCode = https://www.hl7.it/fhir/terminology/CodeSystem/it-V3RoleCode
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $ICD9 = http://fhir.infoway-inforoute.ca/io/psca/ValueSet/ICD9CM
+Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
