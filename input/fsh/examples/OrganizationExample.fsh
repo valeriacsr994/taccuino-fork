@@ -1,4 +1,4 @@
-// //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 // //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Organization-Taccuino-Esempio
 InstanceOf: OrganizationTaccuino
@@ -35,3 +35,4 @@ Description: "Esempio di Struttura di ricovero"
 * type = $CS-entita#cc-priv "Casa di cura privata"
 * name = "POLICLINICO DI MONZA SPA - CASA DI CURA"
 
+// //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -3,7 +3,7 @@ InstanceOf: DeviceTaccuino
 Title : "Dispositivo medico - defibrillatore cardiaco impiantabile"
 Description: "Esempio di dispositivo medico (defibrillatore cardiaco) impiantato su un paziente"
 
-//* identifier = "74839837"
+* identifier.value = "13345479-2238-6234-1239-999756789010"
 * manufacturer = "Microport"
 * manufactureDate = "2023-04-23"
 * expirationDate = "2033-04-23"
