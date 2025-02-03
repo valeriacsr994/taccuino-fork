@@ -6,7 +6,6 @@ Title: "DocumentReference - Taccuino personale dell'assistito"
 Description: "Rappresentazione di eventuali documenti che l'assisito allega al Taccuino, tramite il profilo DocumentReference"
 * ^status = #active
 
-//inserire data di inserimento sul taccuino
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
 * extension[dataRegistrazione].valueDateTime
