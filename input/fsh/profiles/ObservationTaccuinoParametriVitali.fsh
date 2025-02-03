@@ -23,7 +23,7 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -49,7 +49,7 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -76,7 +76,7 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -102,7 +102,7 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -128,7 +128,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -154,7 +154,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -181,7 +181,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -207,7 +207,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -234,7 +234,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -260,7 +260,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -287,7 +287,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -315,7 +315,7 @@ Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramit
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -346,7 +346,7 @@ Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramit
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -373,7 +373,7 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -399,5 +399,5 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//* valueQuantity.system from $vs-unitOfMeasure
 

@@ -26,7 +26,7 @@ Le informazioni, definite nell’Allegato A del Decreto 7 settembre 2023 “Fasc
 - Osservazioni Personali e Parametri vitali che rappresentano i dati clinici e vitali del paziente (come glicemia, pressione sanguigna, peso, saturazione dell'ossigeno, ecc.);
 - Contatti con Strutture che rappresentano i contatti avvenuti tra il paziente e le strutture sanitarie di vario tipo;
 - Farmaci e Integratori che rappresentano i farmaci/integratori assunti da parte del paziente;
-- Viaggi all'estero TODO;
+- Viaggi all'estero;
 - Documenti allegati che rappresentano i documenti caricati da parte del paziente non ancora presenti nel FSE.
 
 

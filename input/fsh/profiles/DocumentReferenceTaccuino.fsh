@@ -11,14 +11,12 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
 * extension[dataRegistrazione].valueDateTime
 
-* securityLabel ^short = "Livello di confidenzialità" //OPZIONALE
 
-* date 0..1
-* date ^short = "Data di emissione del documento" // discutere della cardinalità - proposta Obbligatorio
+* date 1..1
+* date ^short = "Data di emissione del documento"
 
 * masterIdentifier 1..1
-* masterIdentifier ^short = "Identificativo univoco del documento (OID)" 
-* identifier ^short = "Identificativo univoco Documento all’interno del Registry"
+* masterIdentifier ^short = "Identificativo univoco del documento" 
 
 * type 1..1
 * type ^short = "Tipologia di documento (medio livello)"
@@ -33,9 +31,14 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * content.attachment.hash ^short = "Hash"
 * content.attachment.size ^short = "Size"
 * content.attachment.language ^short = "Lingua del Documento"
-* context.event ^short = "Regole di accesso" // proposta oblligatorio e il code da definire
+
+* context.event ^short = "Regole di accesso" // da valutare un Valueset
 
 * category ^short = "Tipo documento (alto livello)"
+* category.coding.code = #TAC (exactly)
+* category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5" (exactly)
+* category.coding.display = "Taccuino"
+
 
 * content.attachment.url ^short = "Identificativo repository"
 * content.format ^short = "Formato utilizzato (basso livello)"

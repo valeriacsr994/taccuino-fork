@@ -332,3 +332,26 @@ Description: "Esempio di un'osservazione: frequenza respiratoria"
 * effectiveDateTime = "2025-10-20"
 * valueQuantity = 15 $unitOfMeasure#{Breaths}/min
 * valueQuantity.unit = "atti al minuto"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Instance: Observation-Taccuino-FrequezaCardiaca
+InstanceOf: ObservationFrequenzaCardiacaTaccuino
+Title: "Observation - Frequenza Cardiaca a riposo"
+Usage: #example
+Description: "Esempio di un'osservazione: Frequenza Cardiaca a riposo"
+
+* extension[dataRegistrazione].valueDate = "2024-10-27"
+* code = $loinc#40443-4 "Frequenza cardiaca a riposo"
+
+* effectiveDateTime = "2025-01-20"
+* status = #final
+
+* subject = Reference (Patient-Taccuino-Esempio)
+* performer = Reference (Practitioner/Practitioner-Taccuino-Esempio3)
+
+* category = $observation-category#vital-signs
+
+* referenceRange.low = 60 '/min' "beats/minute"
+* referenceRange.high = 100 '/min' "beats/minute"
+* valueQuantity = 70 #/min "beats/minute"

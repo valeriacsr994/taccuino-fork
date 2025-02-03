@@ -56,5 +56,5 @@ Alias: $CS-entita = https://www.hl7.it/fhir/terminology/CodeSystem/it-tipoEntita
 Alias: $reason-medication-given = http://terminology.hl7.org/CodeSystem/reason-medication-given
 Alias: $odf = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $cs-itroleCode = https://www.hl7.it/fhir/terminology/CodeSystem/it-V3RoleCode
-Alias: $CND =  urn:oid:2.16.840.1.113883.2.9.6.1.48
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $ICD9 = http://fhir.infoway-inforoute.ca/io/psca/ValueSet/ICD9CM
