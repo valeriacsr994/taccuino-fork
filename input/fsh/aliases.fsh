@@ -59,3 +59,6 @@ Alias: $cs-itroleCode = https://www.hl7.it/fhir/terminology/CodeSystem/it-V3Role
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $ICD9 = http://fhir.infoway-inforoute.ca/io/psca/ValueSet/ICD9CM
 Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+
+Alias: $CS_accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
+Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-no-allergies

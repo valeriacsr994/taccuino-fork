@@ -33,6 +33,8 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * context.event ^short = "Regole di accesso" // da valutare un Valueset
 
+//* content.event.system = $vs-accessRules
+
 * category ^short = "Tipo documento (alto livello)"
 * category.coding.code = #TAC (exactly)
 * category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5" (exactly)

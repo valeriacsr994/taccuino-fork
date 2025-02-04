@@ -43,4 +43,12 @@ Title: "MDS - ASL"
 Description: "Valuset che raccoglie i codici per le Aziende Sanitarie Locali"
 * ^experimental = false
 * codes from system $CS_ASL
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsAccess
+Id: vs-access
+Title: "Atti clinici e regole di accesso"
+Description: "Atti clinici e regole di accesso"
+* ^experimental = false
+* codes from system $CS_accessRules
 

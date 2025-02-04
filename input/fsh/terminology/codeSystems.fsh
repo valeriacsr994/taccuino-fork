@@ -75,3 +75,18 @@ Description: "Tipologia di documento"
 * #101134-5	"Promemoria di appuntamento"
 * #101133-7	"Consenso alla donazione di organo e/o tessuto"
 * #100971-1	"Cartella clinica"
+
+
+
+CodeSystem: CsRegoleAccesso
+Id: access-rules
+Title: "No allergies"
+Description: "Atti clinici e regole di accesso"
+* ^experimental = false
+* ^status = #active
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.3"
+
+* #P97 "Oscuramento al genitore"
+* #P99 "Oscuramento del documento"
