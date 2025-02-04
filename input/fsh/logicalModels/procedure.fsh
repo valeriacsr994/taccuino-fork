@@ -1,6 +1,6 @@
 Logical: Procedura
 Title: "Procedura"
-Description: "Rappresentazione della procedura"
+Description: "Informazioni relativa alla procedura"
 Characteristics: #can-be-target
 * codice 1..1 code "Codice della procedura"
 * paziente 1..1 Reference(Patient) "Paziente sottoposto alla procedura"

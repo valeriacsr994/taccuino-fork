@@ -31,9 +31,9 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * content.attachment.size ^short = "Size"
 * content.attachment.language ^short = "Lingua del Documento"
 
-* context.event ^short = "Regole di accesso" // da valutare un Valueset
+* context.event ^short = "Regole di accesso" 
 
-//* content.event.system = $vs-accessRules
+* context.event.coding.system from $vs-accessRules
 
 * category ^short = "Tipo documento (alto livello)"
 * category.coding.code = #TAC (exactly)

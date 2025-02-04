@@ -18,7 +18,7 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * category.coding.code = #TAC (exactly)
 * category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5" (exactly)
 * category.coding.display = "Taccuino"
-
+* context.event.coding.code = #P99
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -41,3 +41,4 @@ Description: "Esempio di referto specialistico relativo a visita cardiologica am
 * category.coding.code = #TAC (exactly)
 * category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5" (exactly)
 * category.coding.display = "Taccuino"
+* context.event.coding.code = #P99

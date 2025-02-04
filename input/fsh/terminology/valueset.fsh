@@ -12,7 +12,7 @@ Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
 ValueSet: VsNoAllergies
 Id: vs-no-allergies
 Title: "No Allergies"
-Description: "Nessuna Allergie oppure agente non noto"
+Description: "Nessuna allergia oppure agente non noto"
 * ^experimental = false
 
 * codes from system $cs-no-allergies

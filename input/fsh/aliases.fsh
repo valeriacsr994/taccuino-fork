@@ -5,6 +5,8 @@ Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $vs-unitOfMeasure = http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $unitOfMeasure = http://unitsofmeasure.org
+Alias: $device-type = urn:oid:2.16.840.1.113883.2.9.6.1.48
+
 
 Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $sct = http://snomed.info/sct
@@ -57,8 +59,9 @@ Alias: $reason-medication-given = http://terminology.hl7.org/CodeSystem/reason-m
 Alias: $odf = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $cs-itroleCode = https://www.hl7.it/fhir/terminology/CodeSystem/it-V3RoleCode
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $vs-obs-category = http://hl7.org/fhir/ValueSet/observation-category
 Alias: $ICD9 = http://fhir.infoway-inforoute.ca/io/psca/ValueSet/ICD9CM
 Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
 Alias: $CS_accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
-Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-no-allergies
+Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access

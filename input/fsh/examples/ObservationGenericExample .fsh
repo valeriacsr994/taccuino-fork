@@ -47,3 +47,20 @@ Description: "Esempio di un'osservazione per un evento di vaccinazione"
 * code = $loinc#42547-0
 * code.coding.display = "Evento"
 * valueCodeableConcept = $loinc#30939-3 "Measles virus dose count in combination vaccine"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Instance: Observation-Taccuino-Viaggi
+InstanceOf: ObservationViaggiTaccuino
+Title: "Observation - Viaggi all'estero"
+Usage: #example
+Description: "Esempio di un'osservazione: viaggi all'estero effettuati dall'assistito"
+
+* status = #final
+* extension[dataRegistrazione].valueDate = "2025-02-05"
+* effectivePeriod.start = "2025-02-13"
+* effectivePeriod.end = "2025-03-15"
+* category = $observation-category#social-history
+* subject = Reference(Patient-Taccuino-Esempio)
+* code = $loinc#82757-5
+* code.coding.display = "Travel history"
+* valueString = "Viaggio in Benin (Africa)"

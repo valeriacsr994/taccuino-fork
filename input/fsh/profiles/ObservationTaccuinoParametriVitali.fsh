@@ -181,7 +181,6 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -269,7 +268,7 @@ Profile: ObservationTrigliceridiTaccuino
 Parent: Observation
 Id: Observation-it-trigliceridi-taccuino
 Title: "Observation Trigliceridi - Taccuino personale dell'assistito"
-Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramite il profilo Observation"
+Description: "Rappresentazione dell'osservazione relativa ai trigliceridi tramite il profilo Observation"
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
@@ -298,7 +297,7 @@ Profile: ObservationOssimetriaTaccuino
 Parent: Observation
 Id: Observation-it-ossimetria-taccuino
 Title: "Observation Ossimetria - Taccuino personale dell'assistito"
-Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramite il profilo Observation"
+Description: "Rappresentazione dell'osservazione relativa all'ossimetria tramite il profilo Observation"
 * ^status = #active
 
 * language = #it

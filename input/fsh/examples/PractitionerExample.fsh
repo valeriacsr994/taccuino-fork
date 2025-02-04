@@ -1,7 +1,7 @@
 Instance: Practitioner-Taccuino-Esempio
 InstanceOf: Practitioner
-Title: "Practitioner femminile"
-Description: "Esempio di Practitioner (Medico) di sesso femminile"
+Title: "Practitioner - Medico"
+Description: "Esempio di Practitioner (Medico)"
 * identifier[0].system = "http://hl7.it/sid/codiceFiscale"
 * identifier[0].value = "SMNNZE80L45H501O"
 * name.family = "Simoni"
@@ -13,8 +13,8 @@ Description: "Esempio di Practitioner (Medico) di sesso femminile"
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Instance: Practitioner-Taccuino-Esempio2
 InstanceOf: Practitioner
-Title: "Practitioner maschile"
-Description: "Esempio di Practitioner (Farmacista) di sesso maschile"
+Title: "Practitioner - Farmacista"
+Description: "Esempio di Practitioner (Farmacista)"
 * identifier[0].system = "http://hl7.it/sid/codiceFiscale"
 * identifier[0].value = "RSSMRA80L10H501Z"
 * name.family = "Rossi"
@@ -27,8 +27,8 @@ Description: "Esempio di Practitioner (Farmacista) di sesso maschile"
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Instance: Practitioner-Taccuino-Esempio3
 InstanceOf: Practitioner
-Title: "Practitioner maschile"
-Description: "Esempio di Practitioner (MMG) di sesso maschile"
+Title: "Practitioner -  Medico di Medicina Generale"
+Description: "Esempio di Practitioner (MMG)"
 * identifier[0].system = "http://hl7.it/sid/codiceFiscale"
 * identifier[0].value = "RSSMRA80L10H501Z"
 * name.family = "Paleri"

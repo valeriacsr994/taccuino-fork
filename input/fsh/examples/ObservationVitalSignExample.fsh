@@ -317,7 +317,7 @@ Description: "Esempio di un'osservazione: frequenza respiratoria"
 * subject = Reference(Patient-Taccuino-Esempio)
 * category = $observation-category#vital-signs
 * effectiveDateTime = "2025-10-20"
-* valueQuantity = 15 $unitOfMeasure#{Breaths}/min
+* valueQuantity = 15 $unitOfMeasure#/min
 * valueQuantity.unit = "atti al minuto"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

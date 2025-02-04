@@ -2,7 +2,7 @@ Profile: PatientTaccuino
 Parent: Patient
 Id: patient-it-Taccuino
 Title: "Patient - Taccuino personale dell'assistito"
-Description: "Rappresentazione del paziente attraverso il profilo Patient"
+Description: "Rappresentazione del paziente tramite il profilo Patient"
 
 
 * . ^short = "Descrizione delle informazioni del paziente nei documenti FHIR"

@@ -79,4 +79,19 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 // l'oid da inserire nel system è quello relativo a LOINC? oppure un  altro? (proposta)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile: ObservationViaggiTaccuino
+Parent: Observation
+Id: Observation-it-viaggi-taccuino
+Title: "Observation Viaggi all'estero - Taccuino personale dell'assistito"
+Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il profilo Observation"
+* ^status = #active
 
+* extension contains RegistrationDate named dataRegistrazione 1..1 
+* code = $loinc#82757-5
+* code.coding.display = "Travel history"
+* category = $observation-category#social-history
+
+* effectivePeriod ^short = "Data di inizio e di fine del viaggio all'estero effetttuato"
+* effectivePeriod.start 1..1
+* valueString 1..1
+* valueString ^short = "Viaggi all'estero effettuati dall'assistito"

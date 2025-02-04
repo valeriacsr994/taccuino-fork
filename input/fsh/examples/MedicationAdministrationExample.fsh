@@ -1,4 +1,4 @@
-Instance: MedicationAdministration-Dossier-Esempio
+Instance: MedicationAdministration-Taccuino-Esempio
 InstanceOf: MedicationAdministrationTaccuino
 Title: "MedicationAdministration assunzione Paracetamolo"
 Description: "Esempio di assunzione del farmaco TACHIVERDE 1000 mg COMPRESSA da parte di un paziente"
