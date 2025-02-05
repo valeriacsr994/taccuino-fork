@@ -9,6 +9,8 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * code = $loinc#48767-8
 * code.coding.display = "Annotazioni e commenti"
 
+* category = $observation-category#social-history
+
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -45,14 +47,15 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
 
+* category = $observation-category#activity
 * component.valueCodeableConcept ^short = "Codice e descrizione del sintomo, nome dell'allergene o dell'intolleranza"
-* component.valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* component.valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* component.valueCodeableConcept.coding ^slicing.ordered = false
-* component.valueCodeableConcept.coding ^slicing.rules = #open
-* component.valueCodeableConcept.coding contains noAllergiesInfo 0..1 and ICD9 0..1  // Preso da CDA2 in PSS
-* component.valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
-* component.valueCodeableConcept.coding[ICD9].system from $ICD9
+// * component.valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+// * component.valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+// * component.valueCodeableConcept.coding ^slicing.ordered = false
+// * component.valueCodeableConcept.coding ^slicing.rules = #open
+// * component.valueCodeableConcept.coding contains noAllergiesInfo 0..1 and ICD9 0..1  // Preso da CDA2 in PSS
+// * component.valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
+// * component.valueCodeableConcept.coding[ICD9].system from $ICD9
 //quale valueset usare per segni e sintomi fa
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
@@ -68,6 +71,8 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#94085-8
 * code.coding.display = "Dolore, categoria"
+
+* category = $observation-category#activity
 
 * effectivePeriod ^short = "Data di inizio e fine del dolore"
 
@@ -86,12 +91,14 @@ Title: "Observation Viaggi all'estero - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il profilo Observation"
 * ^status = #active
 
-* extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#82757-5
-* code.coding.display = "Travel history"
+* code = $loinc#8691-8
+* code.coding.display = "History of Travel"
 * category = $observation-category#social-history
 
-* effectivePeriod ^short = "Data di inizio e di fine del viaggio all'estero effetttuato"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)
+
+* effectivePeriod ^short = "Periodo di permanenza all'estero (data inizio e data fine)"
 * effectivePeriod.start 1..1
+* valueString ^short = "Nome del paese estero"
 * valueString 1..1
-* valueString ^short = "Viaggi all'estero effettuati dall'assistito"
+* note ^short = "Note e commenti"

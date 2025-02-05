@@ -24,7 +24,7 @@ Description: "Esempio di un'osservazione: note generali"
 * status = #final
 * extension[dataRegistrazione].valueDate = "2025-02-06"
 * effectiveDateTime = "2025-02-06"
-* category = $observation-category#activity
+* category = $observation-category#social-history
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * code = $loinc#48767-8
@@ -56,11 +56,33 @@ Usage: #example
 Description: "Esempio di un'osservazione: viaggi all'estero effettuati dall'assistito"
 
 * status = #final
-* extension[dataRegistrazione].valueDate = "2025-02-05"
 * effectivePeriod.start = "2025-02-13"
 * effectivePeriod.end = "2025-03-15"
 * category = $observation-category#social-history
 * subject = Reference(Patient-Taccuino-Esempio)
-* code = $loinc#82757-5
-* code.coding.display = "Travel history"
+* code = $loinc#8691-8
+* code.coding.display = "History of Travel"
 * valueString = "Viaggio in Benin (Africa)"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Instance: Observation-Taccuino-Dolore
+InstanceOf: ObservationDoloreTaccuino
+Title: "Observation - Dolore"
+Usage: #example
+Description: "Esempio di un'osservazione: Dolore"
+
+* extension[dataRegistrazione].valueDate = "2024-02-19"
+
+* code = $loinc#94085-8 "Dolore, categoria"
+* effectiveDateTime = "2023-08-01"
+* status = #final
+
+
+* subject = Reference (Patient-Taccuino-Esempio)
+* performer = Reference (Practitioner-Taccuino-Esempio)
+* category = $observation-category#activity
+
+* component.code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+
+* component.valueCodeableConcept = $loinc#LA6115-5 "4"
