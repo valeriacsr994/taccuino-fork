@@ -65,3 +65,5 @@ Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-Obs
 
 Alias: $CS_accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
 Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
+
+Alias: $Patient-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab
