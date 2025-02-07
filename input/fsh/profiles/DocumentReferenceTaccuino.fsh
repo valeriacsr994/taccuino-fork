@@ -22,8 +22,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * type from $vs-typeCode (required)
 
 * subject only Reference (PatientTaccuino or Device)
-* authenticator only Reference (Practitioner)
-* authenticator ^short = "Rappresentazione legale"
+
 * author only Reference (Practitioner or PractitionerRole or OrganizationTaccuino or Device)
 * author ^short = "Autore del documento"
 
@@ -39,7 +38,6 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * category.coding.code = #TAC (exactly)
 * category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5" (exactly)
 * category.coding.display = "Taccuino"
-
 
 * content.attachment.url ^short = "Identificativo repository"
 * content.format ^short = "Formato utilizzato (basso livello)"

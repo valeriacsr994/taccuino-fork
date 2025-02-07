@@ -1,7 +1,7 @@
 Profile: OrganizationTaccuino
 Parent: Organization
 Id: Organization-it-Taccuino
-Title: "Organization - Taccuino"
+Title: "Organization - Taccuino personale dell'assistito"
 Description: "Rappresentazione della struttura sanitaria tramite il profilo Organization"
 
 * identifier 1.. 
