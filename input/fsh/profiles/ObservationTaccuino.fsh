@@ -1,7 +1,7 @@
 Profile: ObservationAnnotazioniTaccuino
 Parent: Observation
 Id: Observation-it-annotazioni-taccuino
-Title: "Observation Note generali - Taccuino"
+Title: "Observation Note generali - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Note generali' tramite il profilo Observation"
 * ^status = #active
 
@@ -9,16 +9,16 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * code = $loinc#48767-8
 * code.coding.display = "Annotazioni e commenti"
 
-* value[x] 1..1
-//valutare se inserirlo su value[x] e dare la possibilità di scegliere la tipologia di dato coerentemente con quanto riportato nella observation
-* value[x] ^short = "Note generali: annotazioni libere"
+* category = $observation-category#social-history
 
+* valueString 1..1
+* valueString ^short = "Note generali: annotazioni libere"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationEventiTaccuino
 Parent: Observation
 Id: Observation-it-eventi-taccuino
-Title: "Observation Eventi - Taccuino"
+Title: "Observation Eventi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Observation"
 * ^status = #active
 
@@ -33,30 +33,10 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// Profile: ObservationOsservazioniTaccuino
-// Parent: Observation
-// Id: Observation-it-osservazioni-taccuino
-// Title: "Observation Parametri Osservabili - Taccuino"
-// Description: "Rappresentazione delle osservazioni 'Parametri Osservabili' tramite il profilo Observation"
-// * ^status = #active
-
-// * extension contains RegistrationDate named dataRegistrazione 1..1 
-// * code = $loinc#19781-4
-// * code.coding.display = "Procedura, parametri monitoraggio"
-
-// * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-// * effectiveDateTime ^short = "Data rilevazione del parametro osservabile"
-// * component 1..*
-// * component.code ^short = "Tipo di rilevazione misurata dall'assistito"
-// * component.valueQuantity ^short = "Valore della rilevazione misurata dall'assistito"
-// * component.valueQuantity 1..1
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
 Parent: Observation
 Id: Observation-it-sintomi-taccuino
-Title: "Observation Segni e sintomi - Taccuino"
+Title: "Observation Segni e sintomi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il profilo Observation"
 * ^status = #active
 
@@ -67,37 +47,32 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
 
-* valueCodeableConcept ^short = "Codice e descrizione del sintomo, nome dell'allergene o dell'intolleranza"
-// necessità di inserire più component.valueCodeableConcept perchè posso rappresentare sintomo,allergene o intolleranza (1..*)
-
-* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* valueCodeableConcept.coding ^slicing.ordered = false
-* valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding contains atc 0..1 and aic 0..1
-  and noAllergiesInfo 0..1  // Preso da CDA2 in PSS
-
-* valueCodeableConcept.coding[atc] 
-* valueCodeableConcept.coding[atc] ^sliceName = "atc"
-* valueCodeableConcept.coding[atc].system from $vs-atc
-* valueCodeableConcept.coding[aic].system from $vs-aifa-aic
-* valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
-
+* category = $observation-category#activity
+* component.valueCodeableConcept ^short = "Codice e descrizione del sintomo, nome dell'allergene o dell'intolleranza"
+// * component.valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+// * component.valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+// * component.valueCodeableConcept.coding ^slicing.ordered = false
+// * component.valueCodeableConcept.coding ^slicing.rules = #open
+// * component.valueCodeableConcept.coding contains noAllergiesInfo 0..1 and ICD9 0..1  // Preso da CDA2 in PSS
+// * component.valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
+// * component.valueCodeableConcept.coding[ICD9].system from $ICD9
+//quale valueset usare per segni e sintomi fa
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
 
-* value[x] ^short = "Valore del Segno/sintomo"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
 Parent: Observation
 Id: Observation-it-dolore-taccuino
-Title: "Observation Dolore - Taccuino"
+Title: "Observation Dolore - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Observation"
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#94085-8
 * code.coding.display = "Dolore, categoria"
+
+* category = $observation-category#activity
 
 * effectivePeriod ^short = "Data di inizio e fine del dolore"
 
@@ -109,4 +84,21 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 // l'oid da inserire nel system è quello relativo a LOINC? oppure un  altro? (proposta)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile: ObservationViaggiTaccuino
+Parent: Observation
+Id: Observation-it-viaggi-taccuino
+Title: "Observation Viaggi all'estero - Taccuino personale dell'assistito"
+Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il profilo Observation"
+* ^status = #active
 
+* code = $loinc#8691-8
+* code.coding.display = "History of Travel"
+* category = $observation-category#social-history
+
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)
+
+* effectivePeriod ^short = "Periodo di permanenza all'estero (data inizio e data fine)"
+* effectivePeriod.start 1..1
+* valueString ^short = "Nome del paese estero"
+* valueString 1..1
+* note ^short = "Note e commenti"

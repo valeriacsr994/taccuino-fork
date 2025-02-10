@@ -12,7 +12,7 @@ Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
 ValueSet: VsNoAllergies
 Id: vs-no-allergies
 Title: "No Allergies"
-Description: "Nessuna Allergie oppure agente non noto"
+Description: "Nessuna allergia oppure agente non noto"
 * ^experimental = false
 
 * codes from system $cs-no-allergies
@@ -33,3 +33,22 @@ Title: "Tipologia di documento"
 Description: "Valuset che raccoglie i codici per indicare la tipologia di documento"
 * ^experimental = false
 * codes from system $cs-typeCode
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsASL
+Id: vs-ASL
+Title: "MDS - ASL"
+Description: "Valuset che raccoglie i codici per le Aziende Sanitarie Locali"
+* ^experimental = false
+* codes from system $CS_ASL
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsAccess
+Id: vs-access
+Title: "Atti clinici e regole di accesso"
+Description: "Atti clinici e regole di accesso"
+* ^experimental = false
+* codes from system $CS_accessRules
+

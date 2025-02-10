@@ -1,7 +1,7 @@
 Profile: OrganizationTaccuino
 Parent: Organization
 Id: Organization-it-Taccuino
-Title: "Organization-Taccuino"
+Title: "Organization - Taccuino personale dell'assistito"
 Description: "Rappresentazione della struttura sanitaria tramite il profilo Organization"
 
 * identifier 1.. 
@@ -17,17 +17,21 @@ Description: "Rappresentazione della struttura sanitaria tramite il profilo Orga
     and azienda 0..1
 	and strutturaHos 0..1 
 	and	strutturaRic 0..1
+  and ASL 0..1
 	
 * identifier[farmacia]
   * ^short = "Farmacia"
   * system from $vs-minsan-farmacie
 * identifier[azienda]
-  * ^short = "Azienda Sanitaria ed Ospedaliera"
+  * ^short = "Azienda Ospedaliera"
   * system from $minsan-fls
 * identifier[strutturaHos]
   * ^short = "Struttura di ricovero"
   * system from $minsan-hsp
 * identifier[strutturaRic]
-  * ^short = "Strutture di ricovero pubbliche, istituti e centri di riabilitazione pubblici"
+  * ^short = "Strutture di ricovero pubbliche e private, istituti e centri di riabilitazione pubblici"
   * system from $minsan-ria
+* identifier[ASL]
+  * ^short = "Aziende Sanitarie Locali"
+  * system from $vs_ASL 
 //ampliare

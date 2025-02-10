@@ -5,7 +5,7 @@
 Profile: ObservationPesoCorporeoTaccuino
 Parent: Observation
 Id: Observation-it-weight-taccuino
-Title: "Observation Peso Corporeo - Taccuino"
+Title: "Observation Peso Corporeo - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al peso corporeo tramite il profilo Observation"
 * ^status = #active
 
@@ -13,7 +13,7 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 * code = $loinc#29463-7
 * code.coding.display = "Peso corporeo"
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di misurazione del peso corporeo"
 * effectiveDateTime 1..1
@@ -23,14 +23,14 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationAltezzaTaccuino
 Parent: Observation
 Id: Observation-it-height-taccuino
-Title: "Observation Altezza - Taccuino"
+Title: "Observation Altezza - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il profilo Observation"
 * ^status = #active
 
@@ -39,7 +39,7 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 * code.coding.display = "Altezza"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di misurazione dell'altezza"
 * effectiveDateTime 1..1
@@ -49,14 +49,14 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationTemperaturaTaccuino
+Profile: ObservationTemperaturaCorporeaTaccuino
 Parent: Observation
 Id: Observation-it-temperature-taccuino
-Title: "Observation Temperatura Corporea - Taccuino"
+Title: "Observation Temperatura Corporea - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla temperatura corporea tramite il profilo Observation"
 * ^status = #active
 
@@ -65,7 +65,7 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 * code.coding.display = "Temperatura corporea"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 
 * effectiveDateTime ^short = "Data di registrazione della temperatura corporeo"
@@ -76,14 +76,14 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationCirconferenzaVitaTaccuino
 Parent: Observation
 Id: Observation-it-circonferenza-taccuino
-Title: "Observation Circonferenza Vita - Taccuino"
+Title: "Observation Circonferenza Vita - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla circonferenza della vita tramite il profilo Observation"
 * ^status = #active
 
@@ -92,7 +92,7 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 * code.coding.display = "Circonferenza della vita"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di registrazione della circonferenza della vita"
 * effectiveDateTime 1..1
@@ -102,67 +102,41 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationPressioneDiastolicaTaccuino
+Profile: ObservationPressioneSanguignaTaccuino
 Parent: Observation
-Id: Observation-it-diastolica-taccuino
-Title: "Observation Pressione Sanguigna Diastolica - Taccuino"
-Description: "Rappresentazione dell'osservazione relativa alla pressione sanguigna diastolica tramite il profilo Observation"
+Id: Observation-it-sanguigna-taccuino
+Title: "Observation Pressione Sanguigna - Taccuino personale dell'assistito"
+Description: "Rappresentazione dell'osservazione relativa alla pressione sanguigna tramite il profilo Observation"
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#8462-4
-* code.coding.display = "Pressione sanguigna diastolica"
+* code = $loinc#85354-9
+* code.coding.display = "Pressione sanguigna"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
-* effectiveDateTime ^short = "Data di registrazione della pressione sanguigna diastolica"
+* effectiveDateTime ^short = "Data di registrazione della pressione sanguigna"
 * effectiveDateTime 1..1
 
-* valueQuantity ^short = "Risultato della misurazione"
-* valueQuantity 1..1
-* valueQuantity.unit ^short = "Unità di misura" 
-* valueQuantity.unit 1..1
-* valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+* component.valueQuantity ^short = "Risultato della misurazione"
+* component 1..2
+* component.valueQuantity 1..1
+* component.valueQuantity.unit ^short = "Unità di misura" 
+* component.valueQuantity.unit 1..1
+* component.valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
+
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Profile: ObservationPressioneSistolicaTaccuino
-Parent: Observation
-Id: Observation-it-sistolica-taccuino
-Title: "Observation Pressione Sanguigna Sistolica - Taccuino"
-Description: "Rappresentazione dell'osservazione relativa alla pressione sanguigna sistolica tramite il profilo Observation"
-* ^status = #active
-
-* extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#8480-6
-* code.coding.display = "Pressione sanguigna sistolica"
-
-* performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
-
-* effectiveDateTime ^short = "Data di registrazione della pressione sanguigna sistolica"
-* effectiveDateTime 1..1
-
-* valueQuantity ^short = "Risultato della misurazione"
-* valueQuantity 1..1
-* valueQuantity.unit ^short = "Unità di misura" 
-* valueQuantity.unit 1..1
-* valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 Profile: ObservationFrequenzaCardiacaTaccuino
 Parent: Observation
 Id: Observation-it-heartrate-taccuino
-Title: "Observation Frequenza Cardiaca a riposo - Taccuino"
+Title: "Observation Frequenza Cardiaca a riposo - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiaca a riposo tramite il profilo Observation"
 * ^status = #active
 
@@ -171,7 +145,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * code.coding.display = "Frequenza cardiaca a riposo"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di registrazione della frequenza cardiaca a riposo"
 * effectiveDateTime 1..1
@@ -181,14 +155,14 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationFrequenzaRespiratoriaTaccuino
 Parent: Observation
-Id: Observation-it-rapiratoryrate-taccuino
-Title: "Observation Frequenza Respiratoria - Taccuino"
+Id: Observation-it-respiratoryrate-taccuino
+Title: "Observation Frequenza Respiratoria - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla frequenza respiratoria tramite il profilo Observation"
 * ^status = #active
 
@@ -197,7 +171,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * code.coding.display = "Frequenza respiratoria"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di registrazione della frequenza respiratoria"
 * effectiveDateTime 1..1
@@ -207,14 +181,13 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationColesteroloHDLTaccuino
 Parent: Observation
 Id: Observation-it-hdl-taccuino
-Title: "Observation Colesterolo HDL - Taccuino"
+Title: "Observation Colesterolo HDL - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tramite il profilo Observation"
 * ^status = #active
 
@@ -223,7 +196,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * code.coding.display = "Colesterolo HDL [moli/volume] nel siero o nel plasma"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo HDL"
@@ -234,14 +207,14 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationColesteroloLDLTaccuino
 Parent: Observation
 Id: Observation-it-ldl-taccuino
-Title: "Observation Colesterolo LDL - Taccuino"
+Title: "Observation Colesterolo LDL - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tramite il profilo Observation"
 * ^status = #active
 
@@ -250,7 +223,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 * code.coding.display = "Colesterolo LDL"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo LDL"
 * effectiveDateTime 1..1
@@ -260,14 +233,14 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationColesteroloTotaleTaccuino
 Parent: Observation
 Id: Observation-it-colesterolo-taccuino
-Title: "Observation Colesterolo Totale - Taccuino"
+Title: "Observation Colesterolo Totale - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa al colesterolo totale tramite il profilo Observation"
 * ^status = #active
 
@@ -276,7 +249,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 * code.coding.display = "Colesterolo Totale"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 
 * effectiveDateTime ^short = "Data di registrazione del colesterolo totale"
@@ -287,15 +260,15 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationTrigliceridi
+Profile: ObservationTrigliceridiTaccuino
 Parent: Observation
 Id: Observation-it-trigliceridi-taccuino
-Title: "Observation Trigliceridi Totale - Taccuino"
-Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramite il profilo Observation"
+Title: "Observation Trigliceridi - Taccuino personale dell'assistito"
+Description: "Rappresentazione dell'osservazione relativa ai trigliceridi tramite il profilo Observation"
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
@@ -304,7 +277,7 @@ Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramit
 * code.coding.display = "Trigliceridi"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 
 * effectiveDateTime ^short = "Data di registrazione dei Trigliceridi"
@@ -315,24 +288,26 @@ Description: "Rappresentazione dell'osservazione relativa ai Trigliceridi tramit
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationOssimetria
+Profile: ObservationOssimetriaTaccuino
 Parent: Observation
 Id: Observation-it-ossimetria-taccuino
-Title: "Observation Ossimetria - Taccuino"
-Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramite il profilo Observation"
+Title: "Observation Ossimetria - Taccuino personale dell'assistito"
+Description: "Rappresentazione dell'osservazione relativa all'ossimetria tramite il profilo Observation"
 * ^status = #active
+
+* language = #it
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#20564-1
 * code.coding.display = "Saturazione dell'ossigeno"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 // 85353-1	Vital signs, weight, height, head circumference, oxygen saturation and BMI panel LHC-Forms
 
@@ -344,14 +319,14 @@ Description: "Rappresentazione dell'osservazione relativa all' Ossimetria tramit
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationGlicemiaDigiuno
+Profile: ObservationGlicemiaDigiunoTaccuino
 Parent: Observation
 Id: Observation-it-glicemia-digiuno-taccuino
-Title: "Observation Glicemia a Digiuno - Taccuino"
+Title: "Observation Glicemia a Digiuno - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiuno tramite il profilo Observation"
 * ^status = #active
 
@@ -360,7 +335,7 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * code.coding.display = "Glicemia a digiuno"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 
 * effectiveDateTime ^short = "Data di rilevazione della glicemia a digiuno"
@@ -371,14 +346,14 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationEmoglobinaGlicata
+Profile: ObservationEmoglobinaGlicataTaccuino
 Parent: Observation
 Id: Observation-it-emoglobina-glicata-taccuino
-Title: "Observation Emoglobina Glicata - Taccuino"
+Title: "Observation Emoglobina Glicata - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata tramite il profilo Observation"
 * ^status = #active
 
@@ -387,7 +362,7 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * code.coding.display = "Emoglobina A1c/Emoglobina.totale"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
-* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or Patient)
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
 * effectiveDateTime ^short = "Data di rilevazione dell'emoglobina nel sangue"
 * effectiveDateTime 1..1
@@ -397,4 +372,5 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-* valueQuantity.system from $vs-unitOfMeasure
+//
+

@@ -2,7 +2,7 @@ Logical: ContattoStruttura
 Title: "Contatto del paziente con la struttura sanitaria"
 Description: "Informazioni relative al contatto avvenuto tra il paziente e la struttura sanitaria"
 Characteristics: #can-be-target
-* dataCreazione 1..1 dateTime "Data di creazione"
+* dataCreazione 1..1 dateTime "Data di creazione dell'informazione a sistema"
 * durataContatto 1..1 Period "Durata del contatto tra il paziente e la struttura sanitaria"
   * inizioContatto 1..1 dateTime "Inizio del contatto"
   * fineContatto 0..1 dateTime "Fine del contatto"

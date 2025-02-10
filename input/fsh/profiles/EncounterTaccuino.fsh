@@ -1,13 +1,14 @@
 Profile: EncounterTaccuino
 Parent: Encounter
 Id: Encounter-it-Taccuino
-Title:    "Encounter - Taccuino"
+Title:    "Encounter - Taccuino personale dell'assistito"
 Description: "Rappresentazione dei contatti tra il paziente e le strutture sanitarie tramite il profilo Encounter"
+
+* . ^short = "Descrive l'evento in cui il paziente ha un contatto con una struttura sanitaria"
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
 * extension[dataRegistrazione].valueDateTime
-* . ^short = "Descrive l'evento in cui il paziente ha un contatto con una struttura sanitaria"
 * period 1..1
 * period ^short = "Data inizio e fine contatto con la struttura sanitaria"
 * period.start 1..1

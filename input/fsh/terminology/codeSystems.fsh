@@ -1,7 +1,7 @@
 CodeSystem: CsAifaAic
 Id: aifa-aic
 Title: "AIFA - AIC"
-Description: "AIFA - Identifica i farmaci nella loro forma commerciale."
+Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
 * ^experimental = false
 * ^status = #active
 * ^caseSensitive = true
@@ -14,11 +14,14 @@ Description: "AIFA - Identifica i farmaci nella loro forma commerciale."
 * #020609083 "ISOPTIN*30 cpr riv 80 mg"
 * #039785050 "AUGMENTIN 875 MG/125 MG COMPRESSE RIVESTITE CON FILM"
 * #037568019 "5 MICROGRAMMI SOLUZIONE INETTABILE - USO SOTTOCUTANEO PENNA PRERIEMPITA (VETRO)"
+* #036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CodeSystem: CsNoAllergiesInfo
 Id: no-allergies
 Title: "No allergies"
-Description: "Nessuna Allergie oppure agente non noto"
+Description: "Nessuna allergia oppure agente non noto"
 * ^experimental = false
 * ^status = #active
 * ^caseSensitive = true
@@ -30,6 +33,8 @@ Description: "Nessuna Allergie oppure agente non noto"
 * #no-known-medication-allergies "No known medication allergies"
 * #no-known-environmental-allergies "No known environmental allergies"
 * #no-known-food-allergies "No known food allergies"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CodeSystem: CsTypeCode
 Id: type-code
@@ -74,3 +79,18 @@ Description: "Tipologia di documento"
 * #101134-5	"Promemoria di appuntamento"
 * #101133-7	"Consenso alla donazione di organo e/o tessuto"
 * #100971-1	"Cartella clinica"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CodeSystem: CsRegoleAccesso
+Id: access-rules
+Title: "Atti clinici e regole di accesso"
+Description: "Atti clinici e regole di accesso"
+* ^experimental = false
+* ^status = #active
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.3"
+
+* #P97 "Oscuramento al genitore"
+* #P99 "Oscuramento del documento"
