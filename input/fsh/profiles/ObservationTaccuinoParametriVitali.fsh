@@ -303,7 +303,7 @@ Description: "Rappresentazione dell'osservazione relativa all'ossimetria tramite
 * language = #it
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#20564-1
+* code = $loinc#2708-6
 * code.coding.display = "Saturazione dell'ossigeno"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"

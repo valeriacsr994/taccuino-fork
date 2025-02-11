@@ -28,7 +28,7 @@ Instance: Observation-Taccuino-CirconferenzaVita
 InstanceOf: ObservationCirconferenzaVitaTaccuino
 Title: "Observation - Circoferenza Vita"
 Usage: #example
-Description: "Esempio di un'osservazione: Circoferenza Vita"
+Description: "Esempio di un'osservazione: circoferenza vita"
 
 
 * extension[dataRegistrazione].valueDate = "2024-07-27"
@@ -58,7 +58,7 @@ Instance: Observation-Taccuino-LDL
 InstanceOf: ObservationColesteroloLDLTaccuino
 Title: "Observation - Colesterolo LDL"
 Usage: #example
-Description: "Esempio di un'osservazione: Colesterolo LDL"
+Description: "Esempio di un'osservazione: colesterolo LDL"
 
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 
@@ -84,7 +84,7 @@ Instance: Observation-Taccuino-HDL
 InstanceOf: ObservationColesteroloHDLTaccuino
 Title: "Observation - Colesterolo HDL"
 Usage: #example
-Description: "Esempio di un'osservazione: Colesterolo HDL"
+Description: "Esempio di un'osservazione: colesterolo HDL"
 
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 
@@ -112,7 +112,7 @@ Instance: Observation-Taccuino-ColesteroloTotale
 InstanceOf: ObservationColesteroloTotaleTaccuino
 Title: "Observation - Colesterolo Totale"
 Usage: #example
-Description: "Esempio di un'osservazione: Colesterolo Totale"
+Description: "Esempio di un'osservazione: colesterolo totale"
 
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 
@@ -130,12 +130,34 @@ Description: "Esempio di un'osservazione: Colesterolo Totale"
 * valueQuantity = 120 $unitOfMeasure#mg/dL "mg/dL"
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
+Instance: Observation-Taccuino-ColesteroloTot2
+InstanceOf: ObservationColesteroloTotaleTaccuino
+Title: "Observation - Colesterolo Totale elevato"
+Usage: #example
+Description: "Esempio di un'osservazione: colesterolo totale elevato"
+
+* extension[dataRegistrazione].valueDate = "2024-08-20"
+
+* code = $loinc#2093-3 "Colesterolo Totale"
+* effectiveDateTime = "2024-07-07"
+* status = #final
+
+
+* subject = Reference (Patient-Taccuino-Esempio2)
+* performer = Reference (Organization/Organization-Taccuino-Esempio3)
+* category = $observation-category#vital-signs
+
+* referenceRange.high = 200.0 #mg/dL "mg/dL"
+
+* valueQuantity = 250 $unitOfMeasure#mg/dL "mg/dL"
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-EmoglobinaGlicata
 InstanceOf: ObservationEmoglobinaGlicataTaccuino
 Title: "Observation - Emoglobina Glicata"
 Usage: #example
-Description: "Esempio di un'osservazione: Emoglobina Glicata"
+Description: "Esempio di un'osservazione: emoglobina glicata"
 
 * extension[dataRegistrazione].valueDate = "2024-02-19"
 
@@ -252,7 +274,7 @@ Usage: #example
 Description: "Esempio di un'osservazione: ossimetria"
 
 * status = #final
-* code = $loinc#20564-1
+* code = $loinc#2708-6
 * code.coding.display = "Saturazione dell'ossigeno"
 * extension[dataRegistrazione].valueDate = "2025-01-07"
 * performer = Reference(Practitioner-Taccuino-Esempio)
@@ -303,7 +325,7 @@ Instance: Observation-Taccuino-FrequezaCardiaca
 InstanceOf: ObservationFrequenzaCardiacaTaccuino
 Title: "Observation - Frequenza Cardiaca a riposo"
 Usage: #example
-Description: "Esempio di un'osservazione: Frequenza Cardiaca a riposo"
+Description: "Esempio di un'osservazione: frequenza cardiaca a riposo"
 
 * extension[dataRegistrazione].valueDate = "2024-10-27"
 * code = $loinc#40443-4 "Frequenza cardiaca a riposo"

@@ -2,7 +2,7 @@ Instance: Patient-Taccuino-Esempio
 InstanceOf: PatientTaccuino
 Title: "Patient"
 Usage: #example
-Description: "Esempio di Paziente iscritto al SSN"
+Description: "Esempio 1 di Paziente iscritto al SSN"
 
 * extension[luogoNascita].valueAddress.line[+].extension[odonimo].valueString = "Via della Pace"
 * extension[luogoNascita].valueAddress.line[=].extension[houseNumber].valueString = "1"
@@ -34,5 +34,45 @@ Description: "Esempio di Paziente iscritto al SSN"
 * address.country = "IT"
 * address.postalCode = "23839"
 * address.line = "Via Nazionale, 52"
+* address.use = #home
+* address.extension[residenza].valueBoolean = true
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
+Instance: Patient-Taccuino-Esempio2
+InstanceOf: PatientTaccuino
+Title: "Patient"
+Usage: #example
+Description: "Esempio 2 di Paziente iscritto al SSN"
+
+* extension[luogoNascita].valueAddress.line[+].extension[odonimo].valueString = "Via Santa Cristina"
+* extension[luogoNascita].valueAddress.line[=].extension[houseNumber].valueString = "3"
+* extension[luogoNascita].valueAddress.line[=] = "Via Santa Cristina, 3"
+* extension[luogoNascita].valueAddress.city = "Torino"
+* extension[luogoNascita].valueAddress.postalCode = "10036"
+* extension[luogoNascita].valueAddress.country = "IT"
+* extension[professione].valueCodeableConcept = $CS_ProfessioniIstat#3.1.2.3 "Tecnici web"
+* extension[titoloStudio].valueCodeableConcept = $CS_TitoloStudioIstat#40202023 "Informatica"
+
+* identifier
+  * system = "http://hl7.it/sid/codiceFiscale"
+  * value = "BNCMHL90H12L219K" 
+  * extension[certificazioneId].extension[when].valueDateTime = "2024-08-10"
+
+* extension[luogoNascitaCodeable].valueCodeableConcept = $CS_luogoNascita#100 "Italia"
+
+
+* name.family = "Bianchi"
+* name.given = "Michele"
+
+* telecom[0].system = #phone
+* telecom[0].value = "3332643738"
+* birthDate = "1990-06-12"
+
+* gender = #female
+
+* address.city = "Torino"
+* address.country = "IT"
+* address.postalCode = "10152"
+* address.line = "Via Cuneo, 10"
 * address.use = #home
 * address.extension[residenza].valueBoolean = true
