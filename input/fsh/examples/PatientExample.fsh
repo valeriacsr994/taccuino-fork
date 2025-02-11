@@ -1,8 +1,8 @@
 Instance: Patient-Taccuino-Esempio
 InstanceOf: PatientTaccuino
-Title: "Patient"
+Title: "Paziente donna iscritta al SSN"
 Usage: #example
-Description: "Esempio 1 di Paziente iscritto al SSN"
+Description: "Esempio di Paziente (donna) iscritta al SSN"
 
 * extension[luogoNascita].valueAddress.line[+].extension[odonimo].valueString = "Via della Pace"
 * extension[luogoNascita].valueAddress.line[=].extension[houseNumber].valueString = "1"
@@ -40,9 +40,9 @@ Description: "Esempio 1 di Paziente iscritto al SSN"
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Instance: Patient-Taccuino-Esempio2
 InstanceOf: PatientTaccuino
-Title: "Patient"
+Title: "Paziente uomo iscritto al SSN"
 Usage: #example
-Description: "Esempio 2 di Paziente iscritto al SSN"
+Description: "Esempio di Paziente (uomo) iscritto al SSN"
 
 * extension[luogoNascita].valueAddress.line[+].extension[odonimo].valueString = "Via Santa Cristina"
 * extension[luogoNascita].valueAddress.line[=].extension[houseNumber].valueString = "3"
@@ -68,7 +68,7 @@ Description: "Esempio 2 di Paziente iscritto al SSN"
 * telecom[0].value = "3332643738"
 * birthDate = "1990-06-12"
 
-* gender = #female
+* gender = #male
 
 * address.city = "Torino"
 * address.country = "IT"

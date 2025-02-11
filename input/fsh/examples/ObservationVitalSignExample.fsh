@@ -130,7 +130,7 @@ Description: "Esempio di un'osservazione: colesterolo totale"
 * valueQuantity = 120 $unitOfMeasure#mg/dL "mg/dL"
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
-Instance: Observation-Taccuino-ColesteroloTot2
+Instance: Observation-Taccuino-ColesteroloTotaleAlto
 InstanceOf: ObservationColesteroloTotaleTaccuino
 Title: "Observation - Colesterolo Totale elevato"
 Usage: #example

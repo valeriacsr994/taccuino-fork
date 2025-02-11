@@ -8,5 +8,9 @@ Usage: #example
 * identifier.value = "urn:uuid:bfcf00e2-3de9d419d27e"
 * type = #collection
 * timestamp = "2025-01-26T14:30:00+01:00"
-* entry[+].resource = Observation-Taccuino-ColesteroloTot2
+* entry[+].resource = Observation-Taccuino-ColesteroloTotaleAlto
+* entry[+].fullUrl = "https://www.hl7.it/fhir/taccuino/Observation-Observation-Taccuino-ColesteroloTotaleAlto"
 * entry[=].resource = Patient-Taccuino-Esempio2
+* entry[=].fullUrl = "https://www.hl7.it/fhir/taccuino/Patient-Patient-Taccuino-Esempio2"
+* entry[=].resource = MedicationAdministration-Taccuino-Esempio2
+* entry[=].fullUrl = "https://www.hl7.it/fhir/taccuino/MedicationAdministration-MedicationAdministration-Taccuino-Esempio2"
