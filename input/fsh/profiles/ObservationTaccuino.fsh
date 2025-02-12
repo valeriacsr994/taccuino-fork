@@ -1,6 +1,6 @@
 Profile: ObservationAnnotazioniTaccuino
 Parent: Observation
-Id: Observation-it-annotazioni-taccuino
+Id: observation-it-annotazioni-taccuino
 Title: "Observation Note generali - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Note generali' tramite il profilo Observation"
 * ^status = #active
@@ -13,7 +13,7 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 
 Profile: ObservationEventiTaccuino
 Parent: Observation
-Id: Observation-it-eventi-taccuino
+Id: observation-it-eventi-taccuino
 Title: "Observation Eventi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Observation"
 * ^status = #active
@@ -29,7 +29,7 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
 Parent: Observation
-Id: Observation-it-sintomi-taccuino
+Id: observation-it-sintomi-taccuino
 Title: "Observation Segni e sintomi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il profilo Observation"
 * ^status = #active
@@ -54,7 +54,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
 Parent: Observation
-Id: Observation-it-dolore-taccuino
+Id: observation-it-dolore-taccuino
 Title: "Observation Dolore - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Observation"
 * ^status = #active
@@ -73,7 +73,7 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationViaggiTaccuino
 Parent: Observation
-Id: Observation-it-viaggi-taccuino
+Id: observation-it-viaggi-taccuino
 Title: "Observation Viaggi all'estero - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il profilo Observation"
 * ^status = #active

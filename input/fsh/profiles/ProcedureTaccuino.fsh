@@ -1,6 +1,6 @@
 Profile: ProcedureTaccuino
 Parent: Procedure
-Id: Procedure-it-Taccuino
+Id: procedure-it-Taccuino
 Title:    "Procedure - Taccuino"
 Description: "Rappresentazione della procedura di impianto protesico tramite il profilo Procedure"
 * . ^short = "Descrive l'evento di impianto protesico subito dal paziente"
