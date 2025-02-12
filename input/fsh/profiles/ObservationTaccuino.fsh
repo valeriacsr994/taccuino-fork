@@ -6,7 +6,7 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * ^status = #active
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#48767-8
-* code.coding.display = "Annotazioni e commenti"
+* code.coding.display = "Annotation comment [Interpretation] Narrative"
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -20,7 +20,7 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#42547-0
-* code.coding.display = "Evento"
+* code.coding.display = "Event MERSTH"
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "Data evento significativo"
 * value[x] 1..1
@@ -61,7 +61,7 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $loinc#94085-8
-* code.coding.display = "Dolore, categoria"
+* code.coding.display = "Pain category"
 * effectivePeriod ^short = "Data di inizio e fine del dolore"
 * valueCodeableConcept ^short = "Codice e descrizione del dolore" // TO DO --> capire il vocabolario
 * bodySite ^short = "Area interessata dal dolore"
