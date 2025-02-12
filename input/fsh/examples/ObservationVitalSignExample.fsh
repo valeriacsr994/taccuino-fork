@@ -125,9 +125,11 @@ Description: "Esempio di un'osservazione: colesterolo totale"
 * performer = Reference (Organization/Organization-Taccuino-Esempio3)
 * category = $observation-category#vital-signs
 
-* referenceRange.high = 200.0 #mg/dL "mg/dL"
+* referenceRange.high = 200.0 $unitOfMeasure#mg/dL
 
-* valueQuantity = 120 $unitOfMeasure#mg/dL "mg/dL"
+* valueQuantity = 120 'mg/dL'
+* valueQuantity.system = $unitOfMeasure
+* valueQuantity.unit = "mg/dL"
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 Instance: Observation-Taccuino-ColesteroloTotaleAlto
@@ -147,10 +149,10 @@ Description: "Esempio di un'osservazione: colesterolo totale elevato"
 * performer = Reference (Organization/Organization-Taccuino-Esempio3)
 * category = $observation-category#vital-signs
 
-* referenceRange.high = 200.0 #mg/dL "mg/dL"
-
-* valueQuantity = 250 $unitOfMeasure#mg/dL "mg/dL"
-
+* referenceRange.high = 200.0 $unitOfMeasure#mg/dL 
+* valueQuantity = 250 'mg/dL'
+* valueQuantity.system = $unitOfMeasure
+* valueQuantity.unit = "mg/dL"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-EmoglobinaGlicata
@@ -164,15 +166,12 @@ Description: "Esempio di un'osservazione: emoglobina glicata"
 * code = $loinc#4548-4 "Hemoglobin A1c/Hemoglobin.total in Blood"
 * effectiveDateTime = "2023-08-01"
 * status = #final
-
-
 * subject = Reference (Patient-Taccuino-Esempio)
 * performer = Reference (Organization/Organization-Taccuino-Esempio3)
 * category = $observation-category#vital-signs
 
 * referenceRange.high = 20 $unitOfMeasure#mmol/mol
 * referenceRange.low = 42 $unitOfMeasure#mmol/mol 
-
 
 * valueQuantity = 30 'mmol/mol'
 * valueQuantity.system = $unitOfMeasure
