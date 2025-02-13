@@ -6,6 +6,7 @@ Alias: $oid = urn:ietf:rfc:1155
 Alias: $vs-unitOfMeasure = http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $unitOfMeasure = http://unitsofmeasure.org
 Alias: $device-type = urn:oid:2.16.840.1.113883.2.9.6.1.48
+Alias: $class-code = urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5
 
 
 Alias: $iso3166 = urn:iso:std:iso:3166

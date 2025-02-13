@@ -4,7 +4,7 @@ Title: "Observation - Altezza"
 Usage: #example
 Description: "Esempio di un'osservazione: altezza"
 
-
+* id = "8e8d18f5-3bb4-4f07-bb05-06effd080d96"
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 * code = $loinc#8302-2 "Body height"
 
@@ -30,7 +30,7 @@ Title: "Observation - Circoferenza Vita"
 Usage: #example
 Description: "Esempio di un'osservazione: circoferenza vita"
 
-
+* id = "ebb233a8-964f-4f36-a850-f58c6aa27586"
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 * code = $loinc#56115-9 "Waist Circumference by NCFS"
 
@@ -60,6 +60,7 @@ Title: "Observation - Colesterolo LDL"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo LDL"
 
+* id = "b01f8680-aef2-4430-b65b-85f826c59b59"
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 
 * code = $loinc#2089-1 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
@@ -86,6 +87,8 @@ Title: "Observation - Colesterolo HDL"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo HDL"
 
+
+* id = "97286c2f-c50b-4b14-93d4-c1cd77054861"
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 
 * code = $loinc#14646-4 "Cholesterol in HDL [Moles/volume] in Serum or Plasma"
@@ -114,6 +117,7 @@ Title: "Observation - Colesterolo Totale"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo totale"
 
+* id = "cd6057f1-114b-49e3-a298-fbcfc54fb3dd"
 * extension[dataRegistrazione].valueDate = "2024-07-27"
 
 * code = $loinc#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
@@ -138,6 +142,7 @@ Title: "Observation - Colesterolo Totale elevato"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo totale elevato"
 
+* id = "0170d3be-62e7-47cb-a7a2-7bf967ea0064"
 * extension[dataRegistrazione].valueDate = "2024-08-20"
 
 * code = $loinc#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
@@ -161,6 +166,7 @@ Title: "Observation - Emoglobina Glicata"
 Usage: #example
 Description: "Esempio di un'osservazione: emoglobina glicata"
 
+* id = "03c49e23-90bf-4d60-8dff-c208420f0e2a"
 * extension[dataRegistrazione].valueDate = "2024-02-19"
 
 * code = $loinc#4548-4 "Hemoglobin A1c/Hemoglobin.total in Blood"

@@ -57,6 +57,7 @@ Description: "Esempio di un'osservazione: viaggi all'estero effettuati dall'assi
 * effectivePeriod.end = "2025-03-15"
 * category = $observation-category#activity
 * subject = Reference(Patient-Taccuino-Esempio)
+* performer = Reference(Patient-Taccuino-Esempio)
 * code = $loinc#8691-8
 * code.coding.display = "History of Travel"
 * valueString = "Viaggio in Benin (Africa)"

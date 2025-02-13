@@ -16,7 +16,7 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
 * category.coding.code = #TAC
-* category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+* category.coding.system = $class-code
 * category.coding.display = "Taccuino"
 * context.event.coding.code = #P99
 
@@ -39,6 +39,6 @@ Description: "Esempio di referto specialistico relativo a visita cardiologica am
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
 * category.coding.code = #TAC
-* category.coding.system = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+* category.coding.system = $class-code
 * category.coding.display = "Taccuino"
 * context.event.coding.code = #P99
