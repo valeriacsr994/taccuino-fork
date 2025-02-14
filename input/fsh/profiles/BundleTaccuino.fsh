@@ -49,6 +49,7 @@ ObservationColesteroloHDLTaccuino or ObservationColesteroloLDLTaccuino or Observ
 // * entry contains observationSintomi 0..*  
 // * entry[observationSintomi].resource only ObservationSintomiTaccuino
 
+
 // * entry contains observationDolore 0..*  
 // * entry[observationDolore].resource only ObservationDoloreTaccuino
 

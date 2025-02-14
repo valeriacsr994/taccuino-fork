@@ -9,7 +9,6 @@ The discriminator type 'pattern' is deprecated in R5+. For future compatibility,
 
 == LOINC Display ITA ==
 
-There are no valid display names found for the code http://loinc.org#2093-3 for language(s) 'it-IT'. The display is 'Cholesterol [Mass/volume] in Serum or Plasma' the default language display 
 There are no valid display names found for the code http://loinc.org#2093-3 for language(s) 'it-IT'. The display is 'Cholesterol [Mass/volume] in Serum or Plasma' the default language display
 There are no valid display names found for the code http://loinc.org#4548-4 for language(s) 'it-IT'. The display is 'Hemoglobin A1c/Hemoglobin.total in Blood' the default language display
 There are no valid display names found for the code http://loinc.org#14646-4 for language(s) 'it-IT'. The display is 'Cholesterol in HDL [Moles/volume] in Serum or Plasma' the default language display
