@@ -184,25 +184,25 @@ Description: "Esempio di un'osservazione: emoglobina glicata"
 * valueQuantity.unit = "mmol/mol"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-Taccuino-Trigliceridi
+Instance: Observation-Taccuino-Trigliceridi-alti
 InstanceOf: ObservationTrigliceridiTaccuino
 Title: "Observation - Trigliceridi"
 Usage: #example
-Description: "Esempio di un'osservazione: trigliceridi"
+Description: "Esempio di un'osservazione: trigliceridi oltre il range"
 
 * status = #final
 * code = $loinc#3043-7 
 * code.coding.display = "Triglyceride [Mass/volume] in Blood"
 * extension[dataRegistrazione].valueDate = "2025-02-02"
 * performer = Reference(Practitioner-Taccuino-Esempio)
-* subject = Reference(Patient-Taccuino-Esempio)
+* subject = Reference(Patient-Taccuino-Esempio2)
 * category = $observation-category#vital-signs
-* effectiveDateTime = "2025-02-02"
-* valueQuantity.value = 150
+* effectiveDateTime = "2025-01-29"
+* valueQuantity.value = 200
 * valueQuantity.unit = "mg/dL"
 * valueQuantity.system = $unitOfMeasure
 * valueQuantity.code = #mg/dL
-* note.text = "La misurazione dei trigliceridi è stata effettuata oggi. Il valore risulta essere 150 mg/dL, che rientra nella fascia normale secondo le linee guida. Continuo a monitorare la mia dieta e i livelli di attività fisica come consigliato dal medico."
+* note.text = "Oggi è stata effettuata la misurazione dei trigliceridi, e il valore risulta essere 250 mg/dL, che supera il limite raccomandato dalle linee guida. Continuo a seguire il piano alimentare e l’attività fisica consigliati dal medico. Se la situazione non migliora, discuterò con lui eventuali passi successivi."
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-TemperaturaCorporea

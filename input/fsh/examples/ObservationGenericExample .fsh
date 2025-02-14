@@ -15,11 +15,11 @@ Description: "Esempio di un'osservazione: segni e sintomi"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-Taccuino-Annotazioni
+Instance: Observation-Taccuino-Annotazioni-Febbre
 InstanceOf: ObservationAnnotazioniTaccuino
 Title: "Observation - Note Generali"
 Usage: #example
-Description: "Esempio di un'osservazione: note generali"
+Description: "Esempio di un'osservazione: note generali riguardanti la febbre dell'assistito"
 
 * id = "ff8f154f-7d4e-4830-9a75-3e1c26207173"
 * status = #final
@@ -31,7 +31,21 @@ Description: "Esempio di un'osservazione: note generali"
 * code.coding.display = "Annotation comment [Interpretation] Narrative"
 * valueString = "Oggi ho avuto una leggera febbre (37.8°C) e qualche dolore muscolare.Continuo a monitorare la temperatura. Se la febbre non passa, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+Instance: Observation-Taccuino-Annotazioni-Pressione
+InstanceOf: ObservationAnnotazioniTaccuino
+Title: "Observation - Note Generali"
+Usage: #example
+Description: "Esempio di un'osservazione: note generali relative ad un calo di pressione esperito dall'assistito"
+ 
+* status = #final
+* extension[dataRegistrazione].valueDate = "2025-02-09"
+* effectiveDateTime = "2025-02-09"
+* performer = Reference(Patient-Taccuino-Esempio2)
+* subject = Reference(Patient-Taccuino-Esempio2)
+* code = $loinc#48767-8
+* code.coding.display = "Annotation comment [Interpretation] Narrative"
+* valueString = "Oggi ho avuto un improvviso calo di pressione, con vertigini e un po' di stanchezza. Mi sono riposato e ho bevuto acqua, e al momento la situazione sembra migliorare. Continuo a monitorare i sintomi e, se il malessere persiste o si ripresenta, contatterò il medico."
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Eventi
 InstanceOf: ObservationEventiTaccuino
 Title: "Observation - Evento"

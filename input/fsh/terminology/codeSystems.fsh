@@ -94,3 +94,27 @@ Description: "Atti clinici e regole di accesso"
 
 * #P97 "Oscuramento al genitore"
 * #P99 "Oscuramento del documento"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CodeSystem: CsLoincObs
+Id: loinc-obs
+Title: "Codici LOINC relativi ai parametri vitali"
+Description: "Codici LOINC relativi ai parametri vitali"
+* ^experimental = false
+* ^status = #active
+* ^language = #it_IT
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.6.1"
+
+* #85353-1 "Vital signs, weight, height, head circumference, oxygen saturation & BMI panel"
+* #9279-1 "Respiratory rate"
+* #8867-4 "Heart rate"
+* #2708-6 "Oxygen saturation in Arterial blood"
+* #8310-5 "Body temperature"
+* #8302-2 "Body height"
+* #29463-7 "Body weight"
+* #85354-9 "Blood pressure panel with all children optional"
+* #8480-6 "Systolic blood pressure"
+* #8462-4 "Diastolic blood pressure"

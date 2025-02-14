@@ -10,6 +10,10 @@ Usage: #example
 * timestamp = "2025-01-26T14:30:00+01:00"
 * entry[observation].fullUrl = "urn:uuid:0170d3be-62e7-47cb-a7a2-7bf967ea0064"
 * entry[observation].resource = Observation-Taccuino-ColesteroloTotaleAlto
+* entry[observation].fullUrl = "urn:uuid:0170d3be-62p7-47cb-f7a2-7bf967ea1164"
+* entry[observation].resource = Observation-Taccuino-Annotazioni-Pressione
+* entry[observation].fullUrl = "urn:uuid:0170d9by-33p7-47cb-f9a2-7bf987ea4464"
+* entry[observation].resource = Observation-Taccuino-Trigliceridi-alti
 * entry[patient].fullUrl = "urn:uuid:4ec06b84-071a-4de2-b0eb-e24cda23fbaa"
 * entry[patient].resource = Patient-Taccuino-Esempio2
 * entry[medicationAdministration].fullUrl = "urn:uuid:08cea1b4-db13-48fd-8956-a29d25f42b99"
