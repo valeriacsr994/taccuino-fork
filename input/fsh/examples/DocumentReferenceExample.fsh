@@ -3,7 +3,7 @@ InstanceOf: DocumentReferenceTaccuino
 Title : "Documento Allegato - Esenzione"
 Description: "Esempio di esenzione dal pagamento del ticket"
 
-
+* id = "649df3be-637d-48c7-848b-40105cc36878"
 * extension[dataRegistrazione].valueDate = "2025-01-31"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
@@ -27,6 +27,8 @@ InstanceOf: DocumentReferenceTaccuino
 Title : "Documento Allegato - Referto specialistico di visita cardiologica ambulatoriale"
 Description: "Esempio di referto specialistico relativo a visita cardiologica ambulatoriale"
 
+
+* id = "ecce9788-1666-4e4d-8e75-ae98e3cb7fa1"
 * extension[dataRegistrazione].valueDate = "2025-05-27"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
