@@ -12,8 +12,8 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 //valutare se mantenerlo, vedi documento Taccuino
-* code = $loinc#29463-7
-* code.coding.display = "Body weight"
+* code = $CS_Loinc#29463-7
+* code.coding.display = "Peso corporeo"
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
@@ -40,8 +40,8 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 //valutare se mantenerlo, vedi documento Taccuino
-* code = $loinc#8302-2
-* code.coding.display = "Body height"
+* code = $CS_Loinc#8302-2
+* code.coding.display = "Altezza Corporea"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -69,8 +69,8 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#8310-5
-* code.coding.display = "Body temperature"
+* code = $CS_Loinc#8310-5
+* code.coding.display = "Temperatura corporea"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -99,8 +99,8 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#56115-9
-* code.coding.display = "Waist Circumference by NCFS"
+* code = $CS_Loinc#56115-9
+* code.coding.display = "Circonferenza"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -128,8 +128,8 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione sanguig
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#85354-9
-* code.coding.display = "Blood pressure panel with all children optional"
+* code = $CS_Loinc#85354-9
+* code.coding.display = "Pressione sanguigna, panel con tutti i figli opzionali"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -158,8 +158,8 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#40443-4
-* code.coding.display = "Heart rate --resting"
+* code = $CS_Loinc#40443-4
+* code.coding.display = "Frequenza cardiaca^riposo"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -187,7 +187,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#9279-1
+* code = $CS_Loinc#9279-1
 * code.coding.display = "Frequenza respiratoria"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
@@ -215,8 +215,8 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#14646-4
-* code.coding.display = "Cholesterol in HDL [Moles/volume] in Serum or Plasma"
+* code = $CS_Loinc#14646-4
+* code.coding.display = "Colesterolo.in HDL"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -245,8 +245,8 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#2089-1
-* code.coding.display = "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+* code = $CS_Loinc#2089-1
+* code.coding.display = "Colesterolo.in LDL"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -274,8 +274,8 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#2093-3
-* code.coding.display = "Cholesterol [Mass/volume] in Serum or Plasma"
+* code = $CS_Loinc#2093-3
+* code.coding.display = "Colesterolo"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -304,9 +304,9 @@ Description: "Rappresentazione dell'osservazione relativa ai trigliceridi tramit
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#3043-7 // ci sono diversi codici che rappresentano i triglicedi in varie campioni (sangue, urine..)
+* code = $CS_Loinc#3043-7 // ci sono diversi codici che rappresentano i triglicedi in varie campioni (sangue, urine..)
 // Valutare un valueset di valori loinc altrimenti c'è un codice SNOMED più generico <Triglycerides measurement (procedure) SCTID: 14740000>
-* code.coding.display = "Triglyceride [Mass/volume] in Blood"
+* code.coding.display = "Trigliceridi"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -338,8 +338,8 @@ Description: "Rappresentazione dell'osservazione relativa all'ossimetria tramite
 * language = #it
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#2708-6
-* code.coding.display = "Oxygen saturation in Arterial blood"
+* code = $CS_Loinc#2708-6
+* code.coding.display = "Saturazione dell'ossigeno"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -369,8 +369,8 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#88365-2
-* code.coding.display = "Glucose [Mass/volume] in Blood --pre-meal"
+* code = $CS_Loinc#88365-2
+* code.coding.display = "Glucosio^pre-pasto"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
@@ -399,8 +399,8 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $loinc#4548-4
-* code.coding.display = "Hemoglobin A1c/Hemoglobin.total in Blood"
+* code = $CS_Loinc#4548-4
+* code.coding.display = "Emoglobina A1c/Emoglobina.totale"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)

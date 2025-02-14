@@ -52,3 +52,12 @@ Description: "Atti clinici e regole di accesso"
 * ^experimental = false
 * codes from system $CS_accessRules
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsLoinc
+Id: vs-loinc-obs
+Title: "Loinc"
+Description: "Loinc"
+* ^experimental = false
+* codes from system $CS_Loinc
+

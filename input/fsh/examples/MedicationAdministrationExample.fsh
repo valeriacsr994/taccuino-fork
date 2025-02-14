@@ -11,7 +11,7 @@ Usage: #example
 
 * contained[0] = Medication-Taccuino-Esempio
 * status = #in-progress
-* medicationReference = Reference(Medication/Medication-Taccuino-Esempio)
+* medicationReference = Reference(Medication-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * effectivePeriod.start = "2024-02-20T14:30:00+01:00"
 * effectivePeriod.end = "2024-02-20T14:35:00+01:00"
@@ -39,7 +39,7 @@ Usage: #example
 
 * contained[0] = Medication-Taccuino-Esempio2
 * status = #in-progress
-* medicationReference = Reference(Medication/Medication-Taccuino-Esempio2)
+* medicationReference = Reference(Medication-Taccuino-Esempio2)
 * subject = Reference(Patient-Taccuino-Esempio2)
 * effectivePeriod.start = "2025-02-21T14:30:00+01:00"
 * effectivePeriod.end = "2025-02-21T14:35:00+01:00"

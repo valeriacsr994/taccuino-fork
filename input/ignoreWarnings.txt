@@ -6,29 +6,3 @@
 
 
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-
-== LOINC Display ITA ==
-
-There are no valid display names found for the code http://loinc.org#2093-3 for language(s) 'it-IT'. The display is 'Cholesterol [Mass/volume] in Serum or Plasma' the default language display
-There are no valid display names found for the code http://loinc.org#4548-4 for language(s) 'it-IT'. The display is 'Hemoglobin A1c/Hemoglobin.total in Blood' the default language display
-There are no valid display names found for the code http://loinc.org#14646-4 for language(s) 'it-IT'. The display is 'Cholesterol in HDL [Moles/volume] in Serum or Plasma' the default language display
-There are no valid display names found for the code http://loinc.org#48767-8 for language(s) 'it-IT'. The display is 'Annotation comment [Interpretation] Narrative' the default language display
-There are no valid display names found for the code http://loinc.org#94085-8 for language(s) 'it-IT'. The display is 'Pain category' the default language display
-There are no valid display names found for the code http://loinc.org#72514-3 for language(s) 'it-IT'. The display is 'Pain severity - 0-10 verbal numeric rating [Score] - Reported' the default language display
-There are no valid display names found for the code http://loinc.org#LA6115-5 for language(s) 'it-IT'. The display is '4' the default language display
-There are no valid display names found for the code http://loinc.org#42547-0 for language(s) 'it-IT'. The display is 'Event MERSTH' the default language display
-There are no valid display names found for the code http://loinc.org#30939-3 for language(s) 'it-IT'. The display is 'Measles virus dose count in combination vaccine' the default language display
-There are no valid display names found for the code http://loinc.org#40443-4 for language(s) 'it-IT'. The display is 'Heart rate --resting' the default language display
-There are no valid display names found for the code http://loinc.org#88365-2 for language(s) 'it-IT'. The display is 'Glucose [Mass/volume] in Blood --pre-meal' the default language display 
-There are no valid display names found for the code http://loinc.org#29463-7 for language(s) 'it-IT'. The display is 'Body weight' the default language display
-There are no valid display names found for the code http://loinc.org#85354-9 for language(s) 'it-IT'. The display is 'Blood pressure panel with all children optional' the default language display
-There are no valid display names found for the code http://loinc.org#8462-4 for language(s) 'it-IT'. The display is 'Diastolic blood pressure' the default language display
-There are no valid display names found for the code http://loinc.org#8480-6 for language(s) 'it-IT'. The display is 'Systolic blood pressure' the default language display
-There are no valid display names found for the code http://loinc.org#2708-6 for language(s) 'it-IT'. The display is 'Oxygen saturation in Arterial blood' the default language display
-'High' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation has no Display Names for the language it-IT
-There are no valid display names found for the code http://loinc.org#8310-5 for language(s) 'it-IT'. The display is 'Body temperature' the default language display 
-There are no valid display names found for the code http://loinc.org#3043-7 for language(s) 'it-IT'. The display is 'Triglyceride [Mass/volume] in Blood' the default language display
-There are no valid display names found for the code http://loinc.org#8691-8 for language(s) 'it-IT'. The display is 'History of Travel' the default language display
-There are no valid display names found for the code http://loinc.org#2089-1 for language(s) 'it-IT'. The display is 'Cholesterol in LDL [Mass/volume] in Serum or Plasma' the default language display
-There are no valid display names found for the code http://loinc.org#2093-3 for language(s) 'it-IT'. The display is 'Cholesterol [Mass/volume] in Serum or Plasma' the default language display 
-There are no valid display names found for the code http://loinc.org#56115-9 for language(s) 'it-IT'. The display is 'Waist Circumference by NCFS' the default language display

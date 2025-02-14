@@ -45,6 +45,7 @@ ObservationSintomiTaccuino or ObservationDoloreTaccuino or ObservationViaggiTacc
 or ObservationAltezzaTaccuino or ObservationTemperaturaCorporeaTaccuino or ObservationCirconferenzaVitaTaccuino or 
 ObservationPressioneSanguignaTaccuino or ObservationFrequenzaCardiacaTaccuino or ObservationFrequenzaRespiratoriaTaccuino or 
 ObservationColesteroloHDLTaccuino or ObservationColesteroloLDLTaccuino or ObservationGlicemiaDigiunoTaccuino or ObservationEmoglobinaGlicataTaccuino or ObservationAnnotazioniTaccuino
+or ObservationTrigliceridiTaccuino
 
 // * entry contains observationSintomi 0..*  
 // * entry[observationSintomi].resource only ObservationSintomiTaccuino

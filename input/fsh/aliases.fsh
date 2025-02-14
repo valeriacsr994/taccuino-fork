@@ -14,6 +14,8 @@ Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $vs-atc = https://www.hl7.it/fhir/terminology/ValueSet/who-atc
 Alias: $aic = http://hl7.it/fhir/taccuino/CodeSystem/aifa-aic
+Alias: $CS_Loinc = http://hl7.it/fhir/taccuino/CodeSystem/loinc-obs
+Alias: $VS_Loinc = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-obs
 
 Alias: $vs-aifa-aic = http://hl7.it/fhir/taccuino/ValueSet/aifa-aic
 Alias: $cs-no-allergies = http://hl7.it/fhir/taccuino/CodeSystem/no-allergies

@@ -27,8 +27,8 @@ Description: "Esempio di un'osservazione: note generali riguardanti la febbre de
 * effectiveDateTime = "2025-02-06"
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
-* code = $loinc#48767-8
-* code.coding.display = "Annotation comment [Interpretation] Narrative"
+* code = $CS_Loinc#48767-8
+* code.coding.display = "Annotazioni e comment"
 * valueString = "Oggi ho avuto una leggera febbre (37.8°C) e qualche dolore muscolare.Continuo a monitorare la temperatura. Se la febbre non passa, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Annotazioni-Pressione
@@ -36,14 +36,15 @@ InstanceOf: ObservationAnnotazioniTaccuino
 Title: "Observation - Note Generali"
 Usage: #example
 Description: "Esempio di un'osservazione: note generali relative ad un calo di pressione esperito dall'assistito"
- 
+
+* id = "0170d3be-62p7-47cb-f7a2-7bf967ea1164" 
 * status = #final
 * extension[dataRegistrazione].valueDate = "2025-02-09"
 * effectiveDateTime = "2025-02-09"
 * performer = Reference(Patient-Taccuino-Esempio2)
 * subject = Reference(Patient-Taccuino-Esempio2)
-* code = $loinc#48767-8
-* code.coding.display = "Annotation comment [Interpretation] Narrative"
+* code = $CS_Loinc#48767-8
+* code.coding.display = "Annotazioni e comment"
 * valueString = "Oggi ho avuto un improvviso calo di pressione, con vertigini e un po' di stanchezza. Mi sono riposato e ho bevuto acqua, e al momento la situazione sembra migliorare. Continuo a monitorare i sintomi e, se il malessere persiste o si ripresenta, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Eventi
@@ -59,8 +60,8 @@ Description: "Esempio di un'osservazione per un evento di vaccinazione"
 * effectiveDateTime = "1996-03-06"
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
-* code = $loinc#42547-0
-* code.coding.display = "Event MERSTH"
+* code = $CS_Loinc#42547-0
+* code.coding.display = "Evento:Osservazione"
 * valueCodeableConcept = $loinc#30939-3 "Measles virus dose count in combination vaccine"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -77,8 +78,8 @@ Description: "Esempio di un'osservazione: viaggi all'estero effettuati dall'assi
 * category = $observation-category#activity
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference(Patient-Taccuino-Esempio)
-* code = $loinc#8691-8
-* code.coding.display = "History of Travel"
+* code = $CS_Loinc#8691-8
+* code.coding.display = "Viaggio"
 * valueString = "Viaggio in Benin (Africa)"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -92,10 +93,10 @@ Description: "Esempio di un'osservazione: dolore"
 * id = "0fe610cd-e163-4566-85ea-1b65f168e1b7"
 * extension[dataRegistrazione].valueDate = "2024-02-19"
 
-* code = $loinc#94085-8 "Pain category"
+* code = $CS_Loinc#94085-8 "Dolore, categoria"
 * effectiveDateTime = "2023-08-01"
 * status = #final
 * subject = Reference (Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
-* component.code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+* component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
 * component.valueCodeableConcept = $loinc#LA6115-5 "4"

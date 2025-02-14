@@ -12,7 +12,7 @@ Usage: #example
 * entry[observation].resource = Observation-Taccuino-ColesteroloTotaleAlto
 * entry[observation].fullUrl = "urn:uuid:0170d3be-62p7-47cb-f7a2-7bf967ea1164"
 * entry[observation].resource = Observation-Taccuino-Annotazioni-Pressione
-* entry[observation].fullUrl = "urn:uuid:0170d9by-33p7-47cb-f9a2-7bf987ea4464"
+* entry[observation].fullUrl = "urn:uuid:06a0f231-aec2-417f-9bc7-4954e6252b92"
 * entry[observation].resource = Observation-Taccuino-Trigliceridi-alti
 * entry[patient].fullUrl = "urn:uuid:4ec06b84-071a-4de2-b0eb-e24cda23fbaa"
 * entry[patient].resource = Patient-Taccuino-Esempio2
