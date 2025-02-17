@@ -15,10 +15,8 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * description = "Esenzioni per prestazioni"
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
-* category.coding.code = #TAC
-* category.coding.system = $class-code
-* category.coding.display = "Taccuino"
-* context.event.coding.code = #P99
+* category.coding = $cs-class-code#TAC "Taccuino"
+* context.event.coding = $cs_accessRules#P99 "Oscuramento del documento"
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -40,7 +38,5 @@ Description: "Esempio di referto specialistico relativo a visita cardiologica am
 * description = "Durante la visita, ho riferito al medico di avvertire episodi di affaticamento, ma senza sintomi gravi come dolore toracico o difficoltà respiratorie. Il medico mi ha spiegato l'importanza di monitorare regolarmente la pressione arteriosa e migliorare lo stile di vita. Mi ha anche suggerito di monitorare la pressione a casa e di tornare per un follow-up tra sei mesi per un controllo della pressione arteriosa, insieme all'esecuzione di un ecocardiogramma per valutare meglio la funzione cardiaca, in base ai risultati dei prossimi esami. Se dovessero comparire nuovi sintomi o se la condizione dovesse peggiorare, è previsto un controllo anticipato."
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
-* category.coding.code = #TAC
-* category.coding.system = $class-code
-* category.coding.display = "Taccuino"
-* context.event.coding.code = #P99
+* category.coding = $cs-class-code#TAC "Taccuino"
+* context.event.coding = $cs_accessRules#P99 "Oscuramento del documento"

@@ -50,7 +50,7 @@ Id: vs-access
 Title: "Atti clinici e regole di accesso"
 Description: "Atti clinici e regole di accesso"
 * ^experimental = false
-* codes from system $CS_accessRules
+* codes from system $cs_accessRules
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -61,3 +61,19 @@ Description: "Loinc"
 * ^experimental = false
 * codes from system $CS_Loinc
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsCND
+Id: vs-it-cnd
+Title: "Valuset Classificazione Nazionale dei Dispositivi Medici (CND)"
+Description: "Classificazione Nazionale dei Dispositivi Medici (CND)"
+* ^experimental = false
+* codes from system $cs-cnd
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsclassCode
+Id: vs-it-class-code
+Title: "Classe documento"
+Description: "Valuset che rappresenta la classe a cui il documento appartiene"
+* ^experimental = false
+* codes from system $cs-class-code

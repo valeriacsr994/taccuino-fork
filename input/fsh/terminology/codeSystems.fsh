@@ -131,4 +131,31 @@ Description: "Codici LOINC relativi ai parametri vitali"
 * #56831-1 "Problema, sintomi e segni associati"
 * #3043-7 "Trigliceridi"
 * #8691-8 "Viaggio"
-			
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CodeSystem: CsCND
+Id: cnd
+Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
+Description: "Codici che classificano il tipo di dispositivo (CND)"
+* ^experimental = false
+* ^status = #active
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
+
+* #J010501 "Defibrillatori Impiantabili Sottocutanei"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CodeSystem: CsClassCode
+Id: class-code
+Title: "Codice per la classe a cui il documento appartiene."
+Description: "Classe a cui il documento appartiene."
+* ^experimental = false
+* ^status = #active
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+
+* #TAC "Taccuino"

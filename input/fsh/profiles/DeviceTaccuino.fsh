@@ -12,7 +12,7 @@ Description: "Rappresentazione dei dispositivi sanitari quali protesi impiantate
 * type ^short = "Tipologia del dispositivo sanitario"
 * type 1..
 * type.coding 1..
-* type.coding.system = $device-type
+* type.coding.system from $vs-cnd (extensible)
 * manufacturer ^short = "Produttore del dispositivo sanitario"
 * identifier ^short = "Numero identificativo del dispositivo sanitario"
 * manufactureDate ^short = "Data di produzione o installazione del dispositivo sanitario"

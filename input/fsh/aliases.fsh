@@ -5,9 +5,10 @@ Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $vs-unitOfMeasure = http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $unitOfMeasure = http://unitsofmeasure.org
-Alias: $device-type = urn:oid:2.16.840.1.113883.2.9.6.1.48
-Alias: $class-code = urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5
-
+Alias: $cs-class-code = http://hl7.it/fhir/taccuino/CodeSystem/class-code
+Alias: $vs-class-code = http://hl7.it/fhir/taccuino/ValueSet/vs-it-class-code
+Alias: $cs-cnd = http://hl7.it/fhir/taccuino/CodeSystem/cnd
+Alias: $vs-cnd = http://hl7.it/fhir/taccuino/ValueSet/vs-it-cnd
 
 Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $sct = http://snomed.info/sct
@@ -41,7 +42,6 @@ Alias: $vs-doc-type = http://hl7.org/fhir/ValueSet/c80-doc-typecodes
 Alias: $cs-typeCode = http://hl7.it/fhir/taccuino/CodeSystem/type-code
 Alias: $vs-typeCode = http://hl7.it/fhir/taccuino/ValueSet/vs-typeCode
 Alias: $tipoIdentificatore = https://www.hl7.it/fhir/terminology/ValueSet/VstipoIdentificatore
-Alias: $Patient-it-base = http://hl7.it/fhir/StructureDefinition/Patient-it-base
 Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $istat-cittadinanza = https://www.hl7.it/fhir/terminology/ValueSet/istat-cittadinanza
@@ -66,7 +66,5 @@ Alias: $vs-obs-category = http://hl7.org/fhir/ValueSet/observation-category
 Alias: $ICD9 = http://fhir.infoway-inforoute.ca/io/psca/ValueSet/ICD9CM
 Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
-Alias: $CS_accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
+Alias: $cs_accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
 Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
-
-Alias: $Patient-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab

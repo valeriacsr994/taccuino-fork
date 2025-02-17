@@ -167,6 +167,9 @@ groups:
       - CodeSystem/no-allergies
       - CodeSystem/type-code
       - CodeSystem/access-rules
+      - CodeSystem/loinc-obs
+      - CodeSystem/cnd
+      - CodeSystem/class-code
 
   TaccuinoVSTerminology:
     name: Terminology - ValueSets  
@@ -178,6 +181,10 @@ groups:
       - ValueSet/vs-typeCode
       - ValueSet/vs-ASL
       - ValueSet/vs-access
+      - ValueSet/vs-loinc-obs
+      - ValueSet/vs-it-cnd
+      - ValueSet/vs-it-class-code
+
 
 
 # # ╭────────────────────────────────────────────index.md────────────────────────────────────────────╮
