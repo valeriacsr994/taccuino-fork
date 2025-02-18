@@ -17,7 +17,7 @@ Description: "Esempio di un'osservazione: segni e sintomi"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Annotazioni-Febbre
 InstanceOf: ObservationAnnotazioniTaccuino
-Title: "Observation - Note Generali"
+Title: "Observation - Note Generali (Febbre)"
 Usage: #example
 Description: "Esempio di un'osservazione: note generali riguardanti la febbre dell'assistito"
 
@@ -33,11 +33,11 @@ Description: "Esempio di un'osservazione: note generali riguardanti la febbre de
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Annotazioni-Pressione
 InstanceOf: ObservationAnnotazioniTaccuino
-Title: "Observation - Note Generali"
+Title: "Observation - Note Generali (Calo di pressione)"
 Usage: #example
 Description: "Esempio di un'osservazione: note generali relative ad un calo di pressione esperito dall'assistito"
 
-* id = "0170d3be-62p7-47cb-f7a2-7bf967ea1164" 
+* id = "626a554d-616d-46d5-8e91-cb6b4bbff785" 
 * status = #final
 * extension[dataRegistrazione].valueDate = "2025-02-09"
 * effectiveDateTime = "2025-02-09"

@@ -184,9 +184,10 @@ Description: "Esempio di un'osservazione: emoglobina glicata"
 * valueQuantity.unit = "mmol/mol"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Instance: Observation-Taccuino-Trigliceridi-alti
 InstanceOf: ObservationTrigliceridiTaccuino
-Title: "Observation - Trigliceridi"
+Title: "Observation - Trigliceridi elevati"
 Usage: #example
 Description: "Esempio di un'osservazione: trigliceridi oltre il range"
 
@@ -204,6 +205,29 @@ Description: "Esempio di un'osservazione: trigliceridi oltre il range"
 * valueQuantity.system = $unitOfMeasure
 * valueQuantity.code = #mg/dL
 * note.text = "Oggi è stata effettuata la misurazione dei trigliceridi, e il valore risulta essere 250 mg/dL, che supera il limite raccomandato dalle linee guida. Continuo a seguire il piano alimentare e l’attività fisica consigliati dal medico. Se la situazione non migliora, discuterò con lui eventuali passi successivi."
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Instance: Observation-Taccuino-Trigliceridi
+InstanceOf: ObservationTrigliceridiTaccuino
+Title: "Observation - Trigliceridi"
+Usage: #example
+Description: "Esempio di un'osservazione: trigliceridi"
+
+* status = #final
+* code = $CS_Loinc#3043-7
+* code.coding.display = "Trigliceridi"
+* extension[dataRegistrazione].valueDate = "2025-01-29"
+* performer = Reference(Practitioner-Taccuino-Esempio)
+* subject = Reference(Patient-Taccuino-Esempio)
+* category = $observation-category#vital-signs
+* valueQuantity.value = 150 
+* effectiveDateTime = "2025-01-29"
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.system = $unitOfMeasure
+* valueQuantity.code = #mg/dL
+
+* note.text = "La misurazione dei trigliceridi è stata effettuata oggi. Il valore risulta essere 150 mg/dL, che rientra nella fascia normale secondo le linee guida. Continuo a monitorare la mia dieta e i livelli di attività fisica come consigliato dal medico."
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-TemperaturaCorporea

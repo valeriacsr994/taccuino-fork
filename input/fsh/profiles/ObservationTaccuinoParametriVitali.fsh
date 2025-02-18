@@ -172,7 +172,6 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-//
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -314,13 +313,11 @@ Description: "Rappresentazione dell'osservazione relativa ai trigliceridi tramit
 
 * effectiveDateTime ^short = "Data di registrazione dei Trigliceridi"
 * effectiveDateTime 1..1
-
 * valueQuantity ^short = "Risultato della misurazione"
 * valueQuantity 1..1
 * valueQuantity.unit ^short = "Unità di misura" 
 * valueQuantity.unit 1..1
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
-//
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

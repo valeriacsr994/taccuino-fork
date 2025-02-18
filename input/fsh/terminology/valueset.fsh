@@ -46,8 +46,8 @@ Description: "Atti clinici e regole di accesso"
 
 ValueSet: VsLoinc
 Id: vs-loinc-it
-Title: "Loinc"
-Description: "Loinc"
+Title: "Codici LOINC"
+Description: "Codici LOINC italiano"
 * ^experimental = false
 * codes from system $CS_Loinc
 

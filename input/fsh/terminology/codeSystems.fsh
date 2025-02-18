@@ -53,8 +53,8 @@ Description: "Atti clinici e regole di accesso"
 
 CodeSystem: CsLoincIT
 Id: cs-loinc-it
-Title: "Codici LOINC relativi ai parametri vitali"
-Description: "Codici LOINC relativi ai parametri vitali"
+Title: "Codici LOINC"
+Description: "Codici LOINC italiano"
 * ^experimental = false
 * ^status = #active
 * ^language = #it-IT

@@ -32,11 +32,11 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * context.event ^short = "Regole di accesso" 
 
-* context.event.coding.system from $vs-accessRules
+* context.event.coding.system from $vs-accessRules (required)
 
 * category ^short = "Tipo documento (alto livello)"
 * category.coding.system from $vs-class-code 
-* category.coding.code = #TAC
+* category.coding.code = #TAC (exactly)
 * category.coding.display = "Taccuino"
 
 * content.attachment.url ^short = "Identificativo repository"
