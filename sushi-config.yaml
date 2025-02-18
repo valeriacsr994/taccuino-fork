@@ -165,9 +165,8 @@ groups:
     resources:
       - CodeSystem/aifa-aic
       - CodeSystem/no-allergies
-      - CodeSystem/type-code
       - CodeSystem/access-rules
-      - CodeSystem/loinc-obs
+      - CodeSystem/cs-loinc-it
       - CodeSystem/cnd
       - CodeSystem/class-code
 
@@ -178,10 +177,9 @@ groups:
       - ValueSet/aifa-aic
       - ValueSet/vs-no-allergies
       - ValueSet/vs-NullFlavor
-      - ValueSet/vs-typeCode
       - ValueSet/vs-ASL
       - ValueSet/vs-access
-      - ValueSet/vs-loinc-obs
+      - ValueSet/vs-loinc-it
       - ValueSet/vs-it-cnd
       - ValueSet/vs-it-class-code
 

@@ -19,7 +19,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * type 1..1
 * type ^short = "Tipologia di documento (medio livello)"
-* type from $vs-typeCode (required)
+* type from $VS_Loinc (required)
 
 * subject only Reference (PatientTaccuino or Device)
 
@@ -36,7 +36,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * category ^short = "Tipo documento (alto livello)"
 * category.coding.system from $vs-class-code 
-* category.coding.code = #TAC (exactly)
+* category.coding.code = #TAC
 * category.coding.display = "Taccuino"
 
 * content.attachment.url ^short = "Identificativo repository"

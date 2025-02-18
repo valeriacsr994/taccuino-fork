@@ -27,16 +27,6 @@ Description: "HL7 Iternational - Codici che descrivono perchè non è presente u
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ValueSet: VsTypeCode
-Id: vs-typeCode
-Title: "Tipologia di documento"
-Description: "Valuset che raccoglie i codici per indicare la tipologia di documento"
-* ^experimental = false
-* codes from system $cs-typeCode
-
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 ValueSet: VsASL
 Id: vs-ASL
 Title: "MDS - ASL"
@@ -50,12 +40,12 @@ Id: vs-access
 Title: "Atti clinici e regole di accesso"
 Description: "Atti clinici e regole di accesso"
 * ^experimental = false
-* codes from system $cs_accessRules
+* codes from system $cs-accessRules
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ValueSet: VsLoinc
-Id: vs-loinc-obs
+Id: vs-loinc-it
 Title: "Loinc"
 Description: "Loinc"
 * ^experimental = false

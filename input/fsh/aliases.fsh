@@ -15,8 +15,8 @@ Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $vs-atc = https://www.hl7.it/fhir/terminology/ValueSet/who-atc
 Alias: $aic = http://hl7.it/fhir/taccuino/CodeSystem/aifa-aic
-Alias: $CS_Loinc = http://hl7.it/fhir/taccuino/CodeSystem/loinc-obs
-Alias: $VS_Loinc = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-obs
+Alias: $CS_Loinc = http://hl7.it/fhir/taccuino/CodeSystem/cs-loinc-it
+Alias: $VS_Loinc = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-it
 
 Alias: $vs-aifa-aic = http://hl7.it/fhir/taccuino/ValueSet/aifa-aic
 Alias: $cs-no-allergies = http://hl7.it/fhir/taccuino/CodeSystem/no-allergies
@@ -39,8 +39,6 @@ Alias: $encounterCode = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
 Alias: $cs-encounterCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $reason = http://hl7.org/fhir/ValueSet/encounter-reason
 Alias: $vs-doc-type = http://hl7.org/fhir/ValueSet/c80-doc-typecodes
-Alias: $cs-typeCode = http://hl7.it/fhir/taccuino/CodeSystem/type-code
-Alias: $vs-typeCode = http://hl7.it/fhir/taccuino/ValueSet/vs-typeCode
 Alias: $tipoIdentificatore = https://www.hl7.it/fhir/terminology/ValueSet/VstipoIdentificatore
 Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -66,5 +64,5 @@ Alias: $vs-obs-category = http://hl7.org/fhir/ValueSet/observation-category
 Alias: $ICD9 = http://fhir.infoway-inforoute.ca/io/psca/ValueSet/ICD9CM
 Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
-Alias: $cs_accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
+Alias: $cs-accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
 Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
