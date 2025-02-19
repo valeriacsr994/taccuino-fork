@@ -13,12 +13,12 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * author = Reference (Organization-Taccuino-Esempio)
 * status = #current
 * description = "Esenzioni per prestazioni"
-* category.coding.system = $cs-class-code
-* category.coding.code = #TAC 
-* category.coding.display = "Taccuino"
-* context.event.coding.system = $cs-accessRules
-* context.event.coding.code = #P99 
-* context.event.coding.display = "Oscuramento del documento"
+* category[+].coding[+].system = "http://hl7.it/fhir/taccuino/CodeSystem/class-code"
+* category[=].coding[=].code = #TAC 
+* category[=].coding[=].display = "Taccuino"
+* context.event[+].coding[+].system = "http://hl7.it/fhir/taccuino/CodeSystem/access-rules"
+* context.event[=].coding[=].code = #P99 
+* context.event[=].coding[=].display = "Oscuramento del documento"
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
 
@@ -26,8 +26,8 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 
 Instance: DocumentReference-Taccuino-Esempio02
 InstanceOf: DocumentReferenceTaccuino
-Title : "Documento Allegato - Referto specialistico di visita cardiologica ambulatoriale"
-Description: "Esempio di referto specialistico relativo a visita cardiologica ambulatoriale"
+Title : "Documento Allegato - Referto specialistico ambulatoriale di una visita cardiologica"
+Description: "Esempio di referto specialistico ambulatoriale relativo ad una visita cardiologica"
 
 
 * id = "ecce9788-1666-4e4d-8e75-ae98e3cb7fa1"
@@ -40,11 +40,11 @@ Description: "Esempio di referto specialistico relativo a visita cardiologica am
 * author = Reference (Practitioner-Taccuino-Esempio)
 * status = #current
 * description = "Durante la visita, ho riferito al medico di avvertire episodi di affaticamento, ma senza sintomi gravi come dolore toracico o difficoltà respiratorie. Il medico mi ha spiegato l'importanza di monitorare regolarmente la pressione arteriosa e migliorare lo stile di vita. Mi ha anche suggerito di monitorare la pressione a casa e di tornare per un follow-up tra sei mesi per un controllo della pressione arteriosa, insieme all'esecuzione di un ecocardiogramma per valutare meglio la funzione cardiaca, in base ai risultati dei prossimi esami. Se dovessero comparire nuovi sintomi o se la condizione dovesse peggiorare, è previsto un controllo anticipato."
-* category.coding.system = $cs-class-code
-* category.coding.code = #TAC 
-* category.coding.display = "Taccuino"
-* context.event.coding.system = $cs-accessRules
-* context.event.coding.code = #P99 
-* context.event.coding.display = "Oscuramento del documento"
+* category[+].coding[+].system = $cs-class-code
+* category[=].coding[=].code = #TAC 
+* category[=].coding[=].display = "Taccuino"
+* context.event[+].coding[+].system = $cs-accessRules
+* context.event[=].coding[=].code = #P99 
+* context.event[=].coding[=].display = "Oscuramento del documento"
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
