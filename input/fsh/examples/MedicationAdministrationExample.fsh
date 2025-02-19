@@ -28,7 +28,7 @@ Usage: #example
 
 Instance: MedicationAdministration-Taccuino-Esempio2
 InstanceOf: MedicationAdministrationTaccuino
-Title: "MedicationAdministration assunzione Paracetamolo"
+Title: "MedicationAdministration assunzione Zitromax"
 Description: "Esempio di assunzione del farmaco ZITROMAX 3CPR RIV 500MG da parte di un paziente"
 Usage: #example
 
