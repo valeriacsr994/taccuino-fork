@@ -10,7 +10,6 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
 * extension[dataRegistrazione].valueDateTime
 
-
 * date 1..1
 * date ^short = "Data di emissione del documento"
 
@@ -32,7 +31,6 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 
 * context.event ^short = "Regole di accesso" 
-
 * context.event.coding.system from $vs-accessRules (required)
 
 * category 1..1

@@ -55,7 +55,7 @@ Description: "Codici LOINC italiano"
 
 ValueSet: VsCND
 Id: vs-it-cnd
-Title: "Valuset Classificazione Nazionale dei Dispositivi Medici (CND)"
+Title: "Classificazione Nazionale dei Dispositivi Medici (CND)"
 Description: "Classificazione Nazionale dei Dispositivi Medici (CND)"
 * ^experimental = false
 * codes from system $cs-cnd
