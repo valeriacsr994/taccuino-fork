@@ -14,11 +14,13 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 * effectivePeriod.start ^short = "Inizio dell'assunzione del farmaco/integratore"
 * effectivePeriod.end ^short = "Fine dell'assunzione del farmaco/integratore"
 // TODO: capire quali dizionari utilizzare per l'identificazione del farmaco e quali codici mantenere
+
+* medication[x] only CodeableConcept
 * medicationCodeableConcept.coding 1.. 
   * system 1.. 
   * code 1.. 
   * display 
-* medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
 * medicationCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * medicationCodeableConcept.coding ^slicing.ordered = false
 * medicationCodeableConcept.coding ^slicing.rules = #open
