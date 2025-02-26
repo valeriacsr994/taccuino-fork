@@ -18,12 +18,12 @@ Description: "Nessuna allergia oppure agente non noto"
 * codes from system $cs-no-allergies
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsNullflavor
-Id: vs-NullFlavor
-Title: "NullFlavor"
-Description: "HL7 Iternational - Codici che descrivono perchè non è presente un valore valido"
-* ^experimental = false
-* codes from system $v3-NullFlavor
+// ValueSet: VsNullflavor
+// Id: vs-NullFlavor
+// Title: "NullFlavor"
+// Description: "HL7 Iternational - Codici che descrivono perchè non è presente un valore valido"
+// * ^experimental = false
+// * codes from system $v3-NullFlavor
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

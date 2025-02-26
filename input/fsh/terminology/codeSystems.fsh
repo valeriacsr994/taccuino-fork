@@ -4,6 +4,7 @@ Title: "AIFA - AIC"
 Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
 * ^experimental = false
 * ^status = #active
+* ^language = #it-IT
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.5"
@@ -20,10 +21,11 @@ Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
 
 CodeSystem: CsNoAllergiesInfo
 Id: no-allergies
-Title: "No allergies"
+Title: "No Allergies"
 Description: "Nessuna allergia oppure agente non noto"
 * ^experimental = false
 * ^status = #active
+* ^language = #it-IT
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.5.1150.1"
@@ -42,6 +44,7 @@ Title: "Atti clinici e regole di accesso"
 Description: "Atti clinici e regole di accesso"
 * ^experimental = false
 * ^status = #active
+* ^language = #it-IT
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.3"
@@ -126,6 +129,7 @@ Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
 Description: "Codici che classificano il tipo di dispositivo (CND)"
 * ^experimental = false
 * ^status = #active
+* ^language = #it-IT
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
@@ -136,10 +140,11 @@ Description: "Codici che classificano il tipo di dispositivo (CND)"
 
 CodeSystem: CsClassCode
 Id: class-code
-Title: "Codice per la classe a cui il documento appartiene."
-Description: "Classe a cui il documento appartiene."
+Title: "Classe documento"
+Description: "Classe a cui il documento appartiene"
 * ^experimental = false
 * ^status = #active
+* ^language = #it-IT
 * ^caseSensitive = true
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"

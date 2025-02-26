@@ -20,6 +20,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * type ^short = "Tipologia di documento (medio livello)"
 * type from $VS_Loinc (required)
 
+* subject 1..1
 * subject only Reference (PatientTaccuino or Device)
 
 * author only Reference (Practitioner or PractitionerRole or OrganizationTaccuino or Device)

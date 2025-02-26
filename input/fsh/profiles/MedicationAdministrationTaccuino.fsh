@@ -16,6 +16,7 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 // TODO: capire quali dizionari utilizzare per l'identificazione del farmaco e quali codici mantenere
 
 * medication[x] only CodeableConceptTaccuino
+* medication[x] ^short = "Farmaco/integratore assunto o somministrato"
 
 // TODO: valutare se inserire i dizionari per la codifica delle informazioni, anche per Dossier Farmaceutico
 * dosage
@@ -24,4 +25,5 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
   * dose ^short = "Dose"
   * rate[x] ^short = "Frequenza di assunzione"
 
-
+* subject 1..1
+* subject only Reference(PatientTaccuino)

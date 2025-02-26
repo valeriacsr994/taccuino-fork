@@ -13,6 +13,6 @@ Description: "Esempio di dispositivo medico (defibrillatore cardiaco) impiantato
 * type.coding.system = $vs-cnd
 * type.coding.code = #J010501 
 * type.coding.display = "Defibrillatori Impiantabili Sottocutanei"
-
+* patient = Reference(Patient-Taccuino-Esempio)
 
 

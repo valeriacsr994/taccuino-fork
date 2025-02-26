@@ -16,3 +16,5 @@ Description: "Rappresentazione della procedura di impianto protesico tramite il 
 * performer.actor ^short = "Medico che ha effettuato l'impianto del dispositivo"
 * performer.actor only Reference(Practitioner or PractitionerRole)
 * performer.onBehalfOf only Reference(OrganizationTaccuino)
+* subject 1..1
+* subject only Reference(PatientTaccuino)

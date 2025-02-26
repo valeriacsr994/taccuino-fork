@@ -2,7 +2,7 @@ Profile: CodeableConceptTaccuino
 Parent: CodeableConcept
 Id: codeableConcept-taccuino
 Title: "Codeable Concept (Taccuino)"
-Description: "This profile represents the constraint applied to the CodeableConcept data type by the International Patient Summary (IPS) FHIR Implementation Guide to use the Coding-uv-ips data type profile."
+Description: "Questo profilo rappresenta le limitazioni applicate al tipo di dato CodeableConcept per la IG Taccuino Personale dell'Assistito."
 
 //* ^short = "Descrizione testuale del farmaco/integratore"
 // * code 1.. 

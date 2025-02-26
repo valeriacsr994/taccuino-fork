@@ -22,3 +22,4 @@ Description: "Esempio di contatto/incontro per un ASL"
 
 * serviceProvider = Reference(Organization-Taccuino-Esempio2)
 
+* subject = Reference(Patient-Taccuino-Esempio)

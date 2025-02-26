@@ -9,7 +9,6 @@ Usage: #example
 
 * extension[dataRegistrazione].valueDate = "2024-02-27"
 
-* contained[0] = Medication-Taccuino-Esempio
 * status = #in-progress
 //* medicationReference = Reference(Medication-Taccuino-Esempio)
 
@@ -26,7 +25,7 @@ Usage: #example
 * dosage.route = $sct#26643006  "Oral use"
 * dosage.dose = 1 'PILL' "Pill"
 * dosage.dose.system = $odf
-
+* subject = Reference(Patient-Taccuino-Esempio)
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: MedicationAdministration-Taccuino-Esempio2
@@ -40,7 +39,6 @@ Usage: #example
 
 * extension[dataRegistrazione].valueDate = "2025-02-27"
 
-* contained[0] = Medication-Taccuino-Esempio2
 * status = #in-progress
 * medicationCodeableConcept = $aic#027860042 "ZITROMAX 3CPR RIV 500MG"
 //* medicationReference = Reference(Medication-Taccuino-Esempio2)
@@ -55,3 +53,4 @@ Usage: #example
 * dosage.route = $sct#26643006  "Oral use"
 * dosage.dose = 2 'PILL' "Pill"
 * dosage.dose.system = $odf
+* subject = Reference(Patient-Taccuino-Esempio)
