@@ -16,7 +16,8 @@ Usage: #example
 * subject = Reference(Patient-Taccuino-Esempio)
 * effectivePeriod.start = "2024-02-20T14:30:00+01:00"
 * effectivePeriod.end = "2024-02-20T14:35:00+01:00"
-* medicationCodeableConcept = $aic#036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
+//* medicationCodeableConcept = $aic#036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
+* medication[x].coding[AIC] = $aic#036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
 
 * performer.actor = Reference(Practitioner-Taccuino-Esempio)
 * reasonCode = $reason-medication-given#b "Given as Ordered"

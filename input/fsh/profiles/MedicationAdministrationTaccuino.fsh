@@ -15,25 +15,8 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 * effectivePeriod.end ^short = "Fine dell'assunzione del farmaco/integratore"
 // TODO: capire quali dizionari utilizzare per l'identificazione del farmaco e quali codici mantenere
 
-* medication[x] only CodeableConcept
-* medicationCodeableConcept.coding 1.. 
-  * system 1.. 
-  * code 1.. 
-  * display 
-* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
-* medicationCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* medicationCodeableConcept.coding ^slicing.ordered = false
-* medicationCodeableConcept.coding ^slicing.rules = #open
-* medicationCodeableConcept.coding contains
-    ATC 0..1 and AIC 0..1 and
-    gruppoEquivalenza 0..1  and eccezioni 0..1
-* medicationCodeableConcept.coding[ATC] 
-* medicationCodeableConcept.coding[ATC] ^sliceName = "ATC"
-* medicationCodeableConcept.coding[ATC] from $vs-atc
-* medicationCodeableConcept.coding[AIC] from $vs-aifa-aic
-* medicationCodeableConcept.coding[gruppoEquivalenza] from  $vs-gruppo-equivalenza
-* medicationCodeableConcept.coding[eccezioni] from $vs-NullFlavor
-* medicationCodeableConcept.text ^short = "Descrizione testuale del farmaco/integratore"
+* medication[x] only CodeableConceptTaccuino
+
 // TODO: valutare se inserire i dizionari per la codifica delle informazioni, anche per Dossier Farmaceutico
 * dosage
   * site ^short = "Sito di somministrazione"
