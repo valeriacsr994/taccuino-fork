@@ -2,7 +2,7 @@ Logical: DispositivoMedico
 Title: "Dispositivo medico"
 Description: "Informazioni sul dispositivo medico ad uso dell'assistito"
 Characteristics: #can-be-target
-* identificativo 1..1 Identifier "Identificatico del dispositivo medico"
+* identificativo 1..1 Identifier "Identificativo del dispositivo medico"
 * produttore 0..1 string "Produttore del dispositivo medico"
 * nome 1..* string "Nome del dispositivo medico" // Nome commerciale oppure nome specialistico del DM
 * tipologia 1..1 code "Tipologia di dispositivo medico"

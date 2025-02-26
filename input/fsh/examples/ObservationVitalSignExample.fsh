@@ -26,9 +26,9 @@ Description: "Esempio di un'osservazione: altezza"
 
 Instance: Observation-Taccuino-CirconferenzaVita
 InstanceOf: ObservationCirconferenzaVitaTaccuino
-Title: "Observation - Circoferenza Vita"
+Title: "Observation - Circonferenza Vita"
 Usage: #example
-Description: "Esempio di un'osservazione: circoferenza vita"
+Description: "Esempio di un'osservazione: circonferenza vita"
 
 * id = "ebb233a8-964f-4f36-a850-f58c6aa27586"
 * extension[dataRegistrazione].valueDate = "2024-07-27"

@@ -6,7 +6,7 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * ^status = #active
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $CS_Loinc#48767-8
-* code.coding.display = "Annotazioni e comment"
+* code.coding.display = "Annotazioni e commenti"
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

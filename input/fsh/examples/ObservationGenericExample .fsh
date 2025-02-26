@@ -28,7 +28,7 @@ Description: "Esempio di un'osservazione: note generali riguardanti la febbre de
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * code = $CS_Loinc#48767-8
-* code.coding.display = "Annotazioni e comment"
+* code.coding.display = "Annotazioni e commenti"
 * valueString = "Oggi ho avuto una leggera febbre (37.8°C) e qualche dolore muscolare.Continuo a monitorare la temperatura. Se la febbre non passa, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Annotazioni-Pressione
@@ -44,7 +44,7 @@ Description: "Esempio di un'osservazione: note generali relative ad un calo di p
 * performer = Reference(Patient-Taccuino-Esempio2)
 * subject = Reference(Patient-Taccuino-Esempio2)
 * code = $CS_Loinc#48767-8
-* code.coding.display = "Annotazioni e comment"
+* code.coding.display = "Annotazioni e commenti"
 * valueString = "Oggi ho avuto un improvviso calo di pressione, con vertigini e un po' di stanchezza. Mi sono riposato e ho bevuto acqua, e al momento la situazione sembra migliorare. Continuo a monitorare i sintomi e, se il malessere persiste o si ripresenta, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Eventi
