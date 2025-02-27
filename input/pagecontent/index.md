@@ -1,4 +1,8 @@
 
+<p style="color:blue; font-weight: bold; font-size: 14px;">Avvertenza</p>
+
+La presente guida è *attualmente* in versione **CI-Build** (Continuous Integration Build), che indica una versione in fase di sviluppo continuo, sottoposta a integrazioni e test regolari. Durante questa fase, il contenuto è soggetto a modifiche frequenti e aggiornamenti periodici, al fine di garantire l'accuratezza e la coerenza del materiale. Successivamente, avrà inizio la fase di **ballottaggio**, che segnerà l'avvio della preparazione per la versione finale della guida.
+
 ### Scopo
 
 Questa guida ha lo scopo di definire i profili [HL7 FHIR](https://hl7.org/fhir/R4B) da utilizzare per l'implementazione del Taccuino personale dell'assistito, il quale appartiene al nucleo minimo dei documenti del Fascicolo Sanitario Elettronico (FSE).
@@ -12,7 +16,7 @@ I dati e i documenti inseriti nel Taccuino personale dell’assistito sono infor
 L'Implementation Guide per il Taccuino personale dell'assistito fornisce le linee guida tecniche per l'adozione dello standard FHIR nella gestione dei dati inseriti nel Taccuino all'interno dell'FSE.
 La guida facilita l'interoperabilità tra i sistemi sanitari regionali e nazionali, garantendo la rappresentazione univoca, lo scambio e l'archiviazione delle informazioni personali del paziente.
 
-Il cittadino, o a un suo delegato opportunamente autorizzato, avrà la possibilità di **caricare, visualizzare e cancellare** nel proprio FSE documenti relativi ai percorsi di cura personali. I documenti potranno essere sia scannerizzati sia nativamente elettronici e saranno caricati. L'obiettivo principale del Taccuino personale è fornire uno spazio sicuro e accessibile per integrare la propria storia clinica con documenti personali non ancora presenti nel FSE, provenienti da strutture private o pubbliche, a supporto dei percorsi di cura.
+Il cittadino, o un suo delegato opportunamente autorizzato, avrà la possibilità di **caricare, visualizzare e cancellare** nel proprio FSE documenti relativi ai percorsi di cura personali. I documenti potranno essere sia scannerizzati sia nativamente elettronici e saranno caricati. L'obiettivo principale del Taccuino personale è fornire uno spazio sicuro e accessibile per integrare la propria storia clinica con documenti personali non ancora presenti nel FSE, provenienti da strutture private o pubbliche, a supporto dei percorsi di cura.
 
 <figure style="text-align: center;">
   <img src="funzionalitaTaccuinorid.png" />

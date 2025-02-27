@@ -2,7 +2,7 @@ Logical: DocumentoAllegato
 Title: "Documento allegato"
 Description: "Informazioni relative al documento allegato da parte dell'assistito"
 Characteristics: #can-be-target
-* identificativo 1..1 Identifier "Identificatico univoco del documento"
+* identificativo 1..1 Identifier "Identificativo univoco del documento"
 * dataCreazione 1..1 dateTime "Data di creazione dell'informazione a sistema"
 * dataEmissione 1..1 dateTime "Data di emissione del documento"
 * tipologia 1..1 code "Tipologia di documento"

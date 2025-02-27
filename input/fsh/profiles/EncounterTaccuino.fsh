@@ -1,6 +1,6 @@
 Profile: EncounterTaccuino
 Parent: Encounter
-Id: Encounter-it-Taccuino
+Id: encounter-it-Taccuino
 Title:    "Encounter - Taccuino personale dell'assistito"
 Description: "Rappresentazione dei contatti tra il paziente e le strutture sanitarie tramite il profilo Encounter"
 
@@ -23,3 +23,5 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 * reasonCode.coding.system from $reason (extensible)
 * participant.individual ^short = "Professionista sanitario coinvolto nel contatto"
 * participant.individual only Reference(Practitioner or PractitionerRole)
+* subject 1..1
+* subject only Reference (PatientTaccuino)

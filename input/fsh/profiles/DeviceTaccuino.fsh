@@ -1,6 +1,6 @@
 Profile: DeviceTaccuino
 Parent: Device
-Id: Device-it-Taccuino
+Id: device-it-taccuino
 Title:    "Device - Taccuino personale dell'assistito"
 Description: "Rappresentazione dei dispositivi sanitari quali protesi impiantate o d'ausilio tramite il profilo Device"
 
@@ -12,9 +12,11 @@ Description: "Rappresentazione dei dispositivi sanitari quali protesi impiantate
 * type ^short = "Tipologia del dispositivo sanitario"
 * type 1..
 * type.coding 1..
-* type.coding.system = $device-type
+* type.coding.system from $vs-cnd (extensible)
 * manufacturer ^short = "Produttore del dispositivo sanitario"
 * identifier ^short = "Numero identificativo del dispositivo sanitario"
 * manufactureDate ^short = "Data di produzione o installazione del dispositivo sanitario"
 * expirationDate ^short = "Data di sostituzione consigliata del dispositivo sanitario"
 * owner ^short = "Struttura che ha fornito la documentazione relativa al dispositivo medico"
+* patient 1..1
+* patient only Reference(PatientTaccuino)

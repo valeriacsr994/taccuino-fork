@@ -1,5 +1,5 @@
 Logical: OsservazionePersonale
-Title: "Osservazione Peronale"
+Title: "Osservazione Personale"
 Description: "Informazioni riguardanti i dati, clinici e non, rilevati relativi all'assistito"
 Characteristics: #can-be-target
 
