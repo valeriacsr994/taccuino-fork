@@ -1,5 +1,5 @@
 Extension: BirthPlaceIta
-Parent: $patient-birthPlace
+//Parent: $patient-birthPlace
 Id: birth-place-ita
 Title: "Address Birth Place (Patient)"
 Description: "Definizione dell'indirizzo base per la descrizione del luogo di nascita."
@@ -11,5 +11,5 @@ Title: "Codice comune e/o stato di nascita (Patient)"
 Description: "Codice comune e/o stato di nascita."
 * ^context.type = #element
 * ^context.expression = "Patient"
-* ^url = "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace"
+* ^url = "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace|0.1.1"
 * value[x] only CodeableConcept

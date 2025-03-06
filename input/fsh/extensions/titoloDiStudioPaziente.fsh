@@ -9,7 +9,7 @@ Description: "Estensione per gestire il Titolo di studio del paziente come Codea
 * ^jurisdiction = urn:iso:std:iso:3166#IT
 * . ^short = "Titolo di Studio del paziente"
 * . ^definition = "Estensione per gestire il Titolo di studio del paziente come CodeableConcept."
-* ^url = "http://hl7.it/fhir/StructureDefinition/patient-qualification-it"
+* ^url = "http://hl7.it/fhir/StructureDefinition/patient-qualification-it|0.1.1"
 * ^context.type = #element
 * ^context.expression = "Patient"
 * value[x] only CodeableConcept

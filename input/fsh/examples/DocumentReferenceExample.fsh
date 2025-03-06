@@ -13,9 +13,7 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * author = Reference (Organization-Taccuino-Esempio)
 * status = #current
 * description = "Esenzioni per prestazioni"
-* category[+].coding[+].system = "http://hl7.it/fhir/taccuino/CodeSystem/class-code"
-* category[=].coding[=].code = #TAC 
-* category[=].coding[=].display = "Taccuino"
+* category.coding = $cs-class-code#TAC "Taccuino"
 * context.event[+].coding[+].system = "http://hl7.it/fhir/taccuino/CodeSystem/access-rules"
 * context.event[=].coding[=].code = #P99 
 * context.event[=].coding[=].display = "Oscuramento del documento"
