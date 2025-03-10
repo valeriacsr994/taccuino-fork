@@ -250,30 +250,30 @@ Description: "Esempio di un'osservazione: temperatura corporea"
 * valueQuantity.code = #Cel
 * note.text = "Oggi ho misurato una temperatura di 38.5°C. Sto avvertendo un po' di malessere e un leggero brivido. Ho preso del paracetamolo per abbassare la febbre e cercherò di riposare. Monitorerò la temperatura nelle prossime ore e, se non migliora, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-Taccuino-PressioneSanguigna
-InstanceOf: ObservationPressioneSanguignaTaccuino
-Title: "Observation - Pressione Sanguigna"
+Instance: Observation-Taccuino-PressioneArteriosa
+InstanceOf: ObservationPressioneArteriosaTaccuino
+Title: "Observation - Pressione Arteriosa"
 Usage: #example
-Description: "Esempio di un'osservazione: pressione sanguigna"
+Description: "Esempio di un'osservazione: pressione arteriosa"
 
 * status = #final
 * code = $CS_Loinc#85354-9
-* code.coding.display = "Pressione sanguigna, panel con tutti i figli opzionali"
+* code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
 * extension[dataRegistrazione].valueDate = "2025-01-07"
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
 * effectiveDateTime = "2025-01-05"
-* component[0].code = $CS_Loinc#8462-4 "Diastolica intravascolare"
-* component[0].valueQuantity.value = 77
-* component[0].valueQuantity.unit = "mmHg"
-* component[0].valueQuantity.system = $unitOfMeasure
-* component[0].valueQuantity.code = #mm[Hg]
-* component[1].code = $CS_Loinc#8480-6 "Sistolica intravascolare"
-* component[1].valueQuantity.value = 165
-* component[1].valueQuantity.unit = "mmHg"
-* component[1].valueQuantity.system = $unitOfMeasure
-* component[1].valueQuantity.code = #mm[Hg]
+* component[diastolica].code = $CS_Loinc#8462-4 "Diastolica intravascolare"
+* component[diastolica].valueQuantity.value = 77
+* component[diastolica].valueQuantity.unit = "mmHg"
+* component[diastolica].valueQuantity.system = $unitOfMeasure
+* component[diastolica].valueQuantity.code = #mm[Hg]
+* component[sistolica].code = $CS_Loinc#8480-6 "Sistolica intravascolare"
+* component[sistolica].valueQuantity.value = 165
+* component[sistolica].valueQuantity.unit = "mmHg"
+* component[sistolica].valueQuantity.system = $unitOfMeasure
+* component[sistolica].valueQuantity.code = #mm[Hg]
 
 * component[1].interpretation.coding = $observationInterpretation#H "High"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

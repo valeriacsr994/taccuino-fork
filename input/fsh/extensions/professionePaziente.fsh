@@ -8,7 +8,7 @@ Description: "Estensione per gestire la professione del paziente come CodeableCo
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://hl7.it"
 * ^jurisdiction = urn:iso:std:iso:3166#IT
-* ^url = "http://hl7.it/fhir/StructureDefinition/patient-occupation-it|0.1.1"
+* ^url = "http://hl7.it/fhir/StructureDefinition/patient-occupation-it"
 * ^context.type = #element
 * ^context.expression = "Patient"
 * value[x] only CodeableConcept

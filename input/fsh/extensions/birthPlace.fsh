@@ -11,5 +11,5 @@ Title: "Codice comune e/o stato di nascita (Patient)"
 Description: "Codice comune e/o stato di nascita."
 * ^context.type = #element
 * ^context.expression = "Patient"
-* ^url = "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace|0.1.1"
+* ^url = "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace"
 * value[x] only CodeableConcept

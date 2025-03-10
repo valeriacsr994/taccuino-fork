@@ -121,34 +121,57 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Profile: ObservationPressioneSanguignaTaccuino
+Profile: ObservationPressioneArteriosaTaccuino
 Parent: Observation
-Id: observation-it-sanguigna-taccuino
-Title: "Observation Pressione Sanguigna - Taccuino personale dell'assistito"
-Description: "Rappresentazione dell'osservazione relativa alla pressione sanguigna tramite il profilo Observation"
+Id: observation-it-arteriosa-taccuino
+Title: "Observation Pressione Arteriosa - Taccuino personale dell'assistito"
+Description: "Rappresentazione dell'osservazione relativa alla pressione arteriosa tramite il profilo Observation"
 
-* . ^short = "Informazione sul valore della pressione sanguigna del paziente"
+* . ^short = "Informazione sul valore della pressione arteriosa del paziente"
 
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $CS_Loinc#85354-9
-* code.coding.display = "Pressione sanguigna, panel con tutti i figli opzionali"
+* code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
-* effectiveDateTime ^short = "Data di registrazione della pressione sanguigna"
+* effectiveDateTime ^short = "Data di registrazione della pressione arteriosa"
 * effectiveDateTime 1..1
 
-* component.valueQuantity ^short = "Risultato della misurazione"
+
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.ordered = false
+* component ^slicing.rules = #open
 * component 1..2
-* component.valueQuantity 1..1
-* component.valueQuantity.unit ^short = "Unità di misura" 
-* component.valueQuantity.unit 1..1
-* component.valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
+* component contains
+    diastolica 1..1 and sistolica 1..1 
+
+* component[diastolica].code = $CS_Loinc#8462-4 "Diastolica intravascolare"
+* component[diastolica].valueQuantity ^short = "Risultato della misurazione"
+* component[diastolica].valueQuantity 1..1
+* component[diastolica].valueQuantity.value 1..1
+* component[diastolica].valueQuantity.value ^short = "Valore della misurazione"
+* component[diastolica].valueQuantity.unit ^short = "Unità di misura" 
+* component[diastolica].valueQuantity.unit 1..1
+* component[diastolica].valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
+
+
+* component[sistolica].code = $CS_Loinc#8480-6 "Sistolica intravascolare"
+* component[sistolica].valueQuantity ^short = "Risultato della misurazione"
+* component[sistolica].valueQuantity 1..1
+* component[sistolica].valueQuantity.value 1..1
+* component[sistolica].valueQuantity.value ^short = "Valore della misurazione"
+* component[sistolica].valueQuantity.unit ^short = "Unità di misura" 
+* component[sistolica].valueQuantity.unit 1..1
+* component[sistolica].valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
+
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

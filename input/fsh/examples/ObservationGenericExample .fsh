@@ -62,7 +62,7 @@ Description: "Esempio di un'osservazione per un evento di vaccinazione"
 * subject = Reference(Patient-Taccuino-Esempio)
 * code = $CS_Loinc#42547-0
 * code.coding.display = "Evento:Osservazione"
-* valueCodeableConcept = $loinc#30939-3 "Measles virus dose count in combination vaccine"
+* valueCodeableConcept = $CS_Loinc#30939-3 "Morbillo, conteggio dose virus in vaccino combinato:Num:Pt:^Paziente:Qn:"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Viaggi
@@ -99,4 +99,4 @@ Description: "Esempio di un'osservazione: dolore"
 * subject = Reference (Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
 * component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
-* component.valueCodeableConcept = $loinc#LA6115-5 "4"
+* component.valueCodeableConcept = $CS_Loinc#LA6115-5 "4"
