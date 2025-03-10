@@ -54,6 +54,35 @@ Description: "Atti clinici e regole di accesso"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+CodeSystem: CsClassCode
+Id: class-code
+Title: "Classe documento"
+Description: "Classe a cui il documento appartiene"
+* ^experimental = false
+* ^status = #active
+* ^language = #it-IT
+* ^caseSensitive = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+
+* #TAC "Taccuino"
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CodeSystem: CsCND
+Id: cnd
+Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
+Description: "Codici che classificano il tipo di dispositivo (CND)"
+* ^experimental = false
+* ^status = #active
+* ^language = #it-IT
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
+
+* #J010501 "Defibrillatori Impiantabili Sottocutanei"
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 CodeSystem: CsLoincIT
 Id: cs-loinc-it
 Title: "Codici LOINC"
@@ -121,32 +150,5 @@ Description: "Codici LOINC italiano"
 * #101134-5	"Promemoria di appuntamento"
 * #101133-7	"Consenso alla donazione di organo e/o tessuto"
 * #100971-1	"Cartella clinica"
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-CodeSystem: CsCND
-Id: cnd
-Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
-Description: "Codici che classificano il tipo di dispositivo (CND)"
-* ^experimental = false
-* ^status = #active
-* ^language = #it-IT
-* ^caseSensitive = true
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
 
-* #J010501 "Defibrillatori Impiantabili Sottocutanei"
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-CodeSystem: CsClassCode
-Id: class-code
-Title: "Classe documento"
-Description: "Classe a cui il documento appartiene"
-* ^experimental = false
-* ^status = #active
-* ^language = #it-IT
-* ^caseSensitive = true
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
-
-* #TAC "Taccuino"

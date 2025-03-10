@@ -13,10 +13,11 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * author = Reference (Organization-Taccuino-Esempio)
 * status = #current
 * description = "Esenzioni per prestazioni"
-* category.coding = $cs-class-code#TAC "Taccuino"
-* context.event[+].coding[+].system = "http://hl7.it/fhir/taccuino/CodeSystem/access-rules"
-* context.event[=].coding[=].code = #P99 
-* context.event[=].coding[=].display = "Oscuramento del documento"
+* category = $cs-class-code#TAC "Taccuino"
+* context.event = $cs-accessRules#P99 "Oscuramento del documento"
+// * context.event[+].coding[+].system = "http://hl7.it/fhir/taccuino/CodeSystem/access-rules"
+// * context.event[=].coding[=].code = #P99 
+// * context.event[=].coding[=].display = "Oscuramento del documento"
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
 
@@ -38,11 +39,10 @@ Description: "Esempio di referto specialistico ambulatoriale relativo ad una vis
 * author = Reference (Practitioner-Taccuino-Esempio)
 * status = #current
 * description = "Durante la visita, ho riferito al medico di avvertire episodi di affaticamento, ma senza sintomi gravi come dolore toracico o difficoltà respiratorie. Il medico mi ha spiegato l'importanza di monitorare regolarmente la pressione arteriosa e migliorare lo stile di vita. Mi ha anche suggerito di monitorare la pressione a casa e di tornare per un follow-up tra sei mesi per un controllo della pressione arteriosa, insieme all'esecuzione di un ecocardiogramma per valutare meglio la funzione cardiaca, in base ai risultati dei prossimi esami. Se dovessero comparire nuovi sintomi o se la condizione dovesse peggiorare, è previsto un controllo anticipato."
-* category[+].coding[+].system = $cs-class-code
-* category[=].coding[=].code = #TAC 
-* category[=].coding[=].display = "Taccuino"
-* context.event[+].coding[+].system = $cs-accessRules
-* context.event[=].coding[=].code = #P99 
-* context.event[=].coding[=].display = "Oscuramento del documento"
+* category = $cs-class-code#TAC "Taccuino"
+* context.event = $cs-accessRules#P99 "Oscuramento del documento"
+// * context.event[+].coding[+].system = $cs-accessRules
+// * context.event[=].coding[=].code = #P99 
+// * context.event[=].coding[=].display = "Oscuramento del documento"
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf

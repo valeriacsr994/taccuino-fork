@@ -313,8 +313,7 @@ Description: "Rappresentazione dell'osservazione relativa ai trigliceridi tramit
 * ^status = #active
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#3043-7 // ci sono diversi codici che rappresentano i triglicedi in varie campioni (sangue, urine..)
-// Valutare un valueset di valori loinc altrimenti c'è un codice SNOMED più generico <Triglycerides measurement (procedure) SCTID: 14740000>
+* code = $CS_Loinc#3043-7 
 * code.coding.display = "Trigliceridi"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"

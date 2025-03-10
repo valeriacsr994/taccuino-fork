@@ -60,46 +60,6 @@ or ObservationAltezzaTaccuino or ObservationTemperaturaCorporeaTaccuino or Obser
 ObservationPressioneSanguignaTaccuino or ObservationFrequenzaCardiacaTaccuino or ObservationFrequenzaRespiratoriaTaccuino or 
 ObservationColesteroloHDLTaccuino or ObservationColesteroloLDLTaccuino or ObservationGlicemiaDigiunoTaccuino or ObservationEmoglobinaGlicataTaccuino or ObservationAnnotazioniTaccuino
 or ObservationTrigliceridiTaccuino
+
 * entry[observation].resource 1..
-
-// * entry contains observationSintomi 0..*  
-// * entry[observationSintomi].resource only ObservationSintomiTaccuino
-
-
-// * entry contains observationDolore 0..*  
-// * entry[observationDolore].resource only ObservationDoloreTaccuino
-
-// * entry contains observationViaggi 0..*  
-// * entry[observationViaggi].resource only ObservationViaggiTaccuino
-
-// * entry contains observationOssimetria 0..*  
-// * entry[observationOssimetria].resource only ObservationOssimetriaTaccuino
-
-// * entry contains observationPeso 0..*  
-// * entry[observationPeso].resource only ObservationPesoCorporeoTaccuino
-
-// * entry contains observationAltezza 0..*  
-// * entry[observationAltezza].resource only ObservationAltezzaTaccuino
-
-// * entry contains observationTemperatura 0..*  
-// * entry[observationTemperatura].resource only ObservationTemperaturaCorporeaTaccuino
-
-
-// * entry contains observationColesterolo 0..*  
-// * entry[observationColesterolo].resource only ObservationColesteroloTotaleTaccuino
-
-// * entry[observationCircVita].resource only ObservationCirconferenzaVitaTaccuino
-// * entry[observationPressione].resource only ObservationPressioneSanguignaTaccuino
-// * entry[observationFC].resource only ObservationFrequenzaCardiacaTaccuino
-// * entry[observationFR].resource only ObservationFrequenzaRespiratoriaTaccuino
-// * entry[observationHDL].resource only ObservationColesteroloHDLTaccuino
-// * entry[observationLDL].resource only ObservationColesteroloLDLTaccuino
-
-// * entry[observationTrigliceridi].resource only ObservationTrigliceridiTaccuino
-// * entry[observationGlicemia].resource only ObservationGlicemiaDigiunoTaccuino
-// * entry[observationEmoglobina].resource only ObservationEmoglobinaGlicataTaccuino
-
-// * entry[observationAnnatozioni].resource only ObservationAnnotazioniTaccuino
-
-
 

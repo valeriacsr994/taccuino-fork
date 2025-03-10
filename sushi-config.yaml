@@ -34,11 +34,11 @@ parameters:
   apply-publisher: true
   special-url: !!seq
   - http://unitsofmeasure.org
-  - https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni  
+  - https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni
   - http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace|0.1.1
   - http://hl7.it/fhir/StructureDefinition/patient-occupation-it|0.1.1
   - http://hl7.it/fhir/StructureDefinition/patient-qualification-it|0.1.1
-  - http://hl7.it/fhir/StructureDefinition/recordCertification|0.1.1|0.1.1
+  - http://hl7.it/fhir/StructureDefinition/recordCertification|0.1.1
   autoload-resources: true
 
 copyrightYear: 2021+

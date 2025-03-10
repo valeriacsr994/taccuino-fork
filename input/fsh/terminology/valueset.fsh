@@ -66,4 +66,4 @@ Id: vs-it-class-code
 Title: "Classe documento"
 Description: "Valuset che rappresenta la classe a cui il documento appartiene"
 * ^experimental = false
-* codes from system $cs-class-code
+* codes from system http://hl7.it/fhir/taccuino/CodeSystem/class-code
