@@ -1,6 +1,3 @@
-//peso, temperatura, circonferenza vita, pressione diastolica, pressione sistolica, frequenza cardiaca a riposo, 
-//frequenza respiratoria, colesterolo HDL, colesterolo LDL, colesterolo totale, trigliceridi, ossimetria, 
-//glicemia a digiuno, emoglobina glicata
 
 Profile: ObservationPesoCorporeoTaccuino
 Parent: Observation

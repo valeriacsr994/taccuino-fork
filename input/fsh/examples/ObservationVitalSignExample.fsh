@@ -261,6 +261,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 1"
 * code = $CS_Loinc#85354-9
 * code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
 * extension[dataRegistrazione].valueInstant = "2025-01-07T15:30:00+01:00"
+* issued = "2025-01-07T15:30:00+01:00"
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
