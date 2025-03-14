@@ -4,7 +4,7 @@ Title : "Documento Allegato - Esenzione"
 Description: "Esempio di esenzione dal pagamento del ticket"
 
 * id = "649df3be-637d-48c7-848b-40105cc36878"
-* extension[dataRegistrazione].valueDate = "2025-01-31"
+* extension[dataRegistrazione].valueInstant = "2025-01-31T15:30:00+01:00"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
 * type =  $CS_Loinc#57827-8
@@ -30,7 +30,7 @@ Description: "Esempio di referto specialistico ambulatoriale relativo ad una vis
 
 
 * id = "ecce9788-1666-4e4d-8e75-ae98e3cb7fa1"
-* extension[dataRegistrazione].valueDate = "2025-05-27"
+* extension[dataRegistrazione].valueInstant = "2025-05-27T15:30:00+01:00"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
 * type =  $CS_Loinc#11488-4

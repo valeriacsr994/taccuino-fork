@@ -8,7 +8,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
-* extension[dataRegistrazione].valueDateTime
+* extension[dataRegistrazione].valueInstant
 
 * date 1..1
 * date ^short = "Data di emissione del documento"

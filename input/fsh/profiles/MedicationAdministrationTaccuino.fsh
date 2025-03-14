@@ -8,7 +8,7 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
-* extension[dataRegistrazione].valueDateTime
+* extension[dataRegistrazione].valueInstant
 * effective[x] ^short = "Inizio e fine dell'assunzione del farmaco/integratore"
 * effectivePeriod.start 1..
 * effectivePeriod.start ^short = "Inizio dell'assunzione del farmaco/integratore"

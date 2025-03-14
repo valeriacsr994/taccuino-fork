@@ -14,4 +14,4 @@ Description: "Estensione per la data di registrazione di una risorsa"
 
 * . ^short = "Data di registrazione a sistema"
 * . ^definition = "Estensione utilizzata per gestire la data di registrazione di una risorsa nel sistema"
-* value[x] only date
+* value[x] only instant

@@ -7,7 +7,7 @@ Usage: #example
 * id = "38642e18-973d-4763-b875-1d1bc322d98a"
 * status = #active
 
-* extension[dataRegistrazione].valueDate = "2024-02-27"
+* extension[dataRegistrazione].valueInstant = "2024-02-23T15:30:00+01:00"
 * status = #in-progress
 * subject = Reference(Patient-Taccuino-Esempio)
 * effectivePeriod.start = "2024-02-20T14:30:00+01:00"
@@ -33,7 +33,7 @@ Usage: #example
 * id = "08cea1b4-db13-48fd-8956-a29d25f42b99"
 * status = #active
 
-* extension[dataRegistrazione].valueDate = "2025-02-27"
+* extension[dataRegistrazione].valueInstant = "2025-02-21T15:30:00+01:00"
 
 * status = #in-progress
 * medicationCodeableConcept.coding[AIC] = $aic#027860042 "ZITROMAX 3CPR RIV 500MG"
