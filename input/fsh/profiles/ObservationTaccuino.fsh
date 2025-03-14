@@ -11,6 +11,8 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * valueString ^short = "Note generali: annotazioni libere"
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationEventiTaccuino
@@ -29,6 +31,8 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * value[x] ^short = "Evento"
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
 Parent: Observation
@@ -55,6 +59,8 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
 Parent: Observation
@@ -77,6 +83,7 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 // Proposta 1--> Grado di intensità del dolore, potrebbe essere un integer che con una rule applica una scala da 0 a 10
 // Proposta 2 --> utilizzare il concept come code --> 72514-3 e poi nel concept.valueCodableConcept la scala da 1 a 10, però 
 // l'oid da inserire nel system è quello relativo a LOINC? oppure un  altro? (proposta)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationViaggiTaccuino
@@ -97,3 +104,4 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 * note ^short = "Note e commenti"
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"

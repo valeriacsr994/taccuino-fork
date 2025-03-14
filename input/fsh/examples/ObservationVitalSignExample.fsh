@@ -275,7 +275,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa"
 * component[sistolica].valueQuantity.system = $unitOfMeasure
 * component[sistolica].valueQuantity.code = #mm[Hg]
 
-* component[1].interpretation.coding = $observationInterpretation#H "High"
+* component[sistolica].interpretation.coding = $observationInterpretation#H "High"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-PesoCorporeo
 InstanceOf: ObservationPesoCorporeoTaccuino

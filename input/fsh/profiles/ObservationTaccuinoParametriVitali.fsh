@@ -27,7 +27,7 @@ Description: "Rappresentazione dell'osservazione relativa al peso corporeo trami
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationAltezzaTaccuino
@@ -57,7 +57,7 @@ Description: "Rappresentazione dell'osservazione relativa all'altezza tramite il
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationTemperaturaCorporeaTaccuino
@@ -88,7 +88,7 @@ Description: "Rappresentazione dell'osservazione relativa alla temperatura corpo
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationCirconferenzaVitaTaccuino
@@ -118,7 +118,7 @@ Description: "Rappresentazione dell'osservazione relativa alla circonferenza del
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationPressioneArteriosaTaccuino
@@ -171,7 +171,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -202,6 +202,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza cardiac
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationFrequenzaRespiratoriaTaccuino
@@ -231,6 +232,7 @@ Description: "Rappresentazione dell'osservazione relativa alla frequenza respira
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationColesteroloHDLTaccuino
@@ -261,7 +263,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo HDL tra
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationColesteroloLDLTaccuino
@@ -291,7 +293,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo LDL tra
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationColesteroloTotaleTaccuino
@@ -322,7 +324,7 @@ Description: "Rappresentazione dell'osservazione relativa al colesterolo totale 
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationTrigliceridiTaccuino
@@ -352,7 +354,7 @@ Description: "Rappresentazione dell'osservazione relativa ai trigliceridi tramit
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationOssimetriaTaccuino
@@ -386,7 +388,7 @@ Description: "Rappresentazione dell'osservazione relativa all'ossimetria tramite
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationGlicemiaDigiunoTaccuino
@@ -417,7 +419,7 @@ Description: "Rappresentazione dell'osservazione relativa alla glicemia a digiun
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationEmoglobinaGlicataTaccuino
@@ -447,4 +449,4 @@ Description: "Rappresentazione dell'osservazione relativa all'emoglobina glicata
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
