@@ -12,13 +12,15 @@ Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tr
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
-* effectiveDateTime ^short = "Data di misurazione del peso corporeo"
+* effectiveDateTime ^short = "Data di misurazione del parametro vitale"
 * effectiveDateTime 1..1
 
-* valueQuantity ^short = "Risultato della misurazione"
 * valueQuantity 1..1
-* valueQuantity.unit ^short = "Unità di misura" 
+* valueQuantity ^short = "Risultato della misurazione"
 * valueQuantity.unit 1..1
+* valueQuantity.unit ^short = "Unità di misura"
+* valueQuantity.value 1..1
+* valueQuantity.value ^short = "Valore della misurazione"
 * valueQuantity.code ^short = "Valore codificato dell'unità di misura" 
 * subject 1..1
 * subject only Reference(PatientTaccuino)

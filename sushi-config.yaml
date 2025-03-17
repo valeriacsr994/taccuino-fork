@@ -183,6 +183,7 @@ groups:
       - ValueSet/vs-loinc-it
       - ValueSet/vs-it-cnd
       - ValueSet/vs-it-class-code
+      - ValueSet/vs-loinc-scala-dolore
 
 
 

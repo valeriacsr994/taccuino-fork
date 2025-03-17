@@ -76,13 +76,9 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * valueCodeableConcept ^short = "Codice e descrizione del dolore" 
 * component 1..1
 * component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
-//* componet.valueCodableConcept scala del dolore
 * bodySite ^short = "Area interessata dal dolore"
 * subject 1..1
 * subject only Reference(PatientTaccuino)
-// Proposta 1--> Grado di intensità del dolore, potrebbe essere un integer che con una rule applica una scala da 0 a 10
-// Proposta 2 --> utilizzare il concept come code --> 72514-3 e poi nel concept.valueCodableConcept la scala da 1 a 10, però 
-// l'oid da inserire nel system è quello relativo a LOINC? oppure un  altro? (proposta)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

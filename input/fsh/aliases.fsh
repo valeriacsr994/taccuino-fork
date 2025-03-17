@@ -68,3 +68,4 @@ Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-Obs
 
 Alias: $cs-accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
 Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
+Alias: $vs-loinc-dolore = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-scala-dolore
