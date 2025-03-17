@@ -47,14 +47,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
 * component.valueCodeableConcept ^short = "Codice e descrizione del sintomo, nome dell'allergene o dell'intolleranza"
-// * component.valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-// * component.valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-// * component.valueCodeableConcept.coding ^slicing.ordered = false
-// * component.valueCodeableConcept.coding ^slicing.rules = #open
-// * component.valueCodeableConcept.coding contains noAllergiesInfo 0..1 and ICD9 0..1  // Preso da CDA2 in PSS
-// * component.valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
-// * component.valueCodeableConcept.coding[ICD9].system from $ICD9
-//quale valueset usare per segni e sintomi fa
+//quale valueset utilizzare per segni e sintomi
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
 * subject 1..1
