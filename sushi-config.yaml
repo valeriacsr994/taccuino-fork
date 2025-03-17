@@ -141,7 +141,7 @@ groups:
       # - StructureDefinition/observation-it-glicemia-digiuno-taccuino
       # - StructureDefinition/observation-it-emoglobina-glicata-taccuino
       # - StructureDefinition/observation-it-ossimetria-taccuino
-      # - StructureDefinition/observation-it-annotazioni-taccuino
+      - StructureDefinition/observation-it-annotazioni-taccuino
       - StructureDefinition/observation-it-sintomi-taccuino
       - StructureDefinition/observation-it-dolore-taccuino
       - StructureDefinition/observation-it-viaggi-taccuino
@@ -183,6 +183,7 @@ groups:
       - ValueSet/vs-loinc-it
       - ValueSet/vs-it-cnd
       - ValueSet/vs-it-class-code
+      - ValueSet/vs-loinc-parametri-vitali
       - ValueSet/vs-loinc-scala-dolore
 
 

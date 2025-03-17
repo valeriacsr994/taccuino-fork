@@ -189,7 +189,7 @@ Instance: Observation-Taccuino-Trigliceridi-alti
 InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Trigliceridi elevati"
 Usage: #example
-Description: "Esempio di un'osservazione: trigliceridi oltre il range"
+Description: "Esempio di un'osservazione: trigliceridi superiori al valore normale di riferimento "
 
 * id = "06a0f231-aec2-417f-9bc7-4954e6252b92"
 * status = #final
