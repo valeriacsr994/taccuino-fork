@@ -1,7 +1,7 @@
 Profile: ObservationParametriVitaliTaccuino
 Parent: Observation
 Id: observation-it-vital-signs-taccuino
-Title: "Observation Parametri vitali - Taccuino personale dell'assistito"
+Title: "Observation Parametri Vitali - Taccuino personale dell'assistito"
 Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tramite il profilo Observation"
 
 * . ^short = "Informazione sui parametri vitali raccolta dal paziente"
