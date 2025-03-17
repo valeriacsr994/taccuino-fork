@@ -1,5 +1,5 @@
 Instance: Observation-Taccuino-Altezza
-InstanceOf: ObservationAltezzaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Altezza"
 Usage: #example
 Description: "Esempio di un'osservazione: altezza"
@@ -25,7 +25,7 @@ Description: "Esempio di un'osservazione: altezza"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-CirconferenzaVita
-InstanceOf: ObservationCirconferenzaVitaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Circonferenza Vita"
 Usage: #example
 Description: "Esempio di un'osservazione: circonferenza vita"
@@ -55,7 +55,7 @@ Description: "Esempio di un'osservazione: circonferenza vita"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-LDL
-InstanceOf: ObservationColesteroloLDLTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo LDL"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo LDL"
@@ -82,7 +82,7 @@ Description: "Esempio di un'osservazione: colesterolo LDL"
 // // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-HDL
-InstanceOf: ObservationColesteroloHDLTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo HDL"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo HDL"
@@ -112,7 +112,7 @@ Description: "Esempio di un'osservazione: colesterolo HDL"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-ColesteroloTotale
-InstanceOf: ObservationColesteroloTotaleTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo Totale"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo totale"
@@ -137,7 +137,7 @@ Description: "Esempio di un'osservazione: colesterolo totale"
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 Instance: Observation-Taccuino-ColesteroloTotaleAlto
-InstanceOf: ObservationColesteroloTotaleTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo Totale elevato"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo totale elevato"
@@ -161,7 +161,7 @@ Description: "Esempio di un'osservazione: colesterolo totale elevato"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-EmoglobinaGlicata
-InstanceOf: ObservationEmoglobinaGlicataTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Emoglobina Glicata"
 Usage: #example
 Description: "Esempio di un'osservazione: emoglobina glicata"
@@ -186,7 +186,7 @@ Description: "Esempio di un'osservazione: emoglobina glicata"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Instance: Observation-Taccuino-Trigliceridi-alti
-InstanceOf: ObservationTrigliceridiTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Trigliceridi elevati"
 Usage: #example
 Description: "Esempio di un'osservazione: trigliceridi oltre il range"
@@ -209,7 +209,7 @@ Description: "Esempio di un'osservazione: trigliceridi oltre il range"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Instance: Observation-Taccuino-Trigliceridi
-InstanceOf: ObservationTrigliceridiTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Trigliceridi"
 Usage: #example
 Description: "Esempio di un'osservazione: trigliceridi"
@@ -231,7 +231,7 @@ Description: "Esempio di un'osservazione: trigliceridi"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-TemperaturaCorporea
-InstanceOf: ObservationTemperaturaCorporeaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Temperatura Corporea"
 Usage: #example
 Description: "Esempio di un'osservazione: temperatura corporea"
@@ -261,7 +261,6 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 1"
 * code = $CS_Loinc#85354-9
 * code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
 * extension[dataRegistrazione].valueInstant = "2025-01-07T15:30:00+01:00"
-* issued = "2025-01-07T15:30:00+01:00"
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
@@ -308,7 +307,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 2"
 * component[sistolica].interpretation.coding = $observationInterpretation#H "High"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-PesoCorporeo
-InstanceOf: ObservationPesoCorporeoTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Peso Corporeo"
 Usage: #example
 Description: "Esempio di un'osservazione: peso corporeo"
@@ -328,7 +327,7 @@ Description: "Esempio di un'osservazione: peso corporeo"
 * note.text = "Ho subito una diminuzione del peso corporeo di 1 kg, riducendo il peso di altri 3kg raggiungerò il valore ottimale consigliato dal dietologo."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Ossimetria
-InstanceOf: ObservationOssimetriaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Ossimetria"
 Usage: #example
 Description: "Esempio di un'osservazione: ossimetria"
@@ -345,7 +344,7 @@ Description: "Esempio di un'osservazione: ossimetria"
 * valueQuantity.unit = "%"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-GlicemiaADigiuno
-InstanceOf: ObservationGlicemiaDigiunoTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Glicemia a digiuno"
 Usage: #example
 Description: "Esempio di un'osservazione: glicemia a digiuno"
@@ -364,13 +363,13 @@ Description: "Esempio di un'osservazione: glicemia a digiuno"
 * valueQuantity.code = #mg/dL
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-FrequenzaRespiratoria
-InstanceOf: ObservationFrequenzaRespiratoriaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Frequenza Respiratoria"
 Usage: #example
 Description: "Esempio di un'osservazione: frequenza respiratoria"
 
 * extension[dataRegistrazione].valueInstant = "2025-10-20T15:30:00+01:00"
-
+* code = $CS_Loinc#9279-1 "Respiri"
 * status = #final
 * performer = Reference(Practitioner-Taccuino-Esempio3)
 * subject = Reference(Patient-Taccuino-Esempio)
@@ -382,7 +381,7 @@ Description: "Esempio di un'osservazione: frequenza respiratoria"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Instance: Observation-Taccuino-FrequezaCardiaca
-InstanceOf: ObservationFrequenzaCardiacaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Frequenza Cardiaca a riposo"
 Usage: #example
 Description: "Esempio di un'osservazione: frequenza cardiaca a riposo"

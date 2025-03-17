@@ -17,6 +17,7 @@ Alias: $vs-atc = https://www.hl7.it/fhir/terminology/ValueSet/who-atc
 Alias: $aic = http://hl7.it/fhir/taccuino/CodeSystem/aifa-aic
 Alias: $CS_Loinc = http://hl7.it/fhir/taccuino/CodeSystem/cs-loinc-it
 Alias: $VS_Loinc = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-it
+Alias: $VS_Loinc_PV = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-parametri-vitali
 
 Alias: $vs-aifa-aic = http://hl7.it/fhir/taccuino/ValueSet/aifa-aic
 Alias: $cs-no-allergies = http://hl7.it/fhir/taccuino/CodeSystem/no-allergies

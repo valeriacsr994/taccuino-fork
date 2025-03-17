@@ -51,9 +51,9 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
 dependencies:
   hl7.fhir.it.base: current
   hl7.fhir.it.terminology: current
-  hl7.terminology.r4 : 6.2.0
+  hl7.terminology : 5.5.0
   #hl7.fhir.it.terminology: dev
-  # hl7.fhir.it.base: 0.1.0
+  #hl7.fhir.it.base: 0.1.0
 
 pages:
   index.md:
@@ -124,23 +124,24 @@ groups:
       - StructureDefinition/document-reference-it-taccuino
       - StructureDefinition/encounter-it-Taccuino
       - StructureDefinition/medicationAdministration-it-taccuino
-      - StructureDefinition/observation-it-annotazioni-taccuino
-      - StructureDefinition/observation-it-weight-taccuino
-      - StructureDefinition/observation-it-height-taccuino
-      - StructureDefinition/observation-it-temperature-taccuino
-      - StructureDefinition/observation-it-circonferenza-taccuino
       - StructureDefinition/observation-it-arteriosa-taccuino
-      - StructureDefinition/observation-it-heartrate-taccuino
-      - StructureDefinition/observation-it-respiratoryrate-taccuino
-      - StructureDefinition/observation-it-hdl-taccuino
-      - StructureDefinition/observation-it-ldl-taccuino
-      - StructureDefinition/observation-it-colesterolo-taccuino
-      - StructureDefinition/observation-it-trigliceridi-taccuino
-      - StructureDefinition/observation-it-ossimetria-taccuino
-      - StructureDefinition/observation-it-glicemia-digiuno-taccuino
-      - StructureDefinition/observation-it-emoglobina-glicata-taccuino
-      - StructureDefinition/observation-it-ossimetria-taccuino
-      - StructureDefinition/observation-it-annotazioni-taccuino
+      - StructureDefinition/observation-it-vital-signs-taccuino
+      # - StructureDefinition/observation-it-annotazioni-taccuino
+      # - StructureDefinition/observation-it-weight-taccuino
+      # - StructureDefinition/observation-it-height-taccuino
+      # - StructureDefinition/observation-it-temperature-taccuino
+      # - StructureDefinition/observation-it-circonferenza-taccuino
+      # - StructureDefinition/observation-it-heartrate-taccuino
+      # - StructureDefinition/observation-it-respiratoryrate-taccuino
+      # - StructureDefinition/observation-it-hdl-taccuino
+      # - StructureDefinition/observation-it-ldl-taccuino
+      # - StructureDefinition/observation-it-colesterolo-taccuino
+      # - StructureDefinition/observation-it-trigliceridi-taccuino
+      # - StructureDefinition/observation-it-ossimetria-taccuino
+      # - StructureDefinition/observation-it-glicemia-digiuno-taccuino
+      # - StructureDefinition/observation-it-emoglobina-glicata-taccuino
+      # - StructureDefinition/observation-it-ossimetria-taccuino
+      # - StructureDefinition/observation-it-annotazioni-taccuino
       - StructureDefinition/observation-it-sintomi-taccuino
       - StructureDefinition/observation-it-dolore-taccuino
       - StructureDefinition/observation-it-viaggi-taccuino

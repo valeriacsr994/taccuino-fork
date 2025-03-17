@@ -152,4 +152,3 @@ Description: "Codici LOINC italiano"
 * #100971-1	"Cartella clinica"
 * #30939-3 "Morbillo, conteggio dose virus in vaccino combinato:Num:Pt:^Paziente:Qn:"
 * #LA6115-5 "4"
-

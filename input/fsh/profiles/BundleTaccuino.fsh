@@ -54,12 +54,8 @@ Description: "Rappresentazione del contenuto informativo del Taccuino personale 
 
 * entry contains observation 0..* 
 * entry[observation].resource ^short = "Osservazioni riguardanti i parametri vitali, o generiche osservazioni riportate dal paziente" 
-* entry[observation].resource only ObservationEventiTaccuino or ObservationColesteroloTotaleTaccuino or ObservationSintomiTaccuino or ObservationViaggiTaccuino or
-ObservationSintomiTaccuino or ObservationDoloreTaccuino or ObservationViaggiTaccuino or ObservationOssimetriaTaccuino or ObservationPesoCorporeoTaccuino
-or ObservationAltezzaTaccuino or ObservationTemperaturaCorporeaTaccuino or ObservationCirconferenzaVitaTaccuino or 
-ObservationPressioneArteriosaTaccuino or ObservationFrequenzaCardiacaTaccuino or ObservationFrequenzaRespiratoriaTaccuino or 
-ObservationColesteroloHDLTaccuino or ObservationColesteroloLDLTaccuino or ObservationGlicemiaDigiunoTaccuino or ObservationEmoglobinaGlicataTaccuino or ObservationAnnotazioniTaccuino
-or ObservationTrigliceridiTaccuino
+* entry[observation].resource only ObservationEventiTaccuino or ObservationParametriVitaliTaccuino or ObservationSintomiTaccuino or ObservationViaggiTaccuino or
+ObservationSintomiTaccuino or ObservationDoloreTaccuino or ObservationViaggiTaccuino or ObservationAnnotazioniTaccuino or ObservationPressioneArteriosaTaccuino
 
 * entry[observation].resource 1..
 
