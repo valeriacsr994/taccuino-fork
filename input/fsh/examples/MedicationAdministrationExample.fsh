@@ -7,16 +7,12 @@ Usage: #example
 * id = "38642e18-973d-4763-b875-1d1bc322d98a"
 * status = #active
 
-* extension[dataRegistrazione].valueDate = "2024-02-27"
-
+* extension[dataRegistrazione].valueInstant = "2024-02-23T15:30:00+01:00"
 * status = #in-progress
-//* medicationReference = Reference(Medication-Taccuino-Esempio)
-
 * subject = Reference(Patient-Taccuino-Esempio)
 * effectivePeriod.start = "2024-02-20T14:30:00+01:00"
 * effectivePeriod.end = "2024-02-20T14:35:00+01:00"
-//* medicationCodeableConcept = $aic#036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
-* medication[x].coding[AIC] = $aic#036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
+* medicationCodeableConcept.coding[AIC] = $aic#036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
 
 * performer.actor = Reference(Practitioner-Taccuino-Esempio)
 * reasonCode = $reason-medication-given#b "Given as Ordered"
@@ -37,11 +33,10 @@ Usage: #example
 * id = "08cea1b4-db13-48fd-8956-a29d25f42b99"
 * status = #active
 
-* extension[dataRegistrazione].valueDate = "2025-02-27"
+* extension[dataRegistrazione].valueInstant = "2025-02-21T15:30:00+01:00"
 
 * status = #in-progress
-* medicationCodeableConcept = $aic#027860042 "ZITROMAX 3CPR RIV 500MG"
-//* medicationReference = Reference(Medication-Taccuino-Esempio2)
+* medicationCodeableConcept.coding[AIC] = $aic#027860042 "ZITROMAX 3CPR RIV 500MG"
 * subject = Reference(Patient-Taccuino-Esempio2)
 * effectivePeriod.start = "2025-02-21T14:30:00+01:00"
 * effectivePeriod.end = "2025-02-21T14:35:00+01:00"

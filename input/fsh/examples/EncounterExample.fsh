@@ -6,11 +6,9 @@ Description: "Esempio di contatto/incontro per un ASL"
 
 
 * id = "c83ef1b2-d8ad-4de8-9dfe-7b7dd897d632"
-* extension[dataRegistrazione].valueDate = "2025-07-27"
+* extension[dataRegistrazione].valueInstant = "2024-03-01T15:30:00+01:00"
 
 * class = $cs-encounterCode#VR "Virtual"
-
-
 * period.start = "2024-02-01"
 * period.end = "2024-02-01"
 

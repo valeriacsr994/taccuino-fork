@@ -1,8 +1,8 @@
 Extension: BirthPlaceIta
-Parent: $patient-birthPlace
+//Parent: $patient-birthPlace
 Id: birth-place-ita
 Title: "Address Birth Place (Patient)"
-Description: "Definizione dell'indirizzo base per la descrizione del luogo di nascita."
+Description: "Definizione dell'indirizzo base per la descrizione del luogo di nascita"
 * value[x] only AddressItBase
 
 Extension: ExtCodeableBirthPlace

@@ -1,14 +1,14 @@
 Instance: Observation-Taccuino-Altezza
-InstanceOf: ObservationAltezzaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Altezza"
 Usage: #example
 Description: "Esempio di un'osservazione: altezza"
 
 * id = "8e8d18f5-3bb4-4f07-bb05-06effd080d96"
-* extension[dataRegistrazione].valueDate = "2024-07-27"
+* extension[dataRegistrazione].valueInstant = "2025-07-27T11:30:00+01:00"
 * code = $CS_Loinc#8302-2 "Altezza Corporea"
 
-* effectiveDateTime = "2025-01-27"
+* effectiveDateTime = "2025-07-27"
 * performer = Reference (Practitioner-Taccuino-Esempio)
 
 * subject = Reference (Patient-Taccuino-Esempio)
@@ -25,16 +25,16 @@ Description: "Esempio di un'osservazione: altezza"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-CirconferenzaVita
-InstanceOf: ObservationCirconferenzaVitaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Circonferenza Vita"
 Usage: #example
 Description: "Esempio di un'osservazione: circonferenza vita"
 
 * id = "ebb233a8-964f-4f36-a850-f58c6aa27586"
-* extension[dataRegistrazione].valueDate = "2024-07-27"
+* extension[dataRegistrazione].valueInstant = "2025-07-27T14:00:00+01:00"
 * code = $CS_Loinc#56115-9 "Circonferenza"
 
-* effectiveDateTime = "2023-10-01"
+* effectiveDateTime = "2025-07-27"
 * status = #final
 
 * subject = Reference (Patient-Taccuino-Esempio)
@@ -55,16 +55,16 @@ Description: "Esempio di un'osservazione: circonferenza vita"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-LDL
-InstanceOf: ObservationColesteroloLDLTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo LDL"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo LDL"
 
 * id = "b01f8680-aef2-4430-b65b-85f826c59b59"
-* extension[dataRegistrazione].valueDate = "2024-07-27"
+* extension[dataRegistrazione].valueInstant = "2025-03-27T14:00:00+01:00"
 
 * code = $CS_Loinc#2089-1 "Colesterolo.in LDL"
-* effectiveDateTime = "2023-10-01"
+* effectiveDateTime = "2025-03-27"
 * status = #final
 
 
@@ -82,17 +82,17 @@ Description: "Esempio di un'osservazione: colesterolo LDL"
 // // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-HDL
-InstanceOf: ObservationColesteroloHDLTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo HDL"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo HDL"
 
 
 * id = "97286c2f-c50b-4b14-93d4-c1cd77054861"
-* extension[dataRegistrazione].valueDate = "2024-07-27"
+* extension[dataRegistrazione].valueInstant = "2025-02-25T14:00:00+01:00"
 
 * code = $CS_Loinc#14646-4 "Colesterolo.in HDL"
-* effectiveDateTime = "2023-10-01"
+* effectiveDateTime = "2025-03-20"
 * status = #final
 
 
@@ -112,16 +112,16 @@ Description: "Esempio di un'osservazione: colesterolo HDL"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-ColesteroloTotale
-InstanceOf: ObservationColesteroloTotaleTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo Totale"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo totale"
 
 * id = "cd6057f1-114b-49e3-a298-fbcfc54fb3dd"
-* extension[dataRegistrazione].valueDate = "2024-07-27"
+* extension[dataRegistrazione].valueInstant = "2025-03-02T14:00:00+01:00"
 
 * code = $CS_Loinc#2093-3 "Colesterolo"
-* effectiveDateTime = "2023-08-01"
+* effectiveDateTime = "2025-03-01"
 * status = #final
 
 
@@ -137,16 +137,16 @@ Description: "Esempio di un'osservazione: colesterolo totale"
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 Instance: Observation-Taccuino-ColesteroloTotaleAlto
-InstanceOf: ObservationColesteroloTotaleTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Colesterolo Totale elevato"
 Usage: #example
 Description: "Esempio di un'osservazione: colesterolo totale elevato"
 
 * id = "0170d3be-62e7-47cb-a7a2-7bf967ea0064"
-* extension[dataRegistrazione].valueDate = "2024-08-20"
+* extension[dataRegistrazione].valueInstant = "2025-03-05T14:00:00+01:00"
 
 * code = $CS_Loinc#2093-3 "Colesterolo"
-* effectiveDateTime = "2024-07-07"
+* effectiveDateTime = "2025-03-05"
 * status = #final
 
 
@@ -161,16 +161,16 @@ Description: "Esempio di un'osservazione: colesterolo totale elevato"
 // -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Instance: Observation-Taccuino-EmoglobinaGlicata
-InstanceOf: ObservationEmoglobinaGlicataTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Emoglobina Glicata"
 Usage: #example
 Description: "Esempio di un'osservazione: emoglobina glicata"
 
 * id = "03c49e23-90bf-4d60-8dff-c208420f0e2a"
-* extension[dataRegistrazione].valueDate = "2024-02-19"
+* extension[dataRegistrazione].valueInstant = "2025-03-09T14:00:00+01:00"
 
 * code = $CS_Loinc#4548-4 "Emoglobina A1c/Emoglobina.totale"
-* effectiveDateTime = "2023-08-01"
+* effectiveDateTime = "2025-03-01"
 * status = #final
 * subject = Reference (Patient-Taccuino-Esempio)
 * performer = Reference (Organization-Taccuino-Esempio3)
@@ -186,16 +186,16 @@ Description: "Esempio di un'osservazione: emoglobina glicata"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Instance: Observation-Taccuino-Trigliceridi-alti
-InstanceOf: ObservationTrigliceridiTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Trigliceridi elevati"
 Usage: #example
-Description: "Esempio di un'osservazione: trigliceridi oltre il range"
+Description: "Esempio di un'osservazione: trigliceridi superiori al valore normale di riferimento "
 
 * id = "06a0f231-aec2-417f-9bc7-4954e6252b92"
 * status = #final
 * code = $CS_Loinc#3043-7 
 * code.coding.display = "Trigliceridi"
-* extension[dataRegistrazione].valueDate = "2025-02-02"
+* extension[dataRegistrazione].valueInstant = "2025-01-29T14:00:00+01:00"
 * performer = Reference(Practitioner-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio2)
 * category = $observation-category#vital-signs
@@ -209,7 +209,7 @@ Description: "Esempio di un'osservazione: trigliceridi oltre il range"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Instance: Observation-Taccuino-Trigliceridi
-InstanceOf: ObservationTrigliceridiTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Trigliceridi"
 Usage: #example
 Description: "Esempio di un'osservazione: trigliceridi"
@@ -217,7 +217,7 @@ Description: "Esempio di un'osservazione: trigliceridi"
 * status = #final
 * code = $CS_Loinc#3043-7
 * code.coding.display = "Trigliceridi"
-* extension[dataRegistrazione].valueDate = "2025-01-29"
+* extension[dataRegistrazione].valueInstant = "2025-01-29T14:00:00+01:00"
 * performer = Reference(Practitioner-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * category = $observation-category#vital-signs
@@ -231,7 +231,7 @@ Description: "Esempio di un'osservazione: trigliceridi"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-TemperaturaCorporea
-InstanceOf: ObservationTemperaturaCorporeaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Temperatura Corporea"
 Usage: #example
 Description: "Esempio di un'osservazione: temperatura corporea"
@@ -239,7 +239,7 @@ Description: "Esempio di un'osservazione: temperatura corporea"
 * status = #final
 * code = $CS_Loinc#8310-5
 * code.coding.display = "Temperatura corporea"
-* extension[dataRegistrazione].valueDate = "2025-06-01"
+* extension[dataRegistrazione].valueInstant = "2025-06-01T14:00:00+01:00"
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference (Patient-Taccuino-Esempio)
 * category = $observation-category#vital-signs
@@ -250,35 +250,65 @@ Description: "Esempio di un'osservazione: temperatura corporea"
 * valueQuantity.code = #Cel
 * note.text = "Oggi ho misurato una temperatura di 38.5°C. Sto avvertendo un po' di malessere e un leggero brivido. Ho preso del paracetamolo per abbassare la febbre e cercherò di riposare. Monitorerò la temperatura nelle prossime ore e, se non migliora, contatterò il medico."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-Taccuino-PressioneSanguigna
-InstanceOf: ObservationPressioneSanguignaTaccuino
-Title: "Observation - Pressione Sanguigna"
+Instance: Observation-Taccuino-PressioneArteriosav1
+InstanceOf: ObservationPressioneArteriosaTaccuino
+Title: "Observation - Pressione Arteriosa versione 1"
 Usage: #example
-Description: "Esempio di un'osservazione: pressione sanguigna"
+Description: "Esempio di un'osservazione: pressione arteriosa versione 1"
 
+* meta.versionId = "1"
 * status = #final
 * code = $CS_Loinc#85354-9
-* code.coding.display = "Pressione sanguigna, panel con tutti i figli opzionali"
-* extension[dataRegistrazione].valueDate = "2025-01-07"
+* issued = "2025-01-07T15:30:00+01:00"
+* code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
+* extension[dataRegistrazione].valueInstant = "2025-01-07T15:30:00+01:00"
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
 * category = $observation-category#vital-signs
 * effectiveDateTime = "2025-01-05"
-* component[0].code = $CS_Loinc#8462-4 "Diastolica intravascolare"
-* component[0].valueQuantity.value = 77
-* component[0].valueQuantity.unit = "mmHg"
-* component[0].valueQuantity.system = $unitOfMeasure
-* component[0].valueQuantity.code = #mm[Hg]
-* component[1].code = $CS_Loinc#8480-6 "Sistolica intravascolare"
-* component[1].valueQuantity.value = 165
-* component[1].valueQuantity.unit = "mmHg"
-* component[1].valueQuantity.system = $unitOfMeasure
-* component[1].valueQuantity.code = #mm[Hg]
+* component[diastolica].code = $CS_Loinc#8462-4 "Diastolica intravascolare"
+* component[diastolica].valueQuantity.value = 77
+* component[diastolica].valueQuantity.unit = "mmHg"
+* component[diastolica].valueQuantity.system = $unitOfMeasure
+* component[diastolica].valueQuantity.code = #mm[Hg]
+* component[sistolica].code = $CS_Loinc#8480-6 "Sistolica intravascolare"
+* component[sistolica].valueQuantity.value = 165
+* component[sistolica].valueQuantity.unit = "mmHg"
+* component[sistolica].valueQuantity.system = $unitOfMeasure
+* component[sistolica].valueQuantity.code = #mm[Hg]
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Instance: Observation-Taccuino-PressioneArteriosav2
+InstanceOf: ObservationPressioneArteriosaTaccuino
+Title: "Observation - Pressione Arteriosa versione 2"
+Usage: #example
+Description: "Esempio di un'osservazione: pressione arteriosa versione 2"
 
-* component[1].interpretation.coding = $observationInterpretation#H "High"
+
+* meta.versionId = "2"
+* status = #final
+* code = $CS_Loinc#85354-9
+* code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
+* extension[dataRegistrazione].valueInstant = "2025-01-07T15:30:00+01:00"
+* subject = Reference(Patient-Taccuino-Esempio)
+* performer = Reference (Practitioner-Taccuino-Esempio)
+* category = $observation-category#vital-signs
+* effectiveDateTime = "2025-01-05"
+* component[diastolica].code = $CS_Loinc#8462-4 "Diastolica intravascolare"
+* component[diastolica].valueQuantity.value = 77
+* component[diastolica].valueQuantity.unit = "mmHg"
+* component[diastolica].valueQuantity.system = $unitOfMeasure
+* component[diastolica].valueQuantity.code = #mm[Hg]
+* component[sistolica].code = $CS_Loinc#8480-6 "Sistolica intravascolare"
+* component[sistolica].valueQuantity.value = 165
+* component[sistolica].valueQuantity.unit = "mmHg"
+* component[sistolica].valueQuantity.system = $unitOfMeasure
+* component[sistolica].valueQuantity.code = #mm[Hg]
+* issued = "2025-01-07T16:30:00+01:00"
+
+* component[sistolica].interpretation.coding = $observationInterpretation#H "High"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-PesoCorporeo
-InstanceOf: ObservationPesoCorporeoTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Peso Corporeo"
 Usage: #example
 Description: "Esempio di un'osservazione: peso corporeo"
@@ -286,7 +316,7 @@ Description: "Esempio di un'osservazione: peso corporeo"
 * status = #final
 * code = $CS_Loinc#29463-7
 * code.coding.display = "Peso corporeo"
-* extension[dataRegistrazione].valueDate = "2025-06-05"
+* extension[dataRegistrazione].valueInstant = "2025-06-05T15:30:00+01:00"
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference (Patient-Taccuino-Esempio)
 * category = $observation-category#vital-signs
@@ -298,7 +328,7 @@ Description: "Esempio di un'osservazione: peso corporeo"
 * note.text = "Ho subito una diminuzione del peso corporeo di 1 kg, riducendo il peso di altri 3kg raggiungerò il valore ottimale consigliato dal dietologo."
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Ossimetria
-InstanceOf: ObservationOssimetriaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Ossimetria"
 Usage: #example
 Description: "Esempio di un'osservazione: ossimetria"
@@ -306,7 +336,7 @@ Description: "Esempio di un'osservazione: ossimetria"
 * status = #final
 * code = $CS_Loinc#2708-6
 * code.coding.display = "Saturazione dell'ossigeno"
-* extension[dataRegistrazione].valueDate = "2025-01-07"
+* extension[dataRegistrazione].valueInstant = "2025-01-03T15:30:00+01:00"
 * performer = Reference(Practitioner-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * category = $observation-category#vital-signs
@@ -315,7 +345,7 @@ Description: "Esempio di un'osservazione: ossimetria"
 * valueQuantity.unit = "%"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-GlicemiaADigiuno
-InstanceOf: ObservationGlicemiaDigiunoTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Glicemia a digiuno"
 Usage: #example
 Description: "Esempio di un'osservazione: glicemia a digiuno"
@@ -323,7 +353,7 @@ Description: "Esempio di un'osservazione: glicemia a digiuno"
 * status = #final
 * code = $CS_Loinc#88365-2
 * code.coding.display = "Glucosio^pre-pasto"
-* extension[dataRegistrazione].valueDate = "2025-07-20"
+* extension[dataRegistrazione].valueInstant = "2025-07-13T15:30:00+01:00"
 * performer = Reference(Practitioner-Taccuino-Esempio2)
 * subject = Reference(Patient-Taccuino-Esempio)
 * category = $observation-category#vital-signs
@@ -334,13 +364,13 @@ Description: "Esempio di un'osservazione: glicemia a digiuno"
 * valueQuantity.code = #mg/dL
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-FrequenzaRespiratoria
-InstanceOf: ObservationFrequenzaRespiratoriaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Frequenza Respiratoria"
 Usage: #example
 Description: "Esempio di un'osservazione: frequenza respiratoria"
 
-* extension[dataRegistrazione].valueDate = "2025-10-27"
-
+* extension[dataRegistrazione].valueInstant = "2025-10-20T15:30:00+01:00"
+* code = $CS_Loinc#9279-1 "Respiri"
 * status = #final
 * performer = Reference(Practitioner-Taccuino-Esempio3)
 * subject = Reference(Patient-Taccuino-Esempio)
@@ -352,12 +382,12 @@ Description: "Esempio di un'osservazione: frequenza respiratoria"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Instance: Observation-Taccuino-FrequezaCardiaca
-InstanceOf: ObservationFrequenzaCardiacaTaccuino
+InstanceOf: ObservationParametriVitaliTaccuino
 Title: "Observation - Frequenza Cardiaca a riposo"
 Usage: #example
 Description: "Esempio di un'osservazione: frequenza cardiaca a riposo"
 
-* extension[dataRegistrazione].valueDate = "2024-10-27"
+* extension[dataRegistrazione].valueInstant = "2025-01-21T15:30:00+01:00"
 * code = $CS_Loinc#40443-4 "Frequenza cardiaca^riposo"
 
 * effectiveDateTime = "2025-01-20"

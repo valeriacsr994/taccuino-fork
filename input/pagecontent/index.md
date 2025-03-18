@@ -18,6 +18,8 @@ La guida facilita l'interoperabilità tra i sistemi sanitari regionali e naziona
 
 Il cittadino, o un suo delegato opportunamente autorizzato, avrà la possibilità di **caricare, visualizzare e cancellare** nel proprio FSE documenti relativi ai percorsi di cura personali. I documenti potranno essere sia scannerizzati sia nativamente elettronici e saranno caricati. L'obiettivo principale del Taccuino personale è fornire uno spazio sicuro e accessibile per integrare la propria storia clinica con documenti personali non ancora presenti nel FSE, provenienti da strutture private o pubbliche, a supporto dei percorsi di cura.
 
+Infine, i casi d'uso specifici per l'utilizzo della presente guida saranno delineati all'interno del documento *"FSE 2.0 DM Regime Transitorio Taccuino FSE – Fase II"*
+
 <figure style="text-align: center;">
   <img src="funzionalitaTaccuinorid.png" />
   <figcaption>Funzionalità del Taccuino personale dell'assistito.</figcaption>
@@ -27,12 +29,11 @@ Il cittadino, o un suo delegato opportunamente autorizzato, avrà la possibilit�
 
 Le informazioni, definite nell’Allegato A del Decreto 7 settembre 2023 “Fascicolo Sanitario Elettronico 2.0”, prevede di raccogliere i dati relativi a:
 
-- Osservazioni Personali e Parametri vitali che rappresentano i dati clinici e vitali del paziente (come glicemia, pressione sanguigna, peso, saturazione dell'ossigeno, ecc.);
+- Osservazioni Personali e Parametri vitali che rappresentano i dati clinici e vitali del paziente (come glicemia, pressione arteriosa, peso, saturazione dell'ossigeno, ecc.);
 - Contatti con Strutture che rappresentano i contatti avvenuti tra il paziente e le strutture sanitarie di vario tipo;
 - Farmaci e Integratori, che rappresentano i farmaci/integratori assunti da parte del paziente;
 - Viaggi all'estero, che rappresentano i viaggi effettuati dall'assistito al di fuori dell'Italia;
 - Documenti allegati, che rappresentano i documenti caricati da parte del paziente non ancora presenti nel FSE.
-
 
 ### Dipendenze
 {% include dependency-table.xhtml %}
@@ -63,8 +64,8 @@ Le informazioni, definite nell’Allegato A del Decreto 7 settembre 2023 “Fasc
 <tr class="odd">
 <td>Autore</td>
 <td>Leonardo Alcaro</td>
-<td>HL7 Italia</td>
-<td>leonardo.alcaro@teamdigitale.governo.it</td>
+<td>CTO HL7</td>
+<td>leonardo.alcaro@gmail.com</td>
 </tr>
 <tr class="even">
 <td>Autore</td>
@@ -89,12 +90,6 @@ Le informazioni, definite nell’Allegato A del Decreto 7 settembre 2023 “Fasc
 <td>Maria Giovanna Antida Preziosi</td>
 <td>SOGEI</td>
 <td>mpreziosi@sogei.it</td>
-</tr>
-<tr class="odd">
-<td>Autore</td>
-<td>Giorgio Cangioli</td>
-<td>HL7 Italia</td>
-<td>giorgio.cangioli@gmail.com</td>
 </tr>
 </tbody>
 </table>

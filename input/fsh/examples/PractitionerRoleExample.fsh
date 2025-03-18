@@ -13,7 +13,7 @@ Usage: #example
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Instance: PractitionerRole-Medico-Cardiologo
 InstanceOf: PractitionerRole
-Title: "PractitionerRole - cardiologo"
+Title: "PractitionerRole - Cardiologo"
 Description: "Esempio di PractitionerRole (Cardiologo)"
 Usage: #example 
 

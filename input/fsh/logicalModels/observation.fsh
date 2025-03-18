@@ -5,7 +5,7 @@ Characteristics: #can-be-target
 
 * dataCreazione 1..1 dateTime "Data di creazione dell'informazione a sistema"
 * codice 1..1 code "Identifica la tipologia dell'osservazione" 
-* risultato 1..* BackboneElement "Risultato dell'osservazione"
+* risultato 1..* Base "Risultato dell'osservazione"
   * codice 1..1 code "Identifica la tipologia di risultato dell'osservazione" 
   * valoreOsservazione 1..1 BackboneElement "Valore del risultato dell'osservazione"
 * rangeOsservazione 0..1 Range "Range di riferimento"

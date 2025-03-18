@@ -9,6 +9,10 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * code.coding.display = "Annotazioni e commenti"
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
+* subject 1..1
+* subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationEventiTaccuino
@@ -25,6 +29,9 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * effectiveDateTime ^short = "Data evento significativo"
 * value[x] 1..1
 * value[x] ^short = "Evento"
+* subject 1..1
+* subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
@@ -40,16 +47,12 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
 * component.valueCodeableConcept ^short = "Codice e descrizione del sintomo, nome dell'allergene o dell'intolleranza"
-// * component.valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-// * component.valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-// * component.valueCodeableConcept.coding ^slicing.ordered = false
-// * component.valueCodeableConcept.coding ^slicing.rules = #open
-// * component.valueCodeableConcept.coding contains noAllergiesInfo 0..1 and ICD9 0..1  // Preso da CDA2 in PSS
-// * component.valueCodeableConcept.coding[noAllergiesInfo].system from $vs-no-allergies // Valueset Preso da CDA2 in PSS
-// * component.valueCodeableConcept.coding[ICD9].system from $ICD9
-//quale valueset usare per segni e sintomi fa
+//quale valueset utilizzare per segni e sintomi
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
+* subject 1..1
+* subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
@@ -66,12 +69,10 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * valueCodeableConcept ^short = "Codice e descrizione del dolore" 
 * component 1..1
 * component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
-//* componet.valueCodableConcept scala del dolore
 * bodySite ^short = "Area interessata dal dolore"
-
-// Proposta 1--> Grado di intensità del dolore, potrebbe essere un integer che con una rule applica una scala da 0 a 10
-// Proposta 2 --> utilizzare il concept come code --> 72514-3 e poi nel concept.valueCodableConcept la scala da 1 a 10, però 
-// l'oid da inserire nel system è quello relativo a LOINC? oppure un  altro? (proposta)
+* subject 1..1
+* subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationViaggiTaccuino
@@ -90,3 +91,6 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 * valueString ^short = "Nome del paese estero"
 * valueString 1..1
 * note ^short = "Note e commenti"
+* subject 1..1
+* subject only Reference(PatientTaccuino)
+* issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"

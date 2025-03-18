@@ -6,11 +6,11 @@ Description: "Esempio di un'osservazione: segni e sintomi"
 
 * id = "3fdd0b81-0fc2-491d-bddb-d6cabf6d3dd8"
 * status = #final
-* extension[dataRegistrazione].valueDate = "2025-02-09"
+* extension[dataRegistrazione].valueInstant = "2025-03-09T15:30:00+01:00"
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * effectivePeriod.start = "2024-03-07"
-* effectivePeriod.end = "2024-04-09"
+* effectivePeriod.end = "2024-03-08"
 * valueString = "Reazione allergica al paracetamolo"
 
 
@@ -23,7 +23,7 @@ Description: "Esempio di un'osservazione: note generali riguardanti la febbre de
 
 * id = "ff8f154f-7d4e-4830-9a75-3e1c26207173"
 * status = #final
-* extension[dataRegistrazione].valueDate = "2025-02-06"
+* extension[dataRegistrazione].valueInstant = "2025-02-06T15:30:00+01:00"
 * effectiveDateTime = "2025-02-06"
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
@@ -39,7 +39,7 @@ Description: "Esempio di un'osservazione: note generali relative ad un calo di p
 
 * id = "626a554d-616d-46d5-8e91-cb6b4bbff785" 
 * status = #final
-* extension[dataRegistrazione].valueDate = "2025-02-09"
+* extension[dataRegistrazione].valueInstant = "2025-02-09T15:30:00+01:00"
 * effectiveDateTime = "2025-02-09"
 * performer = Reference(Patient-Taccuino-Esempio2)
 * subject = Reference(Patient-Taccuino-Esempio2)
@@ -56,13 +56,13 @@ Description: "Esempio di un'osservazione per un evento di vaccinazione"
 
 * id = "0ecdd63e-aa05-4a48-9bc2-1dc99018c5f8"
 * status = #final
-* extension[dataRegistrazione].valueDate = "2024-12-20"
+* extension[dataRegistrazione].valueInstant = "2025-01-21T15:30:00+01:00"
 * effectiveDateTime = "1996-03-06"
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * code = $CS_Loinc#42547-0
 * code.coding.display = "Evento:Osservazione"
-* valueCodeableConcept = $loinc#30939-3 "Measles virus dose count in combination vaccine"
+* valueCodeableConcept = $CS_Loinc#30939-3 "Morbillo, conteggio dose virus in vaccino combinato:Num:Pt:^Paziente:Qn:"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: Observation-Taccuino-Viaggi
@@ -73,8 +73,8 @@ Description: "Esempio di un'osservazione: viaggi all'estero effettuati dall'assi
 
 * id = "706c0582-d87a-41dd-9c7f-09a4aa80961c"
 * status = #final
-* effectivePeriod.start = "2025-02-13"
-* effectivePeriod.end = "2025-03-15"
+* effectivePeriod.start = "2025-01-01"
+* effectivePeriod.end = "2025-01-15"
 * category = $observation-category#activity
 * subject = Reference(Patient-Taccuino-Esempio)
 * performer = Reference(Patient-Taccuino-Esempio)
@@ -91,12 +91,12 @@ Usage: #example
 Description: "Esempio di un'osservazione: dolore"
 
 * id = "0fe610cd-e163-4566-85ea-1b65f168e1b7"
-* extension[dataRegistrazione].valueDate = "2024-02-19"
+* extension[dataRegistrazione].valueInstant = "2025-01-21T15:30:00+01:00"
 
 * code = $CS_Loinc#94085-8 "Dolore, categoria"
-* effectiveDateTime = "2023-08-01"
+* effectiveDateTime = "2025-01-21"
 * status = #final
 * subject = Reference (Patient-Taccuino-Esempio)
 * performer = Reference (Practitioner-Taccuino-Esempio)
 * component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
-* component.valueCodeableConcept = $loinc#LA6115-5 "4"
+* component.valueCodeableConcept = $CS_Loinc#LA6115-5 "4"

@@ -54,6 +54,35 @@ Description: "Atti clinici e regole di accesso"
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+CodeSystem: CsClassCode
+Id: class-code
+Title: "Classe documento"
+Description: "Classe a cui il documento appartiene"
+* ^experimental = false
+* ^status = #active
+* ^language = #it-IT
+* ^caseSensitive = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
+
+* #TAC "Taccuino"
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CodeSystem: CsCND
+Id: cnd
+Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
+Description: "Codici che classificano il tipo di dispositivo (CND)"
+* ^experimental = false
+* ^status = #active
+* ^language = #it-IT
+* ^caseSensitive = true
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
+
+* #J010501 "Defibrillatori Impiantabili Sottocutanei"
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 CodeSystem: CsLoincIT
 Id: cs-loinc-it
 Title: "Codici LOINC"
@@ -72,7 +101,7 @@ Description: "Codici LOINC italiano"
 * #8310-5 "Temperatura corporea"
 * #8302-2 "Altezza corporea"
 * #29463-7 "Peso corporeo"
-* #85354-9 "Pressione sanguigna, panel con tutti i figli opzionali"
+* #85354-9 "Pressione arteriosa, panel con tutti i figli opzionali"
 * #8480-6 "Sistolica intravascolare"
 * #8462-4 "Diastolica intravascolare"
 * #2093-3 "Colesterolo"
@@ -121,32 +150,15 @@ Description: "Codici LOINC italiano"
 * #101134-5	"Promemoria di appuntamento"
 * #101133-7	"Consenso alla donazione di organo e/o tessuto"
 * #100971-1	"Cartella clinica"
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-CodeSystem: CsCND
-Id: cnd
-Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
-Description: "Codici che classificano il tipo di dispositivo (CND)"
-* ^experimental = false
-* ^status = #active
-* ^language = #it-IT
-* ^caseSensitive = true
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
-
-* #J010501 "Defibrillatori Impiantabili Sottocutanei"
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-CodeSystem: CsClassCode
-Id: class-code
-Title: "Classe documento"
-Description: "Classe a cui il documento appartiene"
-* ^experimental = false
-* ^status = #active
-* ^language = #it-IT
-* ^caseSensitive = true
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.3.3.6.1.5"
-
-* #TAC "Taccuino"
+* #30939-3 "Morbillo, conteggio dose virus in vaccino combinato:Num:Pt:^Paziente:Qn:"
+* #LA6111-4 "0"
+* #LA6112-2 "1"
+* #LA6113-0 "2"
+* #LA6114-8 "3"
+* #LA6115-5 "4"
+* #LA10137-0 "5"
+* #LA10138-8 "6"
+* #LA10139-6 "7"
+* #LA10140-4 "8"
+* #LA10141-2 "9"
+* #LA13942-0 "10"

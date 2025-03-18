@@ -8,7 +8,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
-* extension[dataRegistrazione].valueDateTime
+* extension[dataRegistrazione].valueInstant
 
 * date 1..1
 * date ^short = "Data di emissione del documento"
@@ -30,15 +30,15 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * content.attachment.size ^short = "Size"
 * content.attachment.language ^short = "Lingua del Documento"
 
-
 * context.event ^short = "Regole di accesso" 
-* context.event.coding.system from $vs-accessRules (required)
+* context.event from $vs-accessRules (required)
 
 * category 1..1
 * category ^short = "Tipo documento (alto livello)"
-* category.coding.system from $vs-class-code 
-* category.coding.code = #TAC (exactly)
-* category.coding.display = "Taccuino"
+* category.coding.system 1..
+* category.coding.code 1..
+* category.coding.display 1..
+* category from $vs-class-code (required)
 
 * content.attachment.url ^short = "Identificativo repository"
 * content.format ^short = "Formato utilizzato (basso livello)"

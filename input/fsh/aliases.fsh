@@ -17,6 +17,7 @@ Alias: $vs-atc = https://www.hl7.it/fhir/terminology/ValueSet/who-atc
 Alias: $aic = http://hl7.it/fhir/taccuino/CodeSystem/aifa-aic
 Alias: $CS_Loinc = http://hl7.it/fhir/taccuino/CodeSystem/cs-loinc-it
 Alias: $VS_Loinc = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-it
+Alias: $VS_Loinc_PV = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-parametri-vitali
 
 Alias: $vs-aifa-aic = http://hl7.it/fhir/taccuino/ValueSet/aifa-aic
 Alias: $cs-no-allergies = http://hl7.it/fhir/taccuino/CodeSystem/no-allergies
@@ -24,7 +25,7 @@ Alias: $vs-no-allergies = http://hl7.it/fhir/taccuino/ValueSet/vs-no-allergies
 Alias: $vs-gruppo-equivalenza = https://www.hl7.it/fhir/terminology/ValueSet/aifa-ge
 
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
-Alias: $vs-NullFlavor = http://terminology.hl7.org/ValueSet/v3-NullFlavor
+Alias: $vs-NullFlavor = http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0
 
 Alias: $minsan-fls = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idAziendeOspedaliere
 Alias: $minsan-hsp = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture
@@ -35,13 +36,13 @@ Alias: $minsan-farmacie = https://www.hl7.it/fhir/terminology/CodeSystem/minsan-
 Alias: $vs-minsan-farmacie = https://www.hl7.it/fhir/terminology/ValueSet/vs-mds-farmacia
 Alias: $minsan-regione = https://www.hl7.it/fhir/terminology/sid/minsan-regione
 Alias: $vs-mds-esenzioni = https://www.hl7.it/fhir/terminology/ValueSet/vs-mds-esenzioni
-Alias: $encounterCode = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
+Alias: $encounterCode = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0
 Alias: $cs-encounterCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $reason = http://hl7.org/fhir/ValueSet/encounter-reason
 Alias: $vs-doc-type = http://hl7.org/fhir/ValueSet/c80-doc-typecodes
 Alias: $tipoIdentificatore = https://www.hl7.it/fhir/terminology/ValueSet/VstipoIdentificatore
-Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
-Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0
+Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0
 Alias: $istat-cittadinanza = https://www.hl7.it/fhir/terminology/ValueSet/istat-cittadinanza
 Alias: $istat-professione = https://www.hl7.it/fhir/terminology/ValueSet/istat-professione
 Alias: $CS_ProfessioniIstat = https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni
@@ -67,3 +68,4 @@ Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-Obs
 
 Alias: $cs-accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
 Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
+Alias: $vs-loinc-dolore = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-scala-dolore

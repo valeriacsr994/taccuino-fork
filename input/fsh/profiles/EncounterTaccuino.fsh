@@ -8,7 +8,7 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
-* extension[dataRegistrazione].valueDateTime
+* extension[dataRegistrazione].valueInstant
 * period 1..1
 * period ^short = "Data inizio e fine contatto con la struttura sanitaria"
 * period.start 1..1
