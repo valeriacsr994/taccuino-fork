@@ -11,7 +11,7 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
+* extension[dataRegistrazione] ^short = "Data e ora di registrazione a sistema"
 * extension[dataRegistrazione].valueInstant
 * period 1..1
 * period ^short = "Data inizio e fine contatto con la struttura sanitaria"

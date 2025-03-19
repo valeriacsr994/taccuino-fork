@@ -52,7 +52,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
-* effectiveDateTime ^short = "Data di registrazione della pressione arteriosa"
+* effectiveDateTime ^short = "Data e ora di registrazione della pressione arteriosa"
 * effectiveDateTime 1..1
 
 
