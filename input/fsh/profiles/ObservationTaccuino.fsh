@@ -4,8 +4,10 @@ Id: observation-it-annotazioni-taccuino
 Title: "Observation Note generali - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Note generali' tramite il profilo Observation"
 * ^status = #active
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#48767-8
+* code = $cs-loinc#48767-8
 * code.coding.display = "Annotazioni e commenti"
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
@@ -22,8 +24,10 @@ Title: "Observation Eventi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#42547-0
+* code = $cs-loinc#42547-0
 * code.coding.display = "Evento:Osservazione"
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "Data evento significativo"
@@ -41,8 +45,10 @@ Title: "Observation Segni e sintomi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#56831-1
+* code = $cs-loinc#56831-1
 * code.coding.display = "Problema, sintomi e segni associati"
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
@@ -62,13 +68,15 @@ Title: "Observation Dolore - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#94085-8
+* code = $cs-loinc#94085-8
 * code.coding.display = "Dolore, categoria"
 * effectivePeriod ^short = "Data di inizio e fine del dolore"
 * valueCodeableConcept ^short = "Codice e descrizione del dolore" 
 * component 1..1
-* component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
+* component.code = $cs-loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
 * bodySite ^short = "Area interessata dal dolore"
 * subject 1..1
 * subject only Reference(PatientTaccuino)
@@ -82,7 +90,9 @@ Title: "Observation Viaggi all'estero - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il profilo Observation"
 * ^status = #active
 
-* code = $CS_Loinc#8691-8
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
+* code = $cs-loinc#8691-8
 * code.coding.display = "Viaggio"
 * category = $observation-category#activity
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)

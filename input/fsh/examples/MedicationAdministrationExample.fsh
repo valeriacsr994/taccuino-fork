@@ -4,6 +4,8 @@ Title: "MedicationAdministration assunzione Paracetamolo"
 Description: "Esempio di assunzione del farmaco TACHIVERDE 1000 mg COMPRESSA da parte di un paziente"
 Usage: #example
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * id = "38642e18-973d-4763-b875-1d1bc322d98a"
 * status = #active
 
@@ -30,6 +32,8 @@ Title: "MedicationAdministration assunzione Zitromax"
 Description: "Esempio di assunzione del farmaco ZITROMAX 3CPR RIV 500MG da parte di un paziente"
 Usage: #example
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * id = "08cea1b4-db13-48fd-8956-a29d25f42b99"
 * status = #active
 

@@ -4,6 +4,8 @@ Title: "Bundle Taccuino Esempio"
 Description: "Esempio di Bundle type collection del Taccuino personale dell'assistito"
 Usage: #example
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * identifier.system = "urn:ietf:rfc:39861"
 * identifier.value = "urn:uuid:bfcf00e2-3de9d419d27e"
 * type = #collection

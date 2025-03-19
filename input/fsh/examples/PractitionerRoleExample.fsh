@@ -1,9 +1,11 @@
 Instance: PractitionerRole-Medico-MMG
 InstanceOf: PractitionerRole
-Title: "PractitionerRole - medico di medicina generale"
+Title: "PractitionerRole - Medico di medicina generale"
 Description: "Esempio di medico di medicina generale"
 Usage: #example
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * id = "c95f6e06-d3f9-46d4-bcd4-deb87cc295e1"
 * practitioner = Reference (Practitioner-Taccuino-Esempio3)
 * organization = Reference(Organization-Taccuino-Esempio)
@@ -17,6 +19,8 @@ Title: "PractitionerRole - Cardiologo"
 Description: "Esempio di PractitionerRole (Cardiologo)"
 Usage: #example 
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * id = "7d6735f7-5fb5-44e5-9469-baebe030e59e"
 * practitioner = Reference (Practitioner-Taccuino-Esempio)
 * organization = Reference(Organization-Taccuino-Esempio3)

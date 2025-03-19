@@ -12,15 +12,15 @@ Description: "Esempio di Paziente (donna) iscritta al SSN"
 * extension[luogoNascita].valueAddress.city = "Milano"
 * extension[luogoNascita].valueAddress.postalCode = "20100"
 * extension[luogoNascita].valueAddress.country = "IT"
-* extension[professione].valueCodeableConcept = $CS_ProfessioniIstat#1.1.3 "Dirigenti della magistratura"
-* extension[titoloStudio].valueCodeableConcept = $CS_TitoloStudioIstat#40205013 "Giuridico economico aziendale"
+* extension[professione].valueCodeableConcept = $cs-professioni-istat#1.1.3 "Dirigenti della magistratura"
+* extension[titoloStudio].valueCodeableConcept = $cs-titolo-studio-istat#40205013 "Giuridico economico aziendale"
 
 * identifier
   * system = "http://hl7.it/sid/codiceFiscale"
   * value = "VRDNGL89D43H501J" 
   * extension[certificazioneId].extension[when].valueDateTime = "2024-09-01"
 
-* extension[luogoNascitaCodeable].valueCodeableConcept = $CS_luogoNascita#100 "Italia"
+* extension[luogoNascitaCodeable].valueCodeableConcept = $cs-luogo-nascita#100 "Italia"
 
 
 * name.family = "Verdi"
@@ -54,15 +54,15 @@ Description: "Esempio di Paziente (uomo) iscritto al SSN"
 * extension[luogoNascita].valueAddress.city = "Torino"
 * extension[luogoNascita].valueAddress.postalCode = "10036"
 * extension[luogoNascita].valueAddress.country = "IT"
-* extension[professione].valueCodeableConcept = $CS_ProfessioniIstat#3.1.2.3 "Tecnici web"
-* extension[titoloStudio].valueCodeableConcept = $CS_TitoloStudioIstat#40202023 "Informatica"
+* extension[professione].valueCodeableConcept = $cs-professioni-istat#3.1.2.3 "Tecnici web"
+* extension[titoloStudio].valueCodeableConcept = $cs-titolo-studio-istat#40202023 "Informatica"
 
 * identifier
   * system = "http://hl7.it/sid/codiceFiscale"
   * value = "BNCMHL90H12L219K" 
   * extension[certificazioneId].extension[when].valueDateTime = "2024-08-10"
 
-* extension[luogoNascitaCodeable].valueCodeableConcept = $CS_luogoNascita#100 "Italia"
+* extension[luogoNascitaCodeable].valueCodeableConcept = $cs-luogo-nascita#100 "Italia"
 
 
 * name.family = "Bianchi"

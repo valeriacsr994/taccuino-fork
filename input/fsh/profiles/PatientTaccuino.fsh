@@ -8,7 +8,6 @@ Description: "Rappresentazione del paziente tramite il profilo Patient"
 * . ^short = "Descrizione delle informazioni del paziente nei documenti FHIR"
 
 * insert SetFmmandStatusRule ( 1, trial-use) 
-
 * extension contains 
     BirthPlaceIta named luogoNascita 0..1 and 
     ExtRecordCertification named certificazione 0..1 and

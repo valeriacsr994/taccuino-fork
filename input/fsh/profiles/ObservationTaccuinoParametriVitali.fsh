@@ -7,8 +7,10 @@ Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tr
 * . ^short = "Informazione sui parametri vitali raccolta dal paziente"
 * ^status = #active
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code from $VS_Loinc_PV (extensible)
+* code from $vs-loinc-pv (extensible)
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino or PatientTaccuino)
 
@@ -37,8 +39,10 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 
 * ^status = #active
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#85354-9
+* code = $cs-loinc#85354-9
 * code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
@@ -56,7 +60,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 * component contains
     diastolica 1..1 and sistolica 1..1 
 
-* component[diastolica].code = $CS_Loinc#8462-4 "Diastolica intravascolare"
+* component[diastolica].code = $cs-loinc#8462-4 "Diastolica intravascolare"
 * component[diastolica].valueQuantity ^short = "Risultato della misurazione"
 * component[diastolica].valueQuantity 1..1
 * component[diastolica].valueQuantity.value 1..1
@@ -66,7 +70,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 * component[diastolica].valueQuantity.code ^short = "Valore codificato dell'unità di misura" //valutare se utilizzare un valueset di unità di misura specifico a seconda dell'osservazione
 
 
-* component[sistolica].code = $CS_Loinc#8480-6 "Sistolica intravascolare"
+* component[sistolica].code = $cs-loinc#8480-6 "Sistolica intravascolare"
 * component[sistolica].valueQuantity ^short = "Risultato della misurazione"
 * component[sistolica].valueQuantity 1..1
 * component[sistolica].valueQuantity.value 1..1

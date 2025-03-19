@@ -6,6 +6,9 @@ Description: "Rappresentazione del contenuto informativo del Taccuino personale 
 * ^text.status = #additional
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a>Profilazione del Bundle per la collection dei dati relativi all'assistito</a></div>"
 * ^status = #draft
+
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * type = #collection (exactly)
 * timestamp 1..1
 * timestamp ^short = "Data di creazione del Bundle"
