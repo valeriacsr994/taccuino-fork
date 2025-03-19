@@ -6,6 +6,8 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 
 * . ^short = "Descrive l'evento in cui il paziente ha un contatto con una struttura sanitaria"
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 

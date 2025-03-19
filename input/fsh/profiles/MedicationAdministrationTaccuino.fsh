@@ -5,6 +5,8 @@ Title:    "MedicationAdministration - Taccuino personale dell'assistito"
 Description: "Rappresentazione della somministrazione/assunzione del farmaco/integratore tramite il profilo MedicationAdministration"
 * . ^short = "Descrive l'evento in cui il paziente assume il farmaco/integratore"
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 

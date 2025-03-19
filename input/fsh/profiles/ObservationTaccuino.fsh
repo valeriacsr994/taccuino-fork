@@ -4,6 +4,9 @@ Id: observation-it-annotazioni-taccuino
 Title: "Observation Note generali - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Note generali' tramite il profilo Observation"
 * ^status = #active
+
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
@@ -24,6 +27,8 @@ Title: "Observation Eventi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
@@ -45,6 +50,8 @@ Title: "Observation Segni e sintomi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
@@ -68,6 +75,8 @@ Title: "Observation Dolore - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
@@ -90,6 +99,8 @@ Title: "Observation Viaggi all'estero - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * code = $cs-loinc#8691-8

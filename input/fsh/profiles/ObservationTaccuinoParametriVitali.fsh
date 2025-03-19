@@ -7,6 +7,8 @@ Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tr
 * . ^short = "Informazione sui parametri vitali raccolta dal paziente"
 * ^status = #active
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
@@ -39,6 +41,8 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 
 * ^status = #active
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 

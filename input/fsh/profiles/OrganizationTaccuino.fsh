@@ -4,6 +4,8 @@ Id: organization-it-Taccuino
 Title: "Organization - Taccuino personale dell'assistito"
 Description: "Rappresentazione della struttura sanitaria tramite il profilo Organization"
 
+* meta.tag.system 1..1
+* meta.tag.code 1..1
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * identifier 1.. 
