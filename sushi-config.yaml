@@ -119,7 +119,7 @@ groups:
       - StructureDefinition/device-it-taccuino
       - StructureDefinition/document-reference-it-taccuino
       - StructureDefinition/encounter-it-Taccuino
-      - StructureDefinition/medicationAdministration-it-taccuino
+      - StructureDefinition/medicationStatement-it-taccuino
       - StructureDefinition/observation-it-arteriosa-taccuino
       - StructureDefinition/observation-it-vital-signs-taccuino
       # - StructureDefinition/observation-it-annotazioni-taccuino

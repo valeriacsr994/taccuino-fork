@@ -278,6 +278,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 1"
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * meta.versionId = "1"
+* meta.lastUpdated = "2025-01-07T15:30:00+01:00"
 * status = #final
 * code = $cs-loinc#85354-9
 * issued = "2025-01-07T15:30:00+01:00"
@@ -307,6 +308,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 2"
 * meta.tag.system = $cs-class-code
 * meta.tag.code = #TAC
 * meta.versionId = "2"
+* meta.lastUpdated = "2025-01-08T16:30:00+01:00"
 * status = #final
 * code = $cs-loinc#85354-9
 * code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
@@ -325,7 +327,7 @@ Description: "Esempio di un'osservazione: pressione arteriosa versione 2"
 * component[sistolica].valueQuantity.unit = "mmHg"
 * component[sistolica].valueQuantity.system = $unitOfMeasure
 * component[sistolica].valueQuantity.code = #mm[Hg]
-* issued = "2025-01-07T16:30:00+01:00"
+* issued = "2025-01-08T16:30:00+01:00"
 
 * component[sistolica].interpretation.coding = $observationInterpretation#H "High"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

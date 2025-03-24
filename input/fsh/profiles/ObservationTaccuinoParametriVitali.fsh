@@ -9,7 +9,7 @@ Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tr
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code from $vs-loinc-pv (extensible)
@@ -43,7 +43,7 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $cs-loinc#85354-9

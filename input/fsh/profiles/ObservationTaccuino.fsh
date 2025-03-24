@@ -7,7 +7,7 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $cs-loinc#48767-8
@@ -29,7 +29,7 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $cs-loinc#42547-0
@@ -52,7 +52,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $cs-loinc#56831-1
@@ -63,7 +63,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 //quale valueset utilizzare per segni e sintomi
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
-* subject 1..1
+//* subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
@@ -77,7 +77,7 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * code = $cs-loinc#94085-8
@@ -86,7 +86,12 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * valueCodeableConcept ^short = "Codice e descrizione del dolore" 
 * component 1..1
 * component.code = $cs-loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
-* bodySite ^short = "Area interessata dal dolore"
+* component.valueCodeableConcept from $vs-loinc-dolore (required)
+* component.valueCodeableConcept ^short = "Valore codificato del dolore percepito"
+* component.valueCodeableConcept 1..1
+* component.valueCodeableConcept.coding.code 1..1
+* component.valueCodeableConcept.coding.system 1..1 
+* bodySite ^short = "Area interessata dal dolore" 
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
@@ -101,7 +106,7 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * code = $cs-loinc#8691-8
 * code.coding.display = "Viaggio"

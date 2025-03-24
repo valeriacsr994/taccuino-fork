@@ -7,7 +7,7 @@ Description: "Rappresentazione della procedura di impianto protesico tramite il 
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * code.coding.code = #59771-6
 * code.coding.display = "Procedura impianti"

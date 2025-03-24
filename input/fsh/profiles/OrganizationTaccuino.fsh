@@ -6,7 +6,7 @@ Description: "Rappresentazione della struttura sanitaria tramite il profilo Orga
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * identifier 1.. 
   * ^short = "Identificativo della struttura dove è avvenuta la procedura"

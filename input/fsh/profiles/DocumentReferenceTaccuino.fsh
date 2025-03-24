@@ -8,7 +8,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data e ora di registrazione a sistema"

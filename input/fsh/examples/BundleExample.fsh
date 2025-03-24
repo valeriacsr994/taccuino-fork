@@ -18,5 +18,5 @@ Usage: #example
 * entry[observation][1].resource = Observation-Taccuino-Annotazioni-Pressione
 * entry[observation][2].fullUrl = "urn:uuid:06a0f231-aec2-417f-9bc7-4954e6252b92"
 * entry[observation][2].resource = Observation-Taccuino-Trigliceridi-alti
-* entry[medicationAdministration].fullUrl = "urn:uuid:08cea1b4-db13-48fd-8956-a29d25f42b99"
-* entry[medicationAdministration].resource = MedicationAdministration-Taccuino-Esempio2
+* entry[medicationStatement].fullUrl = "urn:uuid:08cea1b4-db13-48fd-8956-a29d25f42b99"
+* entry[medicationStatement].resource = MedicationStatement-Taccuino-Esempio2

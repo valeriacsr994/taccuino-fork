@@ -9,7 +9,7 @@ Description: "Rappresentazione del contenuto informativo del Taccuino personale 
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * type = #collection (exactly)
 * timestamp 1..1
@@ -37,10 +37,10 @@ Description: "Rappresentazione del contenuto informativo del Taccuino personale 
 * entry[encounter].resource only EncounterTaccuino
 * entry[encounter].resource 1..
 
-* entry contains medicationAdministration 0..*  
-* entry[medicationAdministration].resource ^short = "Somministrazioni/assunzioni di farmaci/integratori da parte del paziente riportate nel taccuino personale"
-* entry[medicationAdministration].resource only MedicationAdministrationTaccuino
-* entry[medicationAdministration].resource 1..
+* entry contains medicationStatement 0..*  
+* entry[medicationStatement].resource ^short = "Somministrazioni/assunzioni di farmaci/integratori da parte del paziente riportate nel taccuino personale"
+* entry[medicationStatement].resource only MedicationStatementTaccuino
+* entry[medicationStatement].resource 1..
 
 // * entry contains organization 0..*  
 // * entry[organization].resource only OrganizationTaccuino

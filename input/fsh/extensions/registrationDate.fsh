@@ -10,7 +10,7 @@ Description: "Estensione per la data e l'ora di registrazione di una risorsa a s
 * ^context[+].type = #element
 * ^context[=].expression = "Encounter"
 * ^context[+].type = #element
-* ^context[=].expression = "MedicationAdministration"
+* ^context[=].expression = "MedicationStatement"
 
 * . ^short = "Data e ora di registrazione a sistema"
 * . ^definition = "Estensione utilizzata per gestire la data e l'ora di registrazione di una risorsa nel sistema"

@@ -1,13 +1,13 @@
-Profile: MedicationAdministrationTaccuino
-Parent: MedicationAdministration
-Id: medicationAdministration-it-taccuino
-Title:    "MedicationAdministration - Taccuino personale dell'assistito"
-Description: "Rappresentazione della somministrazione/assunzione del farmaco/integratore tramite il profilo MedicationAdministration"
+Profile: MedicationStatementTaccuino
+Parent: MedicationStatement
+Id: medicationStatement-it-taccuino
+Title:    "MedicationStatement - Taccuino personale dell'assistito"
+Description: "Rappresentazione della somministrazione/assunzione del farmaco/integratore tramite il profilo MedicationStatement"
 * . ^short = "Descrive l'evento in cui il paziente assume il farmaco/integratore"
 
 * meta.tag.system 1..1
 * meta.tag.code 1..1
-* meta.tag.system = $cs-class-code
+* meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
 * extension[dataRegistrazione] ^short = "Data e ora di registrazione a sistema"
@@ -16,17 +16,16 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 * effectivePeriod.start 1..
 * effectivePeriod.start ^short = "Inizio dell'assunzione del farmaco/integratore"
 * effectivePeriod.end ^short = "Fine dell'assunzione del farmaco/integratore"
-// TODO: capire quali dizionari utilizzare per l'identificazione del farmaco e quali codici mantenere
+
 * obeys medicationEccezioni
 * medication[x] only CodeableConceptTaccuino
 * medication[x] ^short = "Farmaco/integratore assunto o somministrato"
 
-// TODO: valutare se inserire i dizionari per la codifica delle informazioni, anche per Dossier Farmaceutico
 * dosage
   * site ^short = "Sito di somministrazione"
   * route ^short = "Via di somministrazione"
-  * dose ^short = "Dose"
-  * rate[x] ^short = "Frequenza di assunzione"
+  * doseAndRate.dose[x] ^short = "Dose"
+  * doseAndRate.rate[x] ^short = "Frequenza di assunzione"
 
 * subject 1..1
 * subject only Reference(PatientTaccuino)
