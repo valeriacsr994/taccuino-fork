@@ -4,6 +4,8 @@ Title: "Observation - Segni e Sintomi"
 Usage: #example
 Description: "Esempio di un'osservazione: segni e sintomi"
 
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * id = "3fdd0b81-0fc2-491d-bddb-d6cabf6d3dd8"
 * status = #final
 * extension[dataRegistrazione].valueInstant = "2025-03-09T15:30:00+01:00"

@@ -6,6 +6,7 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 
 * . ^short = "Descrive l'evento in cui il paziente ha un contatto con una struttura sanitaria"
 
+* meta.tag 1..1
 * meta.tag.system 1..1
 * meta.tag.code 1..1
 * meta.tag from $vs-class-code (required)

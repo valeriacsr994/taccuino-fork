@@ -5,6 +5,7 @@ Title:    "MedicationStatement - Taccuino personale dell'assistito"
 Description: "Rappresentazione della somministrazione/assunzione del farmaco/integratore tramite il profilo MedicationStatement"
 * . ^short = "Descrive l'evento in cui il paziente assume il farmaco/integratore"
 
+* meta.tag 1..1
 * meta.tag.system 1..1
 * meta.tag.code 1..1
 * meta.tag from $vs-class-code (required)

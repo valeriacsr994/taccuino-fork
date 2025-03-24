@@ -5,6 +5,7 @@ Title:    "Procedure - Taccuino personale dell'assistito"
 Description: "Rappresentazione della procedura di impianto protesico tramite il profilo Procedure"
 * . ^short = "Descrive la procedura di impianto protesico a cui è stato sottoposto paziente"
 
+* meta.tag 1..1
 * meta.tag.system 1..1
 * meta.tag.code 1..1
 * meta.tag from $vs-class-code (required)

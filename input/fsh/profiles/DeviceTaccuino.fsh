@@ -6,6 +6,8 @@ Description: "Rappresentazione dei dispositivi sanitari quali protesi impiantate
 
 
 * . ^short = "Caratteristiche del dispositivo sanitario impiantato o d'ausilio al paziente"
+
+* meta.tag 1..1
 * meta.tag.system 1..1
 * meta.tag.code 1..1
 * meta.tag from $vs-class-code (required)

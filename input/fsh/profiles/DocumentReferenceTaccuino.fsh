@@ -6,6 +6,8 @@ Title: "DocumentReference - Taccuino personale dell'assistito"
 Description: "Rappresentazione di eventuali documenti che l'assisito allega al Taccuino, tramite il profilo DocumentReference"
 * ^status = #active
 
+
+* meta.tag 1..1
 * meta.tag.system 1..1
 * meta.tag.code 1..1
 * meta.tag from $vs-class-code (required)
