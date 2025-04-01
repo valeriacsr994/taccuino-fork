@@ -6,8 +6,13 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 
 * . ^short = "Descrive l'evento in cui il paziente ha un contatto con una struttura sanitaria"
 
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
+* extension[dataRegistrazione] ^short = "Data e ora di registrazione a sistema"
 * extension[dataRegistrazione].valueInstant
 * period 1..1
 * period ^short = "Data inizio e fine contatto con la struttura sanitaria"

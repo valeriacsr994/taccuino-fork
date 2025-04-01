@@ -4,8 +4,8 @@ Title: "Procedure - Impianto defibrillatore cardiaco"
 Usage: #example
 Description: "Esempio di una procedura di impianto di un defibrillatore cardiaco"
 
-// #2067001 
-// "Impianto di apparecchi acustici elettromagnetici"
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
 * id = "b4bd1cab-efab-4ba1-bf3f-8da5880e5c0e"
 * status = #completed
 * performedDateTime = "2025-02-02"

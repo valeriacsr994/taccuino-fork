@@ -6,8 +6,14 @@ Title: "DocumentReference - Taccuino personale dell'assistito"
 Description: "Rappresentazione di eventuali documenti che l'assisito allega al Taccuino, tramite il profilo DocumentReference"
 * ^status = #active
 
+
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* extension[dataRegistrazione] ^short = "Data di registrazione a sistema"
+* extension[dataRegistrazione] ^short = "Data e ora di registrazione a sistema"
 * extension[dataRegistrazione].valueInstant
 
 * date 1..1
@@ -18,7 +24,7 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * type 1..1
 * type ^short = "Tipologia di documento (medio livello)"
-* type from $VS_Loinc (required)
+* type from $vs-loinc-td (required)
 
 * subject 1..1
 * subject only Reference (PatientTaccuino or Device)
@@ -37,7 +43,6 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * category ^short = "Tipo documento (alto livello)"
 * category.coding.system 1..
 * category.coding.code 1..
-* category.coding.display 1..
 * category from $vs-class-code (required)
 
 * content.attachment.url ^short = "Identificativo repository"

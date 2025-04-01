@@ -1,7 +1,7 @@
 Extension: RegistrationDate
 Id: registration-date
 Title: "Data di Registrazione a sistema"
-Description: "Estensione per la data di registrazione di una risorsa"
+Description: "Estensione per la data e l'ora di registrazione di una risorsa a sistema"
 
 * ^context[0].type = #element
 * ^context[=].expression = "Observation"
@@ -10,8 +10,8 @@ Description: "Estensione per la data di registrazione di una risorsa"
 * ^context[+].type = #element
 * ^context[=].expression = "Encounter"
 * ^context[+].type = #element
-* ^context[=].expression = "MedicationAdministration"
+* ^context[=].expression = "MedicationStatement"
 
-* . ^short = "Data di registrazione a sistema"
-* . ^definition = "Estensione utilizzata per gestire la data di registrazione di una risorsa nel sistema"
+* . ^short = "Data e ora di registrazione a sistema"
+* . ^definition = "Estensione utilizzata per gestire la data e l'ora di registrazione di una risorsa nel sistema"
 * value[x] only instant

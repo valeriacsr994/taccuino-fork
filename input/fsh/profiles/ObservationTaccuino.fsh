@@ -4,8 +4,15 @@ Id: observation-it-annotazioni-taccuino
 Title: "Observation Note generali - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Note generali' tramite il profilo Observation"
 * ^status = #active
+
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#48767-8
+* code.coding.system = $cs-loinc
+* code.coding.code = #48767-8
 * code.coding.display = "Annotazioni e commenti"
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
@@ -22,8 +29,14 @@ Title: "Observation Eventi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#42547-0
+* code.coding.system = $cs-loinc
+* code.coding.code = #42547-0
 * code.coding.display = "Evento:Osservazione"
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "Data evento significativo"
@@ -41,8 +54,14 @@ Title: "Observation Segni e sintomi - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#56831-1
+* code.coding.system = $cs-loinc
+* code.coding.code = #56831-1
 * code.coding.display = "Problema, sintomi e segni associati"
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
@@ -50,7 +69,7 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 //quale valueset utilizzare per segni e sintomi
 * derivedFrom only Reference (Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
-* subject 1..1
+//* subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
 
@@ -62,14 +81,24 @@ Title: "Observation Dolore - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Observation"
 * ^status = #active
 
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $CS_Loinc#94085-8
+* code.coding.system = $cs-loinc
+* code.coding.code = #94085-8
 * code.coding.display = "Dolore, categoria"
 * effectivePeriod ^short = "Data di inizio e fine del dolore"
-* valueCodeableConcept ^short = "Codice e descrizione del dolore" 
 * component 1..1
-* component.code = $CS_Loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
-* bodySite ^short = "Area interessata dal dolore"
+* component.code = $cs-loinc#72514-3 "Dolore, gravità - 0-10 punteggio numerico verbale"
+* component.valueCodeableConcept from $vs-loinc-dolore (required)
+* component.valueCodeableConcept ^short = "Valore codificato del dolore percepito"
+* component.valueCodeableConcept 1..1
+* component.valueCodeableConcept.coding.code 1..1
+* component.valueCodeableConcept.coding.system 1..1 
+* bodySite ^short = "Area interessata dal dolore" 
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
@@ -82,7 +111,13 @@ Title: "Observation Viaggi all'estero - Taccuino personale dell'assistito"
 Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il profilo Observation"
 * ^status = #active
 
-* code = $CS_Loinc#8691-8
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
+* code.coding.system = $cs-loinc
+* code.coding.code = #8691-8
 * code.coding.display = "Viaggio"
 * category = $observation-category#activity
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)

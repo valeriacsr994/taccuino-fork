@@ -3,6 +3,9 @@ Extension: BirthPlaceIta
 Id: birth-place-ita
 Title: "Address Birth Place (Patient)"
 Description: "Definizione dell'indirizzo base per la descrizione del luogo di nascita"
+* ^context.type = #element
+* ^context.expression = "Patient"
+* ^url = "http://hl7.it/fhir/taccuino/StructureDefinition/birth-place-ita"
 * value[x] only AddressItBase
 
 Extension: ExtCodeableBirthPlace
@@ -11,5 +14,6 @@ Title: "Codice comune e/o stato di nascita (Patient)"
 Description: "Codice comune e/o stato di nascita."
 * ^context.type = #element
 * ^context.expression = "Patient"
-* ^url = "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace"
-* value[x] only CodeableConcept
+* ^url = "http://hl7.it/fhir/taccuino/StructureDefinition/patient-codeableBirthPlace"
+* value[x] only CodeableConcept 
+* valueCodeableConcept from $istat-luogoNascita (example)

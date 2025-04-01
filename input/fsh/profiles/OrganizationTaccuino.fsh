@@ -4,6 +4,11 @@ Id: organization-it-Taccuino
 Title: "Organization - Taccuino personale dell'assistito"
 Description: "Rappresentazione della struttura sanitaria tramite il profilo Organization"
 
+* meta.tag 1..1
+* meta.tag.system 1..1
+* meta.tag.code 1..1
+* meta.tag from $vs-class-code (required)
+* meta.tag.code = #TAC
 * identifier 1.. 
   * ^short = "Identificativo della struttura dove è avvenuta la procedura"
   * system 1..  
@@ -33,5 +38,5 @@ Description: "Rappresentazione della struttura sanitaria tramite il profilo Orga
   * system from $minsan-ria
 * identifier[ASL]
   * ^short = "Aziende Sanitarie Locali"
-  * system from $vs_ASL 
+  * system from $vs-asl
 //ampliare

@@ -10,7 +10,7 @@ Description: "Estensione usata per indicare che l'informazione associata è stat
 * ^context[=].expression = "Patient.identifier"
 * . ^short = "Certificazione del record"
 * . ^definition = "Identifica che un certo record paziente, o codice fiscale od indirizzo di residenza è stato certificato da una specifica entità (e.g. MEF)"
-* ^url = "http://hl7.it/fhir/StructureDefinition/recordCertification"
+* ^url = "http://hl7.it/fhir/taccuino/StructureDefinition/recordCertification"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -22,5 +22,4 @@ Description: "Estensione usata per indicare che l'informazione associata è stat
 * extension[when].value[x] only dateTime or Period
 * extension[who] ^short = "Entità Certificante"
 * extension[who].value[x] only CodeableConcept or Reference
-//* extension[who].value[x] from 	VsTipoCertificatore (extensible)
 * extension[rank].value[x] only decimal
