@@ -122,21 +122,6 @@ groups:
       - StructureDefinition/medicationStatement-it-taccuino
       - StructureDefinition/observation-it-arteriosa-taccuino
       - StructureDefinition/observation-it-vital-signs-taccuino
-      # - StructureDefinition/observation-it-annotazioni-taccuino
-      # - StructureDefinition/observation-it-weight-taccuino
-      # - StructureDefinition/observation-it-height-taccuino
-      # - StructureDefinition/observation-it-temperature-taccuino
-      # - StructureDefinition/observation-it-circonferenza-taccuino
-      # - StructureDefinition/observation-it-heartrate-taccuino
-      # - StructureDefinition/observation-it-respiratoryrate-taccuino
-      # - StructureDefinition/observation-it-hdl-taccuino
-      # - StructureDefinition/observation-it-ldl-taccuino
-      # - StructureDefinition/observation-it-colesterolo-taccuino
-      # - StructureDefinition/observation-it-trigliceridi-taccuino
-      # - StructureDefinition/observation-it-ossimetria-taccuino
-      # - StructureDefinition/observation-it-glicemia-digiuno-taccuino
-      # - StructureDefinition/observation-it-emoglobina-glicata-taccuino
-      # - StructureDefinition/observation-it-ossimetria-taccuino
       - StructureDefinition/observation-it-annotazioni-taccuino
       - StructureDefinition/observation-it-sintomi-taccuino
       - StructureDefinition/observation-it-dolore-taccuino
@@ -173,7 +158,7 @@ groups:
     resources:
       - ValueSet/aifa-aic
       - ValueSet/vs-no-allergies
-      # - ValueSet/vs-NullFlavor
+      - ValueSet/vs-loinc-tipo-doc
       - ValueSet/vs-ASL
       - ValueSet/vs-access
       - ValueSet/vs-loinc-it
