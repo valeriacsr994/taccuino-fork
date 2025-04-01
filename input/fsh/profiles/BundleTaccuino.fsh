@@ -43,11 +43,6 @@ Description: "Rappresentazione del contenuto informativo del Taccuino personale 
 * entry[medicationStatement].resource only MedicationStatementTaccuino
 * entry[medicationStatement].resource 1..
 
-// * entry contains organization 0..*  
-// * entry[organization].resource only OrganizationTaccuino
-// * entry[organization].resource ^short = "Organizzazioni con le quali il paziente ha avuto contatti riportate nel taccuino"
-// * entry[organization].resource 1..
-
 * entry contains patient 1..1  
 * entry[patient].resource ^short = "Paziente al quale afferiscono le informazioni del taccuino personale"
 * entry[patient].resource only PatientTaccuino
@@ -60,8 +55,8 @@ Description: "Rappresentazione del contenuto informativo del Taccuino personale 
 
 * entry contains observation 0..* 
 * entry[observation].resource ^short = "Osservazioni riguardanti i parametri vitali, o generiche osservazioni riportate dal paziente" 
-* entry[observation].resource only ObservationEventiTaccuino or ObservationParametriVitaliTaccuino or ObservationSintomiTaccuino or ObservationViaggiTaccuino or
-ObservationSintomiTaccuino or ObservationDoloreTaccuino or ObservationViaggiTaccuino or ObservationAnnotazioniTaccuino or ObservationPressioneArteriosaTaccuino
+* entry[observation].resource only ObservationEventiTaccuino or ObservationParametriVitaliTaccuino or ObservationSintomiTaccuino or ObservationViaggiTaccuino
+or ObservationDoloreTaccuino or ObservationAnnotazioniTaccuino or ObservationPressioneArteriosaTaccuino
 
 * entry[observation].resource 1..
 

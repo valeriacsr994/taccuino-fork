@@ -11,7 +11,8 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $cs-loinc#48767-8
+* code.coding.system = $cs-loinc
+* code.coding.code = #48767-8
 * code.coding.display = "Annotazioni e commenti"
 * valueString 1..1
 * valueString ^short = "Note generali: annotazioni libere"
@@ -34,7 +35,8 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $cs-loinc#42547-0
+* code.coding.system = $cs-loinc
+* code.coding.code = #42547-0
 * code.coding.display = "Evento:Osservazione"
 * effectiveDateTime 1..1
 * effectiveDateTime ^short = "Data evento significativo"
@@ -58,7 +60,8 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $cs-loinc#56831-1
+* code.coding.system = $cs-loinc
+* code.coding.code = #56831-1
 * code.coding.display = "Problema, sintomi e segni associati"
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
@@ -84,7 +87,8 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $cs-loinc#94085-8
+* code.coding.system = $cs-loinc
+* code.coding.code = #94085-8
 * code.coding.display = "Dolore, categoria"
 * effectivePeriod ^short = "Data di inizio e fine del dolore"
 * component 1..1
@@ -112,7 +116,8 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 * meta.tag.code 1..1
 * meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
-* code = $cs-loinc#8691-8
+* code.coding.system = $cs-loinc
+* code.coding.code = #8691-8
 * code.coding.display = "Viaggio"
 * category = $observation-category#activity
 * performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)

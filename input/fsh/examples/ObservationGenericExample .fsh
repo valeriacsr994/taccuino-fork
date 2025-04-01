@@ -9,6 +9,7 @@ Description: "Esempio di un'osservazione: segni e sintomi"
 * id = "3fdd0b81-0fc2-491d-bddb-d6cabf6d3dd8"
 * status = #final
 * extension[dataRegistrazione].valueInstant = "2025-03-09T15:30:00+01:00"
+* code = $cs-loinc#56831-1 "Problema, sintomi e segni associati"
 * performer = Reference(Patient-Taccuino-Esempio)
 * subject = Reference(Patient-Taccuino-Esempio)
 * effectivePeriod.start = "2024-03-07"

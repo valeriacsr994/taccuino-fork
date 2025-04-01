@@ -2,7 +2,7 @@ Profile: MedicationStatementTaccuino
 Parent: MedicationStatement
 Id: medicationStatement-it-taccuino
 Title:    "MedicationStatement - Taccuino personale dell'assistito"
-Description: "Rappresentazione della somministrazione/assunzione del farmaco/integratore tramite il profilo MedicationStatement"
+Description: "Rappresentazione della assunzione/somministrazione del farmaco/integratore tramite il profilo MedicationStatement"
 * . ^short = "Descrive l'evento in cui il paziente assume il farmaco/integratore"
 
 * meta.tag 1..1
@@ -23,10 +23,10 @@ Description: "Rappresentazione della somministrazione/assunzione del farmaco/int
 * medication[x] ^short = "Farmaco/integratore assunto o somministrato"
 
 * dosage
-  * site ^short = "Sito di somministrazione"
-  * route ^short = "Via di somministrazione"
-  * doseAndRate.dose[x] ^short = "Dose"
-  * doseAndRate.rate[x] ^short = "Frequenza di assunzione"
+  * site ^short = "Sito di assunzione/somministrazione"
+  * route ^short = "Via di assunzione/somministrazione"
+  * doseAndRate.dose[x] ^short = "Dose assunta/somministrata"
+  * doseAndRate.rate[x] ^short = "Frequenza di assunzione/somministrazione"
 
 * subject 1..1
 * subject only Reference(PatientTaccuino)

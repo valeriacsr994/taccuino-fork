@@ -48,7 +48,8 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 * meta.tag from $vs-class-code (required)
 * meta.tag.code = #TAC
 * extension contains RegistrationDate named dataRegistrazione 1..1 
-* code = $cs-loinc#85354-9
+* code.coding.system = $cs-loinc
+* code.coding.code = #85354-9
 * code.coding.display = "Pressione arteriosa, panel con tutti i figli opzionali"
 
 * performer ^short = "Modalita' rilevazione: autonoma, MMG, SSR, altra struttura"
