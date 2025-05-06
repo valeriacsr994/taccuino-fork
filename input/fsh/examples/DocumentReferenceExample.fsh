@@ -9,7 +9,7 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * extension[dataRegistrazione].valueInstant = "2025-01-31T15:30:00+01:00"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
-* type =  $cs-loinc#57827-8
+* type =  $cs-loinc#57827-8 "Documento di esenzione"
 * subject = Reference (Patient-Taccuino-Esempio)
 * date = "2024-05-12T09:43:41+11:00"
 * author = Reference (Organization-Taccuino-Esempio)
@@ -36,7 +36,7 @@ Description: "Esempio di referto specialistico ambulatoriale relativo ad una vis
 * extension[dataRegistrazione].valueInstant = "2025-05-27T15:30:00+01:00"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
-* type =  $cs-loinc#11488-4
+* type =  $cs-loinc#11488-4 "Referto specialistico"
 * subject = Reference (Patient-Taccuino-Esempio)
 * date = "2014-05-12T09:43:41+11:00"
 * author = Reference (Practitioner-Taccuino-Esempio)
@@ -63,7 +63,7 @@ Description: "Esempio di documento emesso in seguito all'impianto di un defibril
 * extension[dataRegistrazione].valueInstant = "2025-05-27T15:32:00+01:00"
 * masterIdentifier.value = "1ba0a756-8b7d-4y6e-a852-a1d0b7eu0187"
 * docStatus = #final
-* type =  $cs-loinc#57080-4 
+* type =  $cs-loinc#57080-4 "Dispositivo medico impiantato:Osservazione:Pt:^Paziente:Nar:"
 * subject = Reference (Patient-Taccuino-Esempio)
 * date = "2025-02-03T09:30:41+11:00"
 * author[0] = Reference (Practitioner-Taccuino-Esempio)
