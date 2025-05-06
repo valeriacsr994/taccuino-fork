@@ -49,3 +49,26 @@ Description: "Esempio di referto specialistico ambulatoriale relativo ad una vis
 // * context.event[=].coding[=].display = "Oscuramento del documento"
 * content.attachment.language = #it-IT "Italian (Italy)"
 * content.attachment.contentType = #application/pdf
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+
+Instance: DocumentReference-Taccuino-Esempio03
+InstanceOf: DocumentReferenceTaccuino
+Title : "Documento Allegato - Documento emesso in seguito all'impianto di un defibrillatore cardiaco"
+Description: "Esempio di documento emesso in seguito all'impianto di un defibrillatore cardiaco"
+
+* meta.tag.system = $cs-class-code
+* meta.tag.code = #TAC
+* id = "tiot9799-1666-4e4d-8e75-ae98e3cb7fa5"
+* extension[dataRegistrazione].valueInstant = "2025-05-27T15:32:00+01:00"
+* masterIdentifier.value = "1ba0a756-8b7d-4y6e-a852-a1d0b7eu0187"
+* docStatus = #final
+* type =  $cs-loinc#57080-4 
+* subject = Reference (Patient-Taccuino-Esempio)
+* date = "2025-02-03T09:30:41+11:00"
+* author[0] = Reference (Practitioner-Taccuino-Esempio)
+* author[1] = Reference (Organization-Taccuino-Esempio3)
+* status = #current
+* category = $cs-class-code#TAC 
+* content.attachment.language = #it-IT "Italian (Italy)"
+* content.attachment.contentType = #application/pdf

@@ -18,5 +18,6 @@ Description: "Esempio di una procedura di impianto di un defibrillatore cardiaco
 * subject = Reference (Patient-Taccuino-Esempio)
 * focalDevice.manipulated = Reference (Device-Taccuino-Esempio)
 * bodySite = $sct#51185008 "Chest"
+* report = Reference(DocumentReference-Taccuino-Esempio03)
 * outcome.text = "Non ci sono state complicazioni."
 * followUp.text = "Il prossimo controllo è fissato per il 4 febbraio 2025."

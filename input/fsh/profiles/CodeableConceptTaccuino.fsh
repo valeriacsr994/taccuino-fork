@@ -1,8 +1,8 @@
-Profile: CodeableConceptTaccuino
+Profile: CodeableConceptFarmaco
 Parent: CodeableConcept
 Id: codeableConcept-taccuino
-Title: "Codeable Concept (Taccuino)"
-Description: "Questo profilo rappresenta le limitazioni applicate al tipo di dato CodeableConcept per la IG Taccuino Personale dell'Assistito."
+Title: "Codeable Concept Farmaco (Taccuino)"
+Description: "Questo profilo rappresenta le limitazioni applicate al tipo di dato CodeableConcept per la codifica dei farmaci all'interno della IG Taccuino Personale dell'Assistito"
 
 * coding ^slicing.discriminator.type = #value
 * coding ^slicing.discriminator.path = "$this"
