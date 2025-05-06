@@ -20,5 +20,6 @@ Description: "Rappresentazione della procedura di impianto protesico tramite il 
 * performer.onBehalfOf only Reference(OrganizationTaccuino)
 * subject 1..1
 * subject only Reference(PatientTaccuino)
+* report 1..1
 * report ^short = "Documento emesso in seguito alla procedura, contenente informazioni relative alla data di emissione, al medico e alla struttura che lo ha redatto"
 * report only Reference(DocumentReferenceTaccuino)

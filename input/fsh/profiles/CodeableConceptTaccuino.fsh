@@ -1,4 +1,4 @@
-Profile: CodeableConceptFarmaco
+Profile: CodeableConceptFarmacoTaccuino
 Parent: CodeableConcept
 Id: codeableConcept-taccuino
 Title: "Codeable Concept Farmaco (Taccuino)"

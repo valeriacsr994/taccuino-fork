@@ -19,7 +19,7 @@ Description: "Rappresentazione della assunzione/somministrazione del farmaco/int
 * effectivePeriod.end ^short = "Fine dell'assunzione del farmaco/integratore"
 
 * obeys medicationEccezioni
-* medication[x] only CodeableConceptFarmaco
+* medication[x] only CodeableConceptFarmacoTaccuino
 * medication[x] ^short = "Farmaco/integratore assunto o somministrato"
 
 * dosage
