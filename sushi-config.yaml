@@ -10,7 +10,7 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.it.taccuino 
+id: hl7.fhir.it.taccuino
 canonical: http://hl7.it/fhir/taccuino
 version: 0.0.1
 name: HL7itTaccuino
@@ -46,8 +46,8 @@ jurisdiction: urn:iso:std:iso:3166#IT "Italy"
  
 dependencies:
   hl7.fhir.it.base: current
-  hl7.fhir.it.terminology: current
-  hl7.terminology.r4 : 6.3.0
+  #hl7.fhir.it.terminology: current
+  #hl7.terminology.r4 : 6.3.0
   #hl7.fhir.it.terminology: dev
   #hl7.fhir.it.base: 0.1.0
 

@@ -2,11 +2,9 @@
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
 
-The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == Terminology ==
 HL7 Defined CodeSystems should ensure that every concept has a definition
-
-
+The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
