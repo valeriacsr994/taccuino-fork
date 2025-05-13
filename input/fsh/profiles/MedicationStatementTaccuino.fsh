@@ -18,6 +18,8 @@ Description: "Rappresentazione della assunzione/somministrazione del farmaco/int
 * effectivePeriod.start ^short = "Inizio dell'assunzione del farmaco/integratore"
 * effectivePeriod.end ^short = "Fine dell'assunzione del farmaco/integratore"
 
+* informationSource only Reference (PatientTaccuino or Practitioner or PractitionerRole or RelatedPerson or OrganizationTaccuino)
+
 * obeys medicationEccezioni
 * medication[x] only CodeableConceptFarmacoTaccuino
 * medication[x] ^short = "Farmaco/integratore assunto o somministrato"

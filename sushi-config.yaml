@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.it.taccuino
 canonical: http://hl7.it/fhir/taccuino
-version: 0.0.1
+version: 0.1.0
 name: HL7itTaccuino
 title: HL7 FHIR Implementation Guide Taccuino Personale dell'Assistito
 status: active
@@ -38,7 +38,7 @@ parameters:
   autoload-resources: true
 
 copyrightYear: 2021+
-releaseLabel: ci-build
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 
 FSHOnly: false
 

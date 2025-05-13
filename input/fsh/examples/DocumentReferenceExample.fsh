@@ -9,7 +9,7 @@ Description: "Esempio di esenzione dal pagamento del ticket"
 * extension[dataRegistrazione].valueInstant = "2025-01-31T15:30:00+01:00"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
-* type =  $cs-loinc#57827-8 "Documento di esenzione"
+* type =  $cs-loinc#57827-8 "Motivo di esenzione dal co-pagamento:Osservazione:Pt:^Paziente:Doc:"
 * subject = Reference (Patient-Taccuino-Esempio)
 * date = "2024-05-12T09:43:41+11:00"
 * author = Reference (Organization-Taccuino-Esempio)
@@ -36,7 +36,7 @@ Description: "Esempio di referto specialistico ambulatoriale relativo ad una vis
 * extension[dataRegistrazione].valueInstant = "2025-05-27T15:30:00+01:00"
 * masterIdentifier.value = "0ba0a749-8b7d-4c6e-a852-a1d0b7de0187"
 * docStatus = #final
-* type =  $cs-loinc#11488-4 "Referto specialistico"
+* type =  $cs-loinc#11488-4 "Nota di consulto:Osservazione:Pt:{Setting}:Doc:{Role}"
 * subject = Reference (Patient-Taccuino-Esempio)
 * date = "2014-05-12T09:43:41+11:00"
 * author = Reference (Practitioner-Taccuino-Esempio)

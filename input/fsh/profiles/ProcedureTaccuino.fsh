@@ -23,3 +23,7 @@ Description: "Rappresentazione della procedura di impianto protesico tramite il 
 * report 1..1
 * report ^short = "Documento emesso in seguito alla procedura, contenente informazioni relative alla data di emissione, al medico e alla struttura che lo ha redatto"
 * report only Reference(DocumentReferenceTaccuino)
+* recorder only Reference (PatientTaccuino or RelatedPerson or Practitioner or PractitionerRole)
+* asserter only Reference (PatientTaccuino or RelatedPerson or Practitioner or PractitionerRole)
+* reasonReference only Reference(Condition or Observation or Procedure or DiagnosticReport or DocumentReferenceTaccuino)
+* focalDevice.manipulated only Reference (DeviceTaccuino)

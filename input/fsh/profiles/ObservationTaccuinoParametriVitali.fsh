@@ -30,6 +30,7 @@ Description: "Rappresentazione dell'osservazione relativa ai parametri vitali tr
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+* derivedFrom only Reference (DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Profile: ObservationPressioneArteriosaTaccuino
@@ -89,5 +90,6 @@ Description: "Rappresentazione dell'osservazione relativa alla pressione arterio
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+* derivedFrom only Reference (DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

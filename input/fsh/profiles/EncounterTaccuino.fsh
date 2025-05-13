@@ -30,3 +30,5 @@ Description: "Rappresentazione dei contatti tra il paziente e le strutture sanit
 * participant.individual only Reference(Practitioner or PractitionerRole)
 * subject 1..1
 * subject only Reference (PatientTaccuino)
+* hospitalization.origin only Reference(Location or OrganizationTaccuino)
+* hospitalization.destination only Reference(Location or OrganizationTaccuino)
