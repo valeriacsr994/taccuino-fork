@@ -19,6 +19,8 @@ Description: "Rappresentazione delle osservazioni 'Note generali' tramite il pro
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+* performer only Reference (PatientTaccuino or Practitioner or PractitionerRole or OrganizationTaccuino or CareTeam or RelatedPerson)
+* derivedFrom only Reference(DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -45,6 +47,8 @@ Description: "Rappresentazione delle osservazioni 'Eventi' tramite il profilo Ob
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+* performer only Reference (PatientTaccuino or Practitioner or PractitionerRole or OrganizationTaccuino or CareTeam or RelatedPerson)
+* derivedFrom only Reference(DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationSintomiTaccuino
@@ -66,12 +70,13 @@ Description: "Rappresentazione delle osservazioni 'Segni e sintomi' tramite il p
 * effectivePeriod ^short = "Data di inizio e fine del sintomo"
 * effectivePeriod.start 1..1
 * component.valueCodeableConcept ^short = "Codice e descrizione del sintomo, nome dell'allergene o dell'intolleranza"
-//quale valueset utilizzare per segni e sintomi
-* derivedFrom only Reference (Media)
+// valueset utilizzare per segni e sintomi
+* derivedFrom only Reference (DocumentReferenceTaccuino or ImagingStudy or Media)
 * derivedFrom ^short = "Area interessata al sintomo con eventuale foto allegata"
 //* subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationDoloreTaccuino
@@ -102,6 +107,8 @@ Description: "Rappresentazione delle osservazioni 'Dolore' tramite il profilo Ob
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+* performer only Reference (Practitioner or PractitionerRole or RelatedPerson or PatientTaccuino)
+* derivedFrom only Reference (DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: ObservationViaggiTaccuino
@@ -129,3 +136,4 @@ Description: "Rappresentazione delle osservazioni 'Viaggi all'estero' tramite il
 * subject 1..1
 * subject only Reference(PatientTaccuino)
 * issued ^short = "Rappresenta la data e l'ora dell'ultima versione della risorsa"
+* derivedFrom only Reference (DocumentReferenceTaccuino or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence)

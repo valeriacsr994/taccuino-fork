@@ -23,7 +23,8 @@ Description: "Rappresentazione della struttura sanitaria tramite il profilo Orga
 	and strutturaHos 0..1 
 	and	strutturaRic 0..1
   and ASL 0..1
-	
+	and altro 0..1
+
 * identifier[farmacia]
   * ^short = "Farmacia"
   * system from $vs-minsan-farmacie
@@ -34,9 +35,12 @@ Description: "Rappresentazione della struttura sanitaria tramite il profilo Orga
   * ^short = "Struttura di ricovero"
   * system from $minsan-hsp
 * identifier[strutturaRic]
-  * ^short = "Strutture di ricovero pubbliche e private, istituti e centri di riabilitazione pubblici"
+  * ^short = "Strutture di ricovero pubbliche e private accreditate, istituti e centri di riabilitazione pubblici"
   * system from $minsan-ria
 * identifier[ASL]
   * ^short = "Aziende Sanitarie Locali"
   * system from $vs-asl
-//ampliare
+* identifier[altro]
+  * ^short = "Strutture private non accreditate o di altra tipologia"
+  * system from $vs-NullFlavor
+  * value ^short = "Nome della struttura"

@@ -31,6 +31,8 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 
 * author only Reference (Practitioner or PractitionerRole or OrganizationTaccuino or Device)
 * author ^short = "Autore del documento"
+* authenticator only Reference(OrganizationTaccuino)
+
 
 * content.attachment.hash ^short = "Hash"
 * content.attachment.size ^short = "Size"
@@ -45,8 +47,13 @@ Description: "Rappresentazione di eventuali documenti che l'assisito allega al T
 * category.coding.code 1..
 * category from $vs-class-code (required)
 
+* custodian only Reference(OrganizationTaccuino)
+
 * content.attachment.url ^short = "Identificativo repository"
 * content.format ^short = "Formato utilizzato (basso livello)"
 * docStatus ^short = "Stato del documento"
 
 * description ^short = "Commenti e annotazioni aggiuntive"
+
+* context.sourcePatientInfo only Reference(PatientTaccuino)
+
