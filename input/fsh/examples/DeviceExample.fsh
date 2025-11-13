@@ -12,7 +12,9 @@ Description: "Esempio di dispositivo medico (defibrillatore cardiaco) impiantato
 * expirationDate = "2033-04-23"
 * deviceName.name = "Defibrillatore impiantabile"
 * deviceName.type = #patient-reported-name
-* type = $cs-cnd#J010501 "Defibrillatori Impiantabili Sottocutanei"
+* type.coding.system = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
+* type.coding.code = #J010501
+//* type = $cs-cnd#J010501 "Defibrillatori Impiantabili Sottocutanei"
 * patient = Reference(Patient-Taccuino-Esempio)
 
 

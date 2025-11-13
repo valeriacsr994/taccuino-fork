@@ -7,14 +7,15 @@ Alias: $vs-unitOfMeasure = http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $unitOfMeasure = http://unitsofmeasure.org
 Alias: $cs-class-code = http://hl7.it/fhir/taccuino/CodeSystem/class-code
 Alias: $vs-class-code = http://hl7.it/fhir/taccuino/ValueSet/vs-it-class-code
-Alias: $cs-cnd = http://hl7.it/fhir/taccuino/CodeSystem/cnd
+//Alias: $cs-cnd = http://hl7.it/fhir/taccuino/CodeSystem/cnd
+Alias: $cs-cnd = https://www.salute.gov.it/portale/temi/SceltaDispomedDispositivi.jsp
 Alias: $vs-cnd = http://hl7.it/fhir/taccuino/ValueSet/vs-it-cnd
 
 Alias: $iso3166 = urn:iso:std:iso:3166
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $vs-atc = https://www.hl7.it/fhir/terminology/ValueSet/who-atc
-Alias: $aic = http://hl7.it/fhir/taccuino/CodeSystem/aifa-aic
+Alias: $aic = urn:uuid:2.16.840.1.113883.2.9.6.1.5
 Alias: $cs-loinc = http://hl7.it/fhir/taccuino/CodeSystem/cs-loinc-it
 Alias: $vs-loinc = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-it
 Alias: $vs-loinc-pv = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-parametri-vitali

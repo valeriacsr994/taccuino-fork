@@ -15,8 +15,9 @@ Description: "Questo profilo rappresenta le limitazioni applicate al tipo di dat
 * coding[ATC] 
 * coding[ATC] ^sliceName = "ATC"
 * coding[ATC] from $vs-atc
-* coding[AIC] ^sliceName = "AIC"
-* coding[AIC] from $vs-aifa-aic
+* coding[AIC].system from urn:uuid:2.16.840.1.113883.2.9.6.1.5
+// * coding[AIC] ^sliceName = "AIC"
+// * coding[AIC] from $vs-aifa-aic
 * coding[gruppoEquivalenza] from $vs-gruppo-equivalenza
 * coding[eccezioni] from $vs-NullFlavor
 

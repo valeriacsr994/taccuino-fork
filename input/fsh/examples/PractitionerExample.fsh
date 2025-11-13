@@ -48,5 +48,3 @@ Description: "Esempio di Practitioner (MMG)"
 * gender = #male
 * birthDate = "1980-07-10"
 * qualification.code = https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni#2.4.1 "Medici"
-
-
