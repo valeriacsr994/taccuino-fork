@@ -14,6 +14,7 @@ Description: "Esempio di dispositivo medico (defibrillatore cardiaco) impiantato
 * deviceName.type = #patient-reported-name
 * type.coding.system = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
 * type.coding.code = #J010501
+* type.coding.display = "Defibrillatori Impiantabili Sottocutanei"
 //* type = $cs-cnd#J010501 "Defibrillatori Impiantabili Sottocutanei"
 * patient = Reference(Patient-Taccuino-Esempio)
 

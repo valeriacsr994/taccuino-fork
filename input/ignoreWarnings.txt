@@ -8,3 +8,5 @@
 HL7 Defined CodeSystems should ensure that every concept has a definition
 The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.9.6.1.48' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.9.6.1.5' could not be found, so the code cannot be validated

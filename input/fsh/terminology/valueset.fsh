@@ -1,12 +1,11 @@
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: VsAifaAIC
-Id: aifa-aic
-Title: "AIFA AIC"
-Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
-* ^experimental = false
+// ValueSet: VsAifaAIC
+// Id: aifa-aic
+// Title: "AIFA AIC"
+// Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
+// * ^experimental = false
 
-* codes from system https://www.hl7.it/fhir/terminology/CodeSystem/aifa-aic
-* codes from system $aic
+// * codes from system $cs-aic
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsNoAllergies
@@ -74,13 +73,12 @@ Description: "Codici LOINC dei parametri vitali in italiano"
 * $cs-loinc#3043-7 "Trigliceridi"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ValueSet: VsCND
-Id: vs-it-cnd
-Title: "Classificazione Nazionale dei Dispositivi Medici (CND)"
-Description: "Classificazione Nazionale dei Dispositivi Medici (CND)"
-* ^experimental = false
-* include codes from system https://www.salute.gov.it/portale/temi/SceltaDispomedDispositivi.jsp
-//* codes from system $cs-cnd
+// ValueSet: VsCND
+// Id: vs-it-cnd
+// Title: "Classificazione Nazionale dei Dispositivi Medici (CND)"
+// Description: "Classificazione Nazionale dei Dispositivi Medici (CND)"
+// * ^experimental = false
+// * codes from system $cs-cnd
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ValueSet: VsclassCode

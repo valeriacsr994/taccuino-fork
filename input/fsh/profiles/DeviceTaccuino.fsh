@@ -17,7 +17,9 @@ Description: "Rappresentazione dei dispositivi sanitari quali protesi impiantate
 * type ^short = "Tipologia del dispositivo sanitario"
 * type 1..
 * type.coding 1..
-* type from $vs-cnd (extensible)
+//* type from $vs-cnd (extensible)
+* type.coding ^short = "Classificazione Nazionale dei Dispositivi (CND)"
+* type.coding.system = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
 * manufacturer ^short = "Produttore del dispositivo sanitario"
 * identifier ^short = "Numero identificativo del dispositivo sanitario"
 * manufactureDate ^short = "Data di produzione del dispositivo sanitario"

@@ -145,24 +145,24 @@ groups:
     name: Terminology - CodeSystems  
     description: Codesystems per il dominio del Taccuino.
     resources:
-      - CodeSystem/aifa-aic
+    #  - CodeSystem/aifa-aic
       - CodeSystem/no-allergies
       - CodeSystem/access-rules
       - CodeSystem/cs-loinc-it
-      - CodeSystem/cnd
+     # - CodeSystem/cnd
       - CodeSystem/class-code
 
   TaccuinoVSTerminology:
     name: Terminology - ValueSets  
     description: ValueSets per il Taccuino.
     resources:
-      - ValueSet/aifa-aic
+    #  - ValueSet/aifa-aic
       - ValueSet/vs-no-allergies
       - ValueSet/vs-loinc-tipo-doc
       - ValueSet/vs-ASL
       - ValueSet/vs-access
       - ValueSet/vs-loinc-it
-      - ValueSet/vs-it-cnd
+      #- ValueSet/vs-it-cnd
       - ValueSet/vs-it-class-code
       - ValueSet/vs-loinc-parametri-vitali
       - ValueSet/vs-loinc-scala-dolore

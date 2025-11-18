@@ -1,21 +1,4 @@
-CodeSystem: CsAifaAic
-Id: aifa-aic
-Title: "AIFA - AIC"
-Description: "AIFA - Identifica i farmaci nella loro forma commerciale"
-* ^experimental = false
-* ^status = #active
-* ^language = #it-IT
-* ^caseSensitive = true
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.5"
-
-* #031981069 "PANTORC - 28CPR GASTR 20MG"
-* #033736075 "AIRCORT NEBUL20FL 2ML 0,5MG/ML"
-* #027860042 "ZITROMAX 3CPR RIV 500MG"
-* #020609083 "ISOPTIN*30 cpr riv 80 mg"
-* #039785050 "AUGMENTIN 875 MG/125 MG COMPRESSE RIVESTITE CON FILM"
-* #037568019 "5 MICROGRAMMI SOLUZIONE INETTABILE - USO SOTTOCUTANEO PENNA PRERIEMPITA (VETRO)"
-* #036813018 "1000 MG COMPRESSE 8 COMPRESSE DIVISIBILI"
+// 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -69,18 +52,17 @@ Description: "Classe a cui il documento appartiene"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-CodeSystem: CsCND
-Id: cnd
-Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
-Description: "Codici che classificano il tipo di dispositivo (CND)"
-* ^experimental = false
-* ^status = #active
-* ^language = #it-IT
-* ^caseSensitive = true
-* ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
+// CodeSystem: CsCND
+// Id: cnd
+// Title: "Codici Classificazione Nazionale dei Dispositivi Medici (CND)"
+// Description: "Codici che classificano il tipo di dispositivo (CND)"
+// * ^experimental = false
+// * ^status = #active
+// * ^language = #it-IT
+// * ^caseSensitive = true
+// * ^identifier.system = "urn:ietf:rfc:3986"
+// * ^identifier.value = "urn:oid:2.16.840.1.113883.2.9.6.1.48"
 
-* #J010501 "Defibrillatori Impiantabili Sottocutanei"
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CodeSystem: CsLoincIT
