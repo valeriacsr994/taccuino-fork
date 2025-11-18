@@ -151,3 +151,12 @@ Description: "Codici LOINC per la tipologia di documento"
 * $cs-loinc#100971-1 "Cartella clinica:-:Pt:^Paziente:-:"
 * $cs-loinc#57080-4 "Dispositivo medico impiantato:Osservazione:Pt:^Paziente:Nar:"
 * $cs-loinc#101881-1 "Tessera per il portatore di impianto:Osservazione:Pt:{Setting}:Doc:"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueSet: VsIstatDug
+Id: istat-dug
+Title: "ISTAT - DUG"
+Description: "ISTAT - Registro delle Denominazioni Urbanistiche Generiche (DUG)"
+* ^experimental = false
+* codes from system http://hl7.it/fhir/taccuino/CodeSystem/dug 

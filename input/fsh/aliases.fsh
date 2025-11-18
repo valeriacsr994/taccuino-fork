@@ -69,3 +69,11 @@ Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-Obs
 Alias: $cs-accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
 Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
 Alias: $vs-loinc-dolore = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-scala-dolore
+
+
+Alias: $iso21090-SC-coding = http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding
+Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
+Alias: $iso21090-ADXP-streetNameBase = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase
+Alias: $iso21090-ADXP-streetNameType = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType
+Alias: $iso21090-ADXP-houseNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
+Alias: $istat-dug = http://hl7.it/fhir/lab-report/CodeSystem/dug
