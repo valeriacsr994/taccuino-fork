@@ -32,6 +32,7 @@ Description: "Esempio di Paziente (donna) iscritta al SSN"
 
 * gender = #female
 
+* address.line.extension[dugCode].valueCodeableConcept  = $istat-dug#67 "via"
 * address.city = "Roma"
 * address.country = "IT"
 * address.postalCode = "23839"
