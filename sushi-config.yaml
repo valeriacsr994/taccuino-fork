@@ -44,9 +44,9 @@ FSHOnly: false
 
 jurisdiction: urn:iso:std:iso:3166#IT "Italy"
  
-#dependencies:
+dependencies:
   #hl7.fhir.it.base: current
-  #hl7.fhir.it.terminology: current
+  hl7.fhir.it.terminology: current
   #hl7.terminology.r4 : 6.3.0
   #hl7.fhir.it.terminology: dev
   #hl7.fhir.it.base: 0.1.0

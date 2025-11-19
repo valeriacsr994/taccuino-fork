@@ -55,7 +55,7 @@ Alias: $CF = http://hl7.it/sid/codiceFiscale
 Alias: $anpr = http://hl7.it/sid/anpr
 Alias: $cs-luogo-nascita = https://www.hl7.it/fhir/terminology/CodeSystem/istat-unitaAmministrativeTerritorialiEstere
 Alias: $cs-asl = https://www.hl7.it/fhir/terminology/CodeSystem/cs-asl
-Alias: $vs-asl = http://hl7.it/fhir/taccuino/ValueSet/vs-ASL
+Alias: $vs-asl = https://www.hl7.it/fhir/terminology/ValueSet/mds-asl-vs
 Alias: $cs-entita = https://www.hl7.it/fhir/terminology/CodeSystem/it-tipoEntita
 Alias: $reason-medication-given = http://terminology.hl7.org/CodeSystem/reason-medication-given
 Alias: $odf = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
@@ -71,9 +71,9 @@ Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
 Alias: $vs-loinc-dolore = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-scala-dolore
 
 
-Alias: $iso21090-SC-coding = http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding
-Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
-Alias: $iso21090-ADXP-streetNameBase = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase
-Alias: $iso21090-ADXP-streetNameType = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType
-Alias: $iso21090-ADXP-houseNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
+Alias: $iso21090-SC-coding = http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding|5.2.0
+Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName|5.2.0
+Alias: $iso21090-ADXP-streetNameBase = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase|5.2.0
+Alias: $iso21090-ADXP-streetNameType = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType|5.2.0
+Alias: $iso21090-ADXP-houseNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber|5.2.0
 Alias: $istat-dug = http://hl7.it/fhir/lab-report/CodeSystem/dug
