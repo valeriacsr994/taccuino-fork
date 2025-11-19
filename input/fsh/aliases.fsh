@@ -21,12 +21,9 @@ Alias: $vs-loinc-pv = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-parametri-vi
 Alias: $vs-loinc-td = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-tipo-doc|0.2.0
 Alias: $vs-aifa-aic = http://hl7.it/fhir/taccuino/ValueSet/aifa-aic
 Alias: $cs-no-allergies = http://hl7.it/fhir/taccuino/CodeSystem/no-allergies
-Alias: $vs-no-allergies = http://hl7.it/fhir/taccuino/ValueSet/vs-no-allergies
 Alias: $vs-gruppo-equivalenza = https://www.hl7.it/fhir/terminology/ValueSet/aifa-ge
-
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $vs-NullFlavor = http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0
-
 Alias: $minsan-fls = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idAziendeOspedaliere
 Alias: $minsan-hsp = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture
 Alias: $cs-minsan-hsp = https://www.hl7.it/fhir/terminology/CodeSystem/minsan-hsp
@@ -34,12 +31,8 @@ Alias: $minsan-ria = https://www.hl7.it/fhir/terminology/ValueSet/strutturePubbl
 
 Alias: $minsan-farmacie = https://www.hl7.it/fhir/terminology/CodeSystem/minsan-farmacie
 Alias: $vs-minsan-farmacie = https://www.hl7.it/fhir/terminology/ValueSet/vs-mds-farmacia
-Alias: $minsan-regione = https://www.hl7.it/fhir/terminology/sid/minsan-regione
-Alias: $vs-mds-esenzioni = https://www.hl7.it/fhir/terminology/ValueSet/vs-mds-esenzioni
-Alias: $encounterCode = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0
 Alias: $cs-encounterCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $reason = http://hl7.org/fhir/ValueSet/encounter-reason
-Alias: $vs-doc-type = http://hl7.org/fhir/ValueSet/c80-doc-typecodes
 Alias: $tipoIdentificatore = https://www.hl7.it/fhir/terminology/ValueSet/VstipoIdentificatore
 Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0
@@ -61,16 +54,11 @@ Alias: $reason-medication-given = http://terminology.hl7.org/CodeSystem/reason-m
 Alias: $odf = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $cs-itroleCode = https://www.hl7.it/fhir/terminology/CodeSystem/it-V3RoleCode
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $vs-obs-category = http://hl7.org/fhir/ValueSet/observation-category
-Alias: $ICD9 = http://fhir.infoway-inforoute.ca/io/psca/ValueSet/ICD9CM
+
 Alias: $observationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
-
-
 Alias: $cs-accessRules = http://hl7.it/fhir/taccuino/CodeSystem/access-rules
 Alias: $vs-accessRules = http://hl7.it/fhir/taccuino/ValueSet/vs-access
 Alias: $vs-loinc-dolore = http://hl7.it/fhir/taccuino/ValueSet/vs-loinc-scala-dolore
-
-
 Alias: $iso21090-SC-coding = http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding|5.2.0
 Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName|5.2.0
 Alias: $iso21090-ADXP-streetNameBase = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase|5.2.0
